@@ -17,37 +17,15 @@ const Navbar = () => {
 		<>
 			<NavLink 
 				to="/publications" 
-				className={location.pathname === "/publications" ? "text-sky-400 hover:text-black" : "text-gray-700 hover:text-black"}
+				className={location.pathname === "/publications" ? "navlinks active" : "navlinks"}
 			>
-				<ul className="flex">
-					<li><span>P</span></li>
-					<li><span>u</span></li>
-					<li><span>b</span></li>
-					<li><span>l</span></li>
-					<li><span>i</span></li>
-					<li><span>c</span></li>
-					<li><span>a</span></li>
-					<li><span>t</span></li>
-					<li><span>i</span></li>
-					<li><span>o</span></li>
-					<li><span>n</span></li>
-					<li><span>s</span></li>
-				</ul>
+				Publications
 			</NavLink>
 			<NavLink 
 				to="/research" 
-				className={location.pathname === "/research" ? "text-sky-400 hover:text-black" : "text-gray-700 hover:text-black"}
+				className={location.pathname === "/research" ? "navlinks active" : "navlinks"}
 			>
-				<ul className="flex">
-					<li><span>R</span></li>
-					<li><span>e</span></li>
-					<li><span>s</span></li>
-					<li><span>e</span></li>
-					<li><span>a</span></li>
-					<li><span>r</span></li>
-					<li><span>c</span></li>
-					<li><span>h</span></li>
-				</ul>
+				Research
 			</NavLink>
 		</>
 	);
@@ -56,19 +34,19 @@ const Navbar = () => {
 		<>
 			<NavLink 
 				to="/team" 
-				className={location.pathname === "/team" ? "text-sky-400 hover:text-black" : "text-gray-700 hover:text-black"}
+				className={location.pathname === "/team" ? "navlinks active" : "navlinks"}
 			>
 				Team
 			</NavLink>
 			<NavLink 
 				to="/contact" 
-				className={location.pathname === "/contact" ? "text-sky-400 hover:text-red" : "text-gray-700 hover:text-black"}
+				className={location.pathname === "/contact" ? "navlinks active" : "navlinks"}
 			>
 				Contact
 			</NavLink>
 			<NavLink 
 				to="/opportunities" 
-				className={location.pathname === "/opportunities" ? "text-sky-400 hover:text-red" : "text-gray-700 hover:text-black"}
+				className={location.pathname === "/opportunities" ? "navlinks active" : "navlinks"}
 			>
 				Opportunities
 			</NavLink>

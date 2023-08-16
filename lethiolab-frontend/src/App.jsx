@@ -14,17 +14,15 @@ function App() {
     <Router>
     <div className="App">
       <Navbar />
-      <div className="mt-20">
-	  <Routes>
-	  	<Route exact path="/" element={<Homepage />} />
-		<Route path="/publications" element={<Publications />} />
-		<Route path="/research" element={<Research />} />
-		<Route path="/team" element={<Team />} />
-		<Route path="/contact" element={<Contact />} />
-		<Route path="/opportunities" element={<Opportunities />} />
-	</Routes>
+		<Routes>
+			<Route exact path="/" element={<Homepage />} />
+			<Route path="/publications" element={<Publications />} />
+			<Route path="/research" element={<Research />} />
+			<Route path="/team" element={<Team />} />
+			<Route path="/contact" element={<Contact />} />
+			<Route path="/opportunities" element={<Opportunities />} />
+		</Routes>
       </div>
-    </div>
   </Router>
   )
 }
