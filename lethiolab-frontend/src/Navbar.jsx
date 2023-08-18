@@ -61,7 +61,7 @@ const Navbar = () => {
 	)
 
 	return (
-		<nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+		<nav className="w-full bg-white shadow-md fixed top-0 left-0 h-14 z-50">
 			{isMobile ? (
 				<>
 					<div className="flex space-x-4">

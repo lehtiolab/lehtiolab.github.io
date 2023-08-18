@@ -5,246 +5,287 @@ export const members = [
 		"name": "Akram Embadi",
 		"role": "Postdoc",
 		"country": "Congo",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "postdoc",
 	},
 	{
 		"name": "Ali Razzak",
 		"role": "Bioinformatician",
 		"country": "New Zealand",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "bioinfo",
 	},
 	{
 		"name": "Ann-Sofi Sandberg",
 		"role": "Bioinformatician",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "bioinfo",
 	},
 	{
 		"name": "David Tamborero",
 		"role": "Bioinformatician",
 		"country": "Spain",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "bioinfo",
 	},
 	{
 		"name": "Eduardo Araújo",
 		"role": "Research Engineer",
 		"country": "Portugal",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Georgios Mermelekas",
 		"role": "Senior research engineer",
 		"country": "Greece",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Ghazaleh Assadi",
 		"role": "Research engineer",
 		"country": "Iran",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Haris Babacic",
 		"role": "Ph.D. student",
 		"country": "Montenegro",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Helena Bäckvall",
 		"role": "Scientific coordinator",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Henrik Johansson",
 		"role": "Senior researcher",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Husen Umer",
 		"role": "Postdoc",
 		"country": "Pakistan",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "postdoc",
 	},
 	{
 		"name": "Ioannis Siavelis",
 		"role": "Ph.D. student",
 		"country": "Greece",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Irene Villanueva Sanz",
 		"role": "",
 		"country": "Spain",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Isabelle Leo",
 		"role": "Ph.D. student",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Janne Lehtiö",
 		"role": "Professor, group leader",
 		"country": "Finland",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "boss",
 	},
 	{
 		"name": "Jenny Forshed",
 		"role": "Associate professor",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Jorrit Boekel",
 		"role": "Software developer",
 		"country": "Netherlands",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "programmer",
 	},
 	{
 		"name": "Konstantin Barylyuk",
 		"role": "",
 		"country": "Russia",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "postdoc",
 	},
 	{
 		"name": "Laura Gheorghe",
 		"role": "Software developer",
 		"country": "Romania",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "programmer",
 	},
 	{
 		"name": "Laura Levi",
 		"role": "",
 		"country": "Finland",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Luay Aswad",
 		"role": "Research fellow",
 		"country": "Syria",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Lukas Orre",
 		"role": "Senior researcher, platform manager",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Maan Rachid",
-		"role": "Postdoc",
+		"role": "Software develope",
 		"country": "Syria",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "programmer",
 	},
 	{
 		"name": "Maria Pernemalm",
 		"role": "Assistant professor, platform manager",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Markus Jonsson",
 		"role": "Software developer",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "programmer",
 	},
 	{
 		"name": "Mahshid Zarrineh",
 		"role": "",
 		"country": "Iran",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Mahnaz Nikpour",
 		"role": "",
 		"country": "Iran",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "postdoc",
 	},
 	{
 		"name": "Mattias Vesterlund",
 		"role": "Postdoc",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "postdoc",
 	},
 	{
 		"name": "Nidhi Sharma",
 		"role": "Postdoctoral Fellow",
 		"country": "Iran",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "postdoc",
 	},
 	{
 		"name": "Noora Sissala",
 		"role": "Research Assistant",
 		"country": "Finland",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Olena Berkovska",
 		"role": "Ph.D. student",
 		"country": "Ukraine",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Rozbeh Jafari",
 		"role": "Assistant professor",
 		"country": "Iran",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Rui Branca",
 		"role": "Assistant professor",
 		"country": "Portugal",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Santeri Kiviluoto",
 		"role": "",
 		"country": "Finland",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Simon Rapple",
 		"role": "",
 		"country": "Sweden",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Sumitra Marathe",
 		"role": "",
 		"country": "India",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Xenia Villalobos",
 		"role": "",
 		"country": "Greece",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Xiaofang Cao",
 		"role": "Research engineer",
 		"country": "China",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Xue-Kang Qi",
 		"role": "Postdoc",
 		"country": "China",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "postdoc",
 	},
 	{
 		"name": "Yanbo Pan",
 		"role": "Researcher",
 		"country": "China",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	},
 	{
 		"name": "Yaroslav Kaminskiy",
 		"role": "",
 		"country": "Russia",
-		"picture" : memberImage
+		"picture" : memberImage,
+		"icon" : "",
 	}
 ]
