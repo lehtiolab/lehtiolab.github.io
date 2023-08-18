@@ -9,5 +9,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 body {
+  overflow-y: hidden;
   
 }

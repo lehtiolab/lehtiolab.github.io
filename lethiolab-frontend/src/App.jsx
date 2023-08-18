@@ -12,18 +12,20 @@ import Opportunities from './Opportunities'
 function App() {
   return (
     <Router>
-    <div className="App">
-      <Navbar />
-		<Routes>
-			<Route exact path="/" element={<Homepage />} />
-			<Route path="/publications" element={<Publications />} />
-			<Route path="/research" element={<Research />} />
-			<Route path="/team" element={<Team />} />
-			<Route path="/contact" element={<Contact />} />
-			<Route path="/opportunities" element={<Opportunities />} />
-		</Routes>
+    	<div className="App overflow-y-hidden">
+			<Navbar />
+			<div className="mt-16 overflow-y-auto h-screen">
+				<Routes>
+					<Route exact path="/" element={<Homepage />} />
+					<Route path="/publications" element={<Publications />} />
+					<Route path="/research" element={<Research />} />
+					<Route path="/team" element={<Team />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/opportunities" element={<Opportunities />} />
+				</Routes>
+			</div>
       </div>
-  </Router>
+  	</Router>
   )
 }
 
