@@ -1,11 +1,12 @@
 import memberImage from './../img/member.png';
 
 /*
-"Name" is the members first and last name
-"Role" is the type of role can be: "leader", "principal investigator", "postdoc", "staff", "phd", "student"
-	Note: the appearance of members should be determined by their role as in the order above
+The "role" of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
+
+"name" is the members first and last name
+"role" is the type of role can be: "leader", "principal investigator", "postdoc", "staff", "phd", "student"
 	Note: The role can also determine the icon (given we implemented it)
-"Title" is their actual job title
+"title" is their actual job title
 "email" is their prefered email (ideally collected from https://docs.google.com/spreadsheets/d/185U2WFq2y5yZaBxg6mahq8_zeGod9okXH0BbNoy_lbM/edit#gid=0)
 	If not provided default to their ki email
 "website" is their personal website (ideally collected from https://docs.google.com/spreadsheets/d/185U2WFq2y5yZaBxg6mahq8_zeGod9okXH0BbNoy_lbM/edit#gid=0)
