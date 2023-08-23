@@ -7,10 +7,19 @@ The "newsDate" determines the order of the news
 export const publications = 
 [
     {
-        "newsDate": "",
-        "newsContent": "",
-        "resourceDescription": "",
-        "resourceImage": "",
-        "resourceLink": "",
+        "newsDate": "23/09/2023",
+        "newsContent": "OPSUM LOREUM BLAH BLAH",
+    },
+    {
+        "newsDate": "24/09/2023",
+        "newsContent": "OPSUM LOREUM BLAH BLAH",
+    },
+    {
+        "newsDate": "25/09/2023",
+        "newsContent": "OPSUM LOREUM BLAH BLAH",
+    },
+    {
+        "newsDate": "26/09/2023",
+        "newsContent": "OPSUM LOREUM BLAH BLAH",
     }
 ]

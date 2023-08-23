@@ -14,10 +14,11 @@ export const publications =
 [
     {
         "publicationTitle": "",
-        "publicationAuthors": [],
+        "projectLead": "",
         "projectImage": "",
-        "PublicationDate": "",
-        "publicationImage": "",
-        "publicationLink": "",
+        "projectDescription": "",
+        "publication1Link": "",
+        "publication2Link": "",
+        "publication3Link": "",
     }
 ]
