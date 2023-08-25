@@ -1,0 +1,39 @@
+.publicationHolder {
+    width: 80%;
+    height: fit-content;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publicationList {
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.publicationEntry {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.publicationText {
+    width: 70%;
+    height: inherit;
+}
+
+.publicationImage {
+    width: 30%;
+    height: inherit;
+}
+
+.publicationImage img {
+}

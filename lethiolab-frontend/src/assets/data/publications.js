@@ -15,7 +15,7 @@ export const publications =
         "publicationJournal": "Nature Communications",
         "publicationAuthors": ["*Isabelle Rose Leo", "*Luay Aswad", "Matthias Stahl", "Elena Kunold", "Frederik Post", "Tom Erkers", "Nona Struyf", "*Georgios Mermelekas", "Rubin Narayan Joshi", "Eva Gracia-Villacampa", "Päivi Östling", "Olli P. Kallioniemi", "Katja Pokrovskaja Tamm", "*Ioannis Siavelis", "*Janne Lehtiö", "*Mattias Vesterlund", "*Rozbeh Jafari"],
         "publicationDate": "30/03/2022",
-        "publicationImage": "",
+        "publicationImage": "https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg",
         "publicationLink": "https://doi.org/10.1038/s41467-022-29224-5",
     },
     {
