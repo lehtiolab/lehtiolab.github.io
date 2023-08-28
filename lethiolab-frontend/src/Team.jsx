@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import { members } from "./assets/data/members";
 import {roleIconAssign} from "./assets/data/membersRoleIcons";
 import PieChart from "./PieChart";
-import marble from "./assets/img/marble.png"
 
 
 const Team = () => {
@@ -12,7 +11,6 @@ const Team = () => {
 	const marbleTexture = {
 		height: '50px',
 		padding: '20px',
-		background: `#eeeef8 url(${marble})`
 	}
 
 	const marbleStyle = {

@@ -1,0 +1,27 @@
+.researchHolder {
+    width: 80%;
+    height: fit-content;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.researchCard {
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.researchLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.resarchRelevant {
+    margin-top: 10px;
+}
