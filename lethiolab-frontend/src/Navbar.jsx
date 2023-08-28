@@ -27,6 +27,12 @@ const Navbar = () => {
 			>
 				Research
 			</NavLink>
+			<NavLink 
+				to="/resources" 
+				className={location.pathname === "/resources" ? "navlinks active" : "navlinks"}
+			>
+				Resources
+			</NavLink>
 		</>
 	);
 

@@ -6,6 +6,7 @@ import Homepage from './Homepage';
 import Publications from './Publications';
 import Team from './Team';
 import Research from './Research';
+import Resources from './Resources'
 import Contact from './Contact';
 import Opportunities from './Opportunities'
 
@@ -19,6 +20,7 @@ function App() {
 					<Route exact path="/" element={<Homepage />} />
 					<Route path="/publications" element={<Publications />} />
 					<Route path="/research" element={<Research />} />
+					<Route path="/resources" element={<Resources />} />
 					<Route path="/team" element={<Team />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/opportunities" element={<Opportunities />} />
