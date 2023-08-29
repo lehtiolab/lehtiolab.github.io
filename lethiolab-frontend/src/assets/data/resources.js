@@ -13,7 +13,7 @@ export const resources =
         "resourceType": "product",
         "resourceName": "Molecular Tumor Board Portal",
         "resourceDescription": "The public version of the MTB portal provides a general framework to interpret the functional and predictive relevance of a given list of gene variants in interactive reports.",
-        "resourceImage": "https://mtbp.org/assets/img/logo/public/logo-landscape-karolinska-mtb-tone.svg",
+        "resourceImage": "https://mtbp.org/assets/img/logo/logo-karolinska-mtb-notext.svg",
         "resourceLink": "https://mtbp.org/",
     },
     {
@@ -27,7 +27,7 @@ export const resources =
         "resourceType": "product",
         "resourceName": "Subcell Barcode",
         "resourceDescription": "An exploratory web portal into subcellular location of proteins.",
-        "resourceImage": "images/lehtiolab/SubcellLogo.png",
+        "resourceImage": "https://www.subcellbarcode.org/images/lehtiolab/SubcellLogo.png",
         "resourceLink": "https://www.subcellbarcode.org/",
     },
     {
