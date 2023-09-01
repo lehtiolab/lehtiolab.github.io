@@ -89,11 +89,11 @@ function Carousel() {
 					/>
 				);
 				})}
-        <ul className="bullet-points">
-          {images.map((_, index) => (
-            <li key={index} className={activeIndex === index ? 'active' : ''}></li>
-          ))}
-        </ul>
+			<ul className="bullet-points">
+				{images.map((_, index) => (
+					<li key={index} className={activeIndex === index ? 'active' : ''}></li>
+				))}
+			</ul>
       </div>
     </div>
     </div>

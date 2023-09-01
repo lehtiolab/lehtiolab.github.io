@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import logo from './assets/img/logo.png';
-import './Navbar.css';
+import './styles/navbar.css';
 
 const Navbar = () => {
 	const location = useLocation();

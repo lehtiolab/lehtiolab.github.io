@@ -1,0 +1,14 @@
+.custom-height {
+    height: calc(100vh - 60px);
+}
+
+.news-links {
+    box-shadow: inset 0px 0 0 0 #54b3d6;
+    color: #ffffff;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.news-links:hover {
+    box-shadow: inset 500px 0 0 0 #54b3d6;
+    color: white;
+}
