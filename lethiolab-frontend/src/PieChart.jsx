@@ -37,9 +37,14 @@ const PieChart = ({ data, setSelectedCountry }) => {
     
         // Check if the selected slice is the same as the previously selected one
         if (sliceIndex === selectedSlice) {
-          setSelectedSlice(null); // Reset the selection
-          setSelectedCountry(null); // Reset the selected country if needed
-          return; // Exit early since the selection was reset
+          // Reset the selection
+          chart.setSelection([]);
+          
+          // Reset the selected country if needed
+          setSelectedCountry(null);
+          
+          // Exit early since the selection was reset
+          return;
         }
     
         setSelectedSlice(sliceIndex);
@@ -48,8 +53,14 @@ const PieChart = ({ data, setSelectedCountry }) => {
           setSelectedCountry(selectedDataElement);
         }
       }
+    },
+    {
+      eventName: 'click',
+      callback: ({ chartWrapper }) => {
+        chartWrapper.getChart().clearChart();
+      }
     }
-  ]
+  ];
 
   const dynamicOptions = {
     ...pieOptions,
@@ -57,20 +68,17 @@ const PieChart = ({ data, setSelectedCountry }) => {
   };
 
   
-
   return (
-    <div>
-      <Chart
-        width={'600px'}
-        height={'320px'}
-        chartType="PieChart"
-        loader={<Loader />}
-        data={data}
-        options={dynamicOptions}
-        chartEvents={chartEvents}
-        rootProps={{ 'data-testid': '3' }}
-      />
-    </div>
+	<Chart
+		width={'600px'}
+		height={'320px'}
+		chartType="PieChart"
+		loader={<Loader />}
+		data={data}
+		options={dynamicOptions}
+		chartEvents={chartEvents}
+		rootProps={{ 'data-testid': '3' }}
+	/>
   )
 }
 

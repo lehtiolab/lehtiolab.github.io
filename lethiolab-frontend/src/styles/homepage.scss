@@ -12,3 +12,7 @@
     box-shadow: inset 500px 0 0 0 #54b3d6;
     color: white;
 }
+
+#reactgooglegraph-1 svg g:last-child {
+    pointer-events: none;
+}

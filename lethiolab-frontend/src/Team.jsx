@@ -6,7 +6,8 @@ import PieChart from "./PieChart";
 
 const Team = () => {
 	const [selectedCountry, setSelectedCountry] = useState(null);
-	const [showEnlargedImage, setShowEnlargedImage] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
+	const [currentMember, setCurrentMember] = useState(null);
 
 	const marbleTexture = {
 		height: '50px',
@@ -37,7 +38,10 @@ const Team = () => {
 	
 	dataArray.splice(0, 0, ['Country', 'Members']);
 
-
+	const openModalWithMember = (member) => {
+		setCurrentMember(member);
+		setIsOpen(true);
+	};
 
 	const MemberRender = ({member}) => (
 		<div key={member.name} className="flex flex-col items-center relative">
@@ -45,6 +49,7 @@ const Team = () => {
                 src={member.picture}
                 alt={member.name}
                 className="w-38 h-38 rounded-full object-cover shadow-xl"
+				onClick={() => openModalWithMember(member)}
             />
 
             <span className="absolute bottom-8 left-0 w-8 h-8">
@@ -56,8 +61,6 @@ const Team = () => {
             >
                 {member.name}
             </span>
-
-            
         </div>
 	)
 
@@ -102,7 +105,26 @@ const Team = () => {
 					</div>
 				</div>
 			</div>
-
+			{isOpen && (
+				<>
+					<div
+					className="fixed inset-0 bg-black opacity-50"
+					onClick={() => setIsOpen(false)}
+					></div>
+					<div className="fixed inset-0 flex items-center justify-center z-50">
+					<div className="bg-white text-black p-8 rounded shadow-lg w-1/3">
+						<h2 className="text-2xl mb-4">Modal Title</h2>
+						<p>{currentMember.name}</p>
+						<button
+						onClick={() => setIsOpen(false)}
+						className="mt-4 p-2 bg-red-500 text-white rounded"
+						>
+						Close
+						</button>
+					</div>
+					</div>
+			  </>
+			)}
 		</>
 	);
 };
