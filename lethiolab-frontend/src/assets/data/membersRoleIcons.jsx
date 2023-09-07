@@ -2,7 +2,7 @@ import React from 'react';
 
 export const roleIconAssign = (role) => {
     switch (role) {
-        case 'boss':
+        case 'leader':
           return (
 				<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 448 512" style={{ display: 'block', margin: '0 auto' }}>
 					<defs>

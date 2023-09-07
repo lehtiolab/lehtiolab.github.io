@@ -39,13 +39,13 @@ export const members = [
 	},
 	{
 		"name": "Ali Razzak",
-		"role": "staff",
+		"role": "programmer",
 		"title": "System Developer",
 		"email": "alirazzak@ki.se",
 		"website": "https://alirazzak.info",
 		"github": "https://github.com/AHTARazzak",
 		"kiLink": "https://staff.ki.se/people/ali-razzak",
-		"linkedIn": "www.linkedin.com/in/ali-razzak-datasci",
+		"linkedIn": "https://linkedin.com/in/ali-razzak-datasci",
 		"yearStarted": "2021",
 		"active": 1,
 		"country": "NZ",
@@ -264,7 +264,7 @@ export const members = [
 	},
 	{
 		"name": "Jorrit Boekel",
-		"role": "Staff",
+		"role": "programmer",
 		"title": "Software Developer",
 		"email": "",
 		"website": "",
@@ -294,7 +294,7 @@ export const members = [
 	},
 	{
 		"name": "Laura Gheorghe",
-		"role": "staff",
+		"role": "programmer",
 		"title": "Software developer",
 		"email": "",
 		"website": "",
@@ -354,7 +354,7 @@ export const members = [
 	},
 	{
 		"name": "Maan Rachid",
-		"role": "staff",
+		"role": "programmer",
 		"title": "Software Developer",
 		"email": "",
 		"website": "",
@@ -384,7 +384,7 @@ export const members = [
 	},
 	{
 		"name": "Markus Jonsson",
-		"role": "staff",
+		"role": "programmer",
 		"title": "Software Developer",
 		"email": "",
 		"website": "",

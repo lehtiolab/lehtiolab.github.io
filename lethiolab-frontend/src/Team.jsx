@@ -1,24 +1,16 @@
-import React, {useState} from "react";
+import React, {useState, memo} from "react";
 import { members } from "./assets/data/members";
 import {roleIconAssign} from "./assets/data/membersRoleIcons";
 import PieChart from "./PieChart";
+import sweden from './assets/img/Flag_of_Sweden.svg.png';
+import './styles/team.scss';
+import TeamModal from "./TeamModal";
 
 
 const Team = () => {
 	const [selectedCountry, setSelectedCountry] = useState(null);
 	const [isOpen, setIsOpen] = useState(false);
 	const [currentMember, setCurrentMember] = useState(null);
-
-	const marbleTexture = {
-		height: '50px',
-		padding: '20px',
-	}
-
-	const marbleStyle = {
-		color: 'transparent',
-		textShadow: '1px 1px 1px hsla(0,0%,255%,0.5)',
-		textTransform: 'uppercase'
-	  };
 
 	const countryCounts = {};
 
@@ -43,32 +35,40 @@ const Team = () => {
 		setIsOpen(true);
 	};
 
-	const MemberRender = ({member}) => (
-		<div key={member.name} className="flex flex-col items-center relative">
-            <img
-                src={member.picture}
-                alt={member.name}
-                className="w-38 h-38 rounded-full object-cover shadow-xl"
-				onClick={() => openModalWithMember(member)}
-            />
-
-            <span className="absolute bottom-8 left-0 w-8 h-8">
-                {roleIconAssign(member.icon)}
+	const MemberRender = memo(({member}) => (
+		<div className="memberpage_person">
+			<div className="memberpage_container" onClick={() => openModalWithMember(member)}>
+				<div className="memberpage_container-inner">
+					<img
+						className="memberpage_circle"
+						src={sweden}
+					/>
+					<img
+						className="memberpage_img"
+						src={member.pictureLink}
+						alt={member.name}
+						
+					/>
+				</div>
+			</div>
+			<span className="memberpage_icon">
+                {roleIconAssign(member.role)}
             </span>
 
             <span 
-                className="mt-2 text-center cursor-pointer"
+                className="text-center"
             >
                 {member.name}
             </span>
+			
         </div>
-	)
+	))
 
 	return (
-		<>
+		<div className="bg-white">
 			<PieChart data={dataArray} setSelectedCountry={setSelectedCountry}/>
 
-			<div className="p-12">
+			<div className="p-12 text-black">
 				<h1 className="text-2xl font-bold mb-4">Members</h1>
 				<div className="grid grid-cols-5 gap-8">
 					{members.map(member => {
@@ -86,7 +86,7 @@ const Team = () => {
 						} else {
 						// render all members if no country is selected
 						return (
-							<MemberRender member={member} />
+							<MemberRender key={member.name} member={member} />
 						);
 						}
 				})}
@@ -105,27 +105,8 @@ const Team = () => {
 					</div>
 				</div>
 			</div>
-			{isOpen && (
-				<>
-					<div
-					className="fixed inset-0 bg-black opacity-50"
-					onClick={() => setIsOpen(false)}
-					></div>
-					<div className="fixed inset-0 flex items-center justify-center z-50">
-					<div className="bg-white text-black p-8 rounded shadow-lg w-1/3">
-						<h2 className="text-2xl mb-4">Modal Title</h2>
-						<p>{currentMember.name}</p>
-						<button
-						onClick={() => setIsOpen(false)}
-						className="mt-4 p-2 bg-red-500 text-white rounded"
-						>
-						Close
-						</button>
-					</div>
-					</div>
-			  </>
-			)}
-		</>
+			<TeamModal currentMember={currentMember} isOpen={isOpen} setIsOpen={setIsOpen} />
+		</div>
 	);
 };
 
