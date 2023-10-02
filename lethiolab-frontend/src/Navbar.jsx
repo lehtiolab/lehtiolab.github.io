@@ -17,19 +17,19 @@ const Navbar = () => {
 		<>
 			<NavLink 
 				to="/publications" 
-				className={location.pathname === "/publications" ? "navlinks active" : "navlinks"}
+				className={location.pathname === "/publications" ? "navlinks active text-2xl" : "navlinks text-2xl"}
 			>
 				Publications
 			</NavLink>
 			<NavLink 
 				to="/research" 
-				className={location.pathname === "/research" ? "navlinks active" : "navlinks"}
+				className={location.pathname === "/research" ? "navlinks active text-2xl" : "navlinks text-2xl"}
 			>
 				Research
 			</NavLink>
 			<NavLink 
 				to="/resources" 
-				className={location.pathname === "/resources" ? "navlinks active" : "navlinks"}
+				className={location.pathname === "/resources" ? "navlinks active text-2xl" : "navlinks text-2xl"}
 			>
 				Resources
 			</NavLink>
@@ -40,19 +40,19 @@ const Navbar = () => {
 		<>
 			<NavLink 
 				to="/team" 
-				className={location.pathname === "/team" ? "navlinks active" : "navlinks"}
+				className={location.pathname === "/team" ? "navlinks active text-2xl" : "navlinks text-2xl"}
 			>
 				Team
 			</NavLink>
 			<NavLink 
 				to="/contact" 
-				className={location.pathname === "/contact" ? "navlinks active" : "navlinks"}
+				className={location.pathname === "/contact" ? "navlinks active text-2xl" : "navlinks text-2xl"}
 			>
 				Contact
 			</NavLink>
 			<NavLink 
 				to="/opportunities" 
-				className={location.pathname === "/opportunities" ? "navlinks active" : "navlinks"}
+				className={location.pathname === "/opportunities" ? "navlinks active text-2xl" : "navlinks text-2xl"}
 			>
 				Opportunities
 			</NavLink>
@@ -67,7 +67,7 @@ const Navbar = () => {
 	)
 
 	return (
-		<nav className="w-full bg-white shadow-md fixed top-0 left-0 h-14 z-50">
+		<nav className="w-full shadow-md fixed top-0 left-0 h-14 z-50">
 			{isMobile ? (
 				<>
 					<div className="flex space-x-4">

@@ -1,28 +1,25 @@
-.publicationHolder {
-    width: 90%;
-    height: fit-content;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.yearTitle {
+    color: #54b3d6
+}
+
+.publicationTitle {
+    color: #54b3d6;
+    transition: 0.3s ease;
+}
+
+.publicationTitle:hover {
+    color: #8dc0d3;
 }
 
 .publicationList {
-    padding: 10px;
-    border: 2px solid red;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    border: 2px solid #54b3d6;
 }
 
 .publicationEntry {
     display: flex;
     flex-direction: row;
     height: fit-content;
+    align-items: center;
 }
 
 .publicationText {
@@ -36,4 +33,8 @@
 }
 
 .publicationImage img {
+    max-height: 200px;
+    width: auto;
+    margin-left: auto;
+    margin-right:auto
 }

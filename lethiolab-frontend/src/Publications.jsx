@@ -45,21 +45,22 @@ const Publications = () => {
             }
           }
         })
-        publicationYearEntries.push(<div className="publicationEntry text-left">
+        publicationYearEntries.push(<div className="publicationEntry text-left gap-4 flex flex-row ">
           <div className="publicationText">
             <Link className="publicationTitle text-3xl text-left" to={publication.publicationLink} target="_blank">{publication.publicationTitle}</Link>
-            <div className="publicationJournalTime text-lg">{publication.publicationJournal}, {publication.publicationDate}</div>
-            <div className="publicationAuthours text-lg">{publicationAuthours}</div>
+            <div className="publicationJournalTime text-black italic text-lg">{publication.publicationJournal}, {publication.publicationDate}</div>
+            <div className="publicationAuthours text-black text-lg text-justify">{publicationAuthours}</div>
           </div>
-          <div className="publicationImage"><img src={publication.publicationImage}/></div>
+          <div className="publicationImage"
+          ><img src={publication.publicationImage}/></div>
       </div>)
       })
       publicationGrid.push(<div className="publicationYear" id={"year-"+i}>
-        <div className="yearTitle text-5xl text-center">{i}</div><div className="publicationList">{publicationYearEntries}</div></div>)
+        <div className="yearTitle text-5xl text-left">{i}</div><div className="publicationList bg-white flex flex-col gap-1 p-2 rounded">{publicationYearEntries}</div></div>)
     }
   }
   return (
-    <div className="publicationHolder">
+    <div className="flex flex-col w-11/12 mt-2 mb-20 h-fit ml-auto mr-auto gap-5">
     {publicationGrid}
     </div>
   )

@@ -1,55 +1,30 @@
-.resourceHolder {
-    width: 90%;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 100px;
-}
-
-.resourceSoftware {
-    padding-top: 20px;
-}
-
 .resourceTitle {
-    padding-left:20px;
-}
-
-.resourcGeneral {
-    margin: 20px;
-    padding: 10px;
-    border: red solid 2px;
-    border-radius: 20px;
-}
-
-.resourceItems {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+    color: #54b3d6;
+    text-align: center;
 }
 
 .resourceCard {
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 10px;
-    text-decoration: none;
-    border: red solid 2px;
-    border-radius: 20px;
+    color: #54b3d6;
+    transition: 0.3s ease;
 }
 
-.resourceDetail {
-    width: 50%;
+.resourceCard:hover {
+    color: #8dc0d3;
+}
+
+.resourcGeneral {
+    border: #54b3d6 solid 2px;
+}
+
+.resourceCard {
+    text-decoration: none;
+    border: #54b3d6 solid 2px;
 }
 
 .softwareImage {
+    width: fit;
     height: auto;
-    width: 50%;
-    background-size: auto 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
 }
