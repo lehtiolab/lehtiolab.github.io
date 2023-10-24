@@ -15,7 +15,7 @@ function App() {
     <Router>
     	<div className="App overflow-y-hidden">
 			<Navbar />
-			<div className="mt-14 overflow-y-auto h-screen">
+			<div className="overflow-y-auto h-screen bg-white">
 				<Routes>
 					<Route exact path="/" element={<Homepage />} />
 					<Route path="/publications" element={<Publications />} />

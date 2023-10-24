@@ -1,8 +1,5 @@
-.memberpage_person {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	width: 280px;
+
+.memberpage {
 	position: relative;
 }
 
@@ -17,10 +14,31 @@
 }
 
 .memberpage_container:hover {
-	transform: scale(0.54);
+	transform: scale(0.44);
 }
 
 .memberpage_container-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.memberpage_container.flipped .memberpage_container-inner {
+	transform: rotateY(180deg);
+}
+
+.memberpage_container-front, .memberpage_container-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+
+.memberpage_container-front {
 	clip-path: path(
 		"M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
 	);
@@ -52,24 +70,25 @@
 }
 
 .memberpage_container:hover .memberpage_img {
-	transform: translateY(0) scale(1.2);
+	transform: translateY(0) scale(1.3);
 }
 
 .memberpage_icon {
 	position: absolute;
-	left: 40px;
+	left: 80px;
 	bottom: 50px;
 }
 
-.modal-closed {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 300ms, visibility 300ms;
+.memberpage_container-back {
+	color: black;
+	transform: rotateY(180deg);
+	display: flex;
+    justify-content: center;
+    top: 60%;
 }
 
-.modal-open {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 300ms, visibility 300ms;
+.memberpage_container-back a {
+	width: 50px;
+	height: 50px;
 }
 

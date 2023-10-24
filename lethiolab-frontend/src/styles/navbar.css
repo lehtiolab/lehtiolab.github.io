@@ -1,3 +1,15 @@
+.burgermenu {
+  transition: transform 0.3s;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transform-origin: center;
+}
+
+.hiddenBurgermenu {
+  transform: scaleY(0);
+}
+
 .navlinks {
   padding: 0px 0px;
   box-shadow: inset 0 0 0 0 #54b3d6;
@@ -13,4 +25,14 @@
 .navlinks.active {
   box-shadow: inset 100px 0 0 0 #54b3d6;
   color: white;
+}
+
+@media (max-width: 915px) {
+  .navlinks {
+    border-style: solid;
+  }
+  .navlinks.active{
+    box-shadow: none;
+    color: rgb(136, 255, 154);
+  }
 }

@@ -1,0 +1,233 @@
+.contact-page {
+  margin-top: 60px;
+  display: -webkit-box;
+}
+
+.contact-page-links {
+  margin: 120px 50px 50px 125px;
+}
+
+.contact-page-links-icons {
+  display: flex;
+}
+
+.contact-page-links-icons a{
+  cursor: pointer;
+  padding: 10px;
+}
+
+.contact-page-links-icons img {
+  fill: aliceblue;
+}
+
+.contact-page-form {
+  position: fixed;
+  left: 58%;
+  top: 30px;
+}
+
+.contact-page-form-fields {
+  color: black;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 120px;
+  left: 58%;
+  margin-left: 65px;
+}
+
+.contact-page-form form h2 {
+  font-size: larger;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.contact-page-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-page-form input, .contact-page-form textarea, .contact-page-form select {
+  border: 1px solid #5EB4CB;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-weight: 200;
+    font-size: 18px;
+    color: #9C9C9C;
+    font-family: inherit;
+    padding:13px 25px;
+    background: transparent;
+    width:325px;
+    max-width: 100%;
+    height: 30px;
+}
+
+.contact-page-form select {
+  padding: 0px 25px;
+}
+
+//hide textarea scrollbar
+.contact-page-form textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.contact-page-form form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-page-form-submit {
+  position: absolute;
+  z-index: 99;
+    bottom: 110px;
+    left: 45%;
+}
+
+.contact-page-form-submit button {
+  background-color: transparent;
+  padding: 0px;
+  border: 0px;
+}
+
+.contact-page-form-submit button svg path{
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.contact-page-form-submit button:hover svg path{
+  transform: scale(1.2);
+}
+
+.contact-page-form-submit button:active svg path{
+  transform: scale(1);
+}
+
+.contact-page-form-envelope {
+  width: 400px;
+  position: absolute;
+  top: 0px;
+  left: -65px;
+}
+
+.front-svg {
+  position: absolute;
+  top: -2px;
+  pointer-events: none;
+}
+
+//for smaller screens
+@media (max-width: 1350px) {
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-page-links {
+    margin: 50px 50px 0;
+  }
+
+  .contact-page-form {
+    position: relative;
+    left: 0px;
+    padding-left: 25px;
+    margin-top: -30px;
+  }
+
+  .contact-page-form-fields {
+    position: absolute;
+    left: 25px;
+    top: 95px;
+  }
+
+  .contact-page-form-submit {
+    position: absolute;
+    z-index: 99;
+    bottom: 110px;
+    left: 227px;
+  }
+}
+
+//for the mobile styling
+.mobile-contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.mobile-contact-page-links-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+.mobile-contact-page-form {
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.mobile-contact-page-form-fields {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-contact-page-form form h2, .mobile-contact-page-form-sent h2 {
+  color: black;
+  font-size: x-large;
+  margin-bottom: 25px;
+}
+
+.mobile-contact-page-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mobile-contact-page-form input, .mobile-contact-page-form textarea, .mobile-contact-page-form select {
+  border: 1px solid #5EB4CB;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-weight: 200;
+    font-size: 18px;
+    color: #9C9C9C;
+    font-family: inherit;
+    padding:13px 25px;
+    background: transparent;
+    width:325px;
+    max-width: 100%;
+    height: 30px;
+}
+
+.mobile-contact-page-form select {
+  padding: 0px 25px;
+}
+
+//hide textarea scrollbar
+.mobile-contact-page-form textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-contact-page-form form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.mobile-contact-page-form-submit {
+  padding-top: 25px;
+}
+
+.mobile-contact-page-form-sent {
+  width: 325px;
+  height: 100px;
+  
+}
