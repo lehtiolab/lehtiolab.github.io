@@ -10,7 +10,7 @@ The order in the list will determine the order of the position appearance
 "positionAffiliation" is the projects the position is affilitated with but can also be all or something entirely unique
 "positionContact" is the person to be contacted regarding the position
 */
-export const publications = 
+export const opportunities = 
 [
     {
         "positionType": "",
@@ -21,5 +21,6 @@ export const publications =
         "positionLink": "",
         "positionAffiliation": [],
         "positionContact": "",
+        "active": "",
     }
 ]
