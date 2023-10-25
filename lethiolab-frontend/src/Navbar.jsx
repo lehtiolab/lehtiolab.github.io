@@ -88,7 +88,7 @@ const Navbar = () => {
 	return (
 		<>
 			{isMobile ? (
-				<nav className="bg-white">
+				<nav>
 					<div className="flex space-x-4">
 						<button
 							className="h-12 w-12 border-2 border-black rounded flex flex-col justify-center items-center group gap-1"
@@ -112,12 +112,12 @@ const Navbar = () => {
 					</div>
 				</nav>
 			) : (
-				<nav className="w-full shadow-md fixed top-0 left-0 h-14 z-50 bg-white">
-					<div className="grid bg-white content-center grid-cols-layout items-center h-[50px]">
+				<nav className="w-full shadow-md fixed top-0 left-0 h-14 z-50">
+					<div className="grid content-center grid-cols-layout items-center h-[50px]">
 						<div className="flex space-x-4 justify-around">
 							{renderFirstLinks()}
 						</div>
-						<div className="flex justify-center bg-white rounded-full w-32 h-36 items-center">
+						<div className="logoCont flex justify-center bg-white rounded-full w-32 h-36 items-center">
 							<NavLink to="/">
 								<img
 									src={logo}

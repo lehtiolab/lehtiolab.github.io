@@ -25,17 +25,18 @@ export const members = [
 	{
 		"name": "Akram Embadi",
 		"role": "postdoc",
-		"title": "",
-		"email": "",
+		"title": "Post-Doctoral Fellow",
+		"email": "akram.emdadi@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
+		"kiLink": "https://staff.ki.se/people/akram-emdadi",
+		"linkedIn": "https://www.linkedin.com/in/akram-emdadi-0b48762a/",
 		"yearStarted": "2022",
 		"active": 1,
 		"country": "IR",
 		"pictureLink" : memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Ali Razzak",
@@ -50,7 +51,8 @@ export const members = [
 		"active": 1,
 		"country": "NZ",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Ann-Sofi Sandberg",
@@ -65,7 +67,8 @@ export const members = [
 		"active": 0,
 		"country": "SE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "David Tamborero",
@@ -80,12 +83,13 @@ export const members = [
 		"active": 1,
 		"country": "Spain",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Eduardo Araújo",
 		"role": "staff",
-		"title": "Research Engineer",
+		"title": "Research engineer",
 		"email": "",
 		"website": "",
 		"github": "",
@@ -95,22 +99,24 @@ export const members = [
 		"active": 1,
 		"country": "PT",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Georgios Mermelekas",
 		"role": "staff",
-		"title": "Senior research engineer",
-		"email": "",
+		"title": "Senior staff scientist",
+		"email": "georgios.mermelekas@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://medarbetare.ki.se/people/georgios-mermelekas",
+		"linkedIn": "https://www.linkedin.com/in/george-mermelekas-318a0640/",
+		"yearStarted": "2017",
 		"active": 1,
 		"country": "GR",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "https://scholar.google.com/citations?user=r8OKg80AAAAJ&hl=en&oi=ao",
+		"orcid":"https://orcid.org/0009-0002-1736-9114"
 	},
 	{
 		"name": "Ghazaleh Assadi",
@@ -125,7 +131,8 @@ export const members = [
 		"active": 1,
 		"country": "IR",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Haris Babacic",
@@ -140,22 +147,24 @@ export const members = [
 		"active": 1,
 		"country": "BA",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Helena Bäckvall",
 		"role": "staff",
 		"title": "Scientific coordinator",
-		"email": "",
+		"email": "Helena.backvall@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://staff.ki.se/people/helena-backvall",
+		"linkedIn": "https://www.linkedin.com/in/helena-bäckvall-94743950/",
+		"yearStarted": "2006",
 		"active": 1,
 		"country": "SE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":"https://orcid.org/0000-0002-1531-9271"
 	},
 	{
 		"name": "Henrik Johansson",
@@ -170,7 +179,8 @@ export const members = [
 		"active": 1,
 		"country": "SE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Husen Umer",
@@ -185,43 +195,30 @@ export const members = [
 		"active": 0,
 		"country": "IQ",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Ioannis Siavelis",
 		"role": "postdoc",
-		"title": "",
-		"email": "",
+		"title": "Post-Doctoral Fellow",
+		"email": "ioannis.siavelis@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
+		"kiLink": "https://medarbetare.ki.se/people/ioannis-siavelis",
 		"linkedIn": "",
-		"yearStarted": "",
+		"yearStarted": "2016",
 		"active": 1,
 		"country": "GR",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
-	},
-	{
-		"name": "Irene Villanueva Sanz",
-		"role": "phd",
-		"title": "",
-		"email": "",
-		"website": "",
-		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "2022",
-		"active": 1,
-		"country": "ES",
-		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":"https://orcid.org/0009-0000-0758-8140"
 	},
 	{
 		"name": "Isabelle Leo",
 		"role": "phd",
-		"title": "",
-		"email": "",
+		"title": "PhD Student",
+		"email": "isabelle.leo@ki.se",
 		"website": "",
 		"github": "",
 		"kiLink": "",
@@ -230,12 +227,13 @@ export const members = [
 		"active": 1,
 		"country": "US",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Janne Lehtiö",
 		"role": "leader",
-		"title": "Group Leader",
+		"title": "Professor",
 		"email": "",
 		"website": "",
 		"github": "",
@@ -245,7 +243,8 @@ export const members = [
 		"active": 1,
 		"country": "FI",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Jenny Forshed",
@@ -260,12 +259,13 @@ export const members = [
 		"active": 1,
 		"country": "SE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Jorrit Boekel",
 		"role": "programmer",
-		"title": "Software Developer",
+		"title": "Software developer",
 		"email": "",
 		"website": "",
 		"github": "",
@@ -275,7 +275,8 @@ export const members = [
 		"active": 1,
 		"country": "NL",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Konstantin Barylyuk",
@@ -290,7 +291,8 @@ export const members = [
 		"active": 1,
 		"country": "RU",
 		"pictureLink" :  memberImage,
-		"googleScholar": "https://scholar.google.com/citations?user=iV2j9ZkAAAAJ"
+		"googleScholar": "https://scholar.google.com/citations?user=iV2j9ZkAAAAJ",
+		"orcid":"https://orcid.org/0000-0002-3580-0345"
 	},
 	{
 		"name": "Laura Gheorghe",
@@ -305,22 +307,24 @@ export const members = [
 		"active": 1,
 		"country": "RO",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Laura Levi",
 		"role": "staff",
 		"title": "",
-		"email": "",
+		"email": "laura.levi@ki.se	",
 		"website": "",
 		"github": "",
-		"kiLink": "",
+		"kiLink": "https://medarbetare.ki.se/people/laura-levi",
 		"linkedIn": "",
-		"yearStarted": "",
+		"yearStarted": "2023",
 		"active": 1,
-		"country": "FI",
+		"country": "IT",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Luay Aswad",
@@ -335,7 +339,8 @@ export const members = [
 		"active": 1,
 		"country": "TN",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Lukas Orre",
@@ -350,43 +355,46 @@ export const members = [
 		"active": 1,
 		"country": "SE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Maan Rachid",
 		"role": "programmer",
-		"title": "Software Developer",
+		"title": "Software developer",
 		"email": "",
 		"website": "",
 		"github": "",
 		"kiLink": "",
 		"linkedIn": "",
 		"yearStarted": "",
-		"active": 1,
+		"active": 0,
 		"country": "SY",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Maria Pernemalm",
 		"role": "principal investigator",
-		"title": "Assistant professor, platform manager",
-		"email": "",
+		"title": "Principal researcher",
+		"email": "maria.pernemalm@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://staff.ki.se/people/maria-pernemalm",
+		"linkedIn": "https://www.linkedin.com/in/maria-pernemalm-09a02810/",
+		"yearStarted": "2005",
 		"active": 1,
 		"country": "SE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "https://orcid.org/0000-0003-4624-031X",
+		"orcid":""
 	},
 	{
 		"name": "Markus Jonsson",
 		"role": "programmer",
-		"title": "Software Developer",
-		"email": "",
+		"title": "Software developer",
+		"email": "markus.jonsson@scilifelab.se",
 		"website": "",
 		"github": "",
 		"kiLink": "",
@@ -395,22 +403,24 @@ export const members = [
 		"active": 1,
 		"country": "SE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Mahshid Zarrineh",
 		"role": "postdoc",
-		"title": "",
-		"email": "",
+		"title": "Research Engineer",
+		"email": "mahnaz.nikpour@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
+		"kiLink": "https://staff.ki.se/people/mahnaz-nikpour",
+		"linkedIn": "linkedin.com/in/mahnaz-nikpour-b93a9477",
 		"yearStarted": "2022",
 		"active": 1,
 		"country": "IR",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Mahnaz Nikpour",
@@ -425,7 +435,8 @@ export const members = [
 		"active": 1,
 		"country": "IR",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Mattias Vesterlund",
@@ -440,7 +451,8 @@ export const members = [
 		"active": 0,
 		"country": "SE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Nidhi Sharma",
@@ -455,67 +467,72 @@ export const members = [
 		"active": 1,
 		"country": "IN",
 		"pictureLink" :  memberImage,
-		"googleScholar": "https://scholar.google.com/citations?user=2v7QCVgAAAAJ"
+		"googleScholar": "https://scholar.google.com/citations?user=2v7QCVgAAAAJ",
+		"orcid":"https://orcid.org/0000-0002-2475-9340"
 	},
 	{
 		"name": "Noora Sissala",
 		"role": "phd",
-		"title": "Research Assistant",
-		"email": "",
+		"title": "PhD Student",
+		"email": "noora.sissala@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://staff.ki.se/people/noora-sissala",
+		"linkedIn": "https://www.linkedin.com/in/noorasissala/",
+		"yearStarted": "2022",
 		"active": 1,
 		"country": "FI",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "https://scholar.google.com/citations?user=KJLnI6sAAAAJ&hl=en",
+		"orcid":""
 	},
 	{
 		"name": "Olena Berkovska",
 		"role": "phd",
-		"title": "",
-		"email": "",
+		"title": "PhD Student",
+		"email": "olena.berkovska@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://staff.ki.se/people/olena-berkovska",
+		"linkedIn": "www.linkedin.com/in/olena-berkovska",
+		"yearStarted": "2020",
 		"active": 1,
 		"country": "UA",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "https://scholar.google.com/citations?user=HWRPAwIAAAAJ&hl",
+		"orcid":"https://orcid.org/0000-0002-8811-0591"
 	},
 	{
 		"name": "Rozbeh Jafari",
 		"role": "principal investigator",
-		"title": "Assistant professor",
-		"email": "",
+		"title": "Senior Research Specialist",
+		"email": "rozbeh.jafari@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://staff.ki.se/people/rozbeh-jafari",
+		"linkedIn": "https://www.linkedin.com/in/rozbehjafari/",
+		"yearStarted": "2015",
 		"active": 1,
 		"country": "IR",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":"https://orcid.org/0000-0002-3396-4709"
 	},
 	{
 		"name": "Rui Branca",
 		"role": "principal investigator",
-		"title": "Assistant professor",
-		"email": "",
+		"title": "Senior Researcher",
+		"email": "rui.mamede-branca@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
+		"kiLink": "https://staff.ki.se/people/rui-mamede-branca",
 		"linkedIn": "",
-		"yearStarted": "",
+		"yearStarted": "2009",
 		"active": 1,
 		"country": "PT",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "https://scholar.google.com/citations?user=SMSGfEcAAAAJ&hl=en",
+		"orcid":"https://orcid.org/0000-0003-3890-6476"
 	},
 	{
 		"name": "Santeri Kiviluoto",
@@ -530,7 +547,8 @@ export const members = [
 		"active": 1,
 		"country": "FI",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Simon Rapple",
@@ -545,7 +563,8 @@ export const members = [
 		"active": 1,
 		"country": "IE",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Sumitra Marathe",
@@ -560,7 +579,8 @@ export const members = [
 		"active": 1,
 		"country": "IN",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Xenia Villalobos",
@@ -575,42 +595,45 @@ export const members = [
 		"active": 1,
 		"country": "ES",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Xiaofang Cao",
 		"role": "staff",
-		"title": "Research engineer",
-		"email": "",
+		"title": "Research Engineer",
+		"email": "xiaofang.cao@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://staff.ki.se/people/xiaofang-cao",
+		"linkedIn": "https://www.linkedin.com/in/xiaofang-cao-0598bb28/",
+		"yearStarted": "2018",
 		"active": 1,
 		"country": "CN",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Xue-Kang Qi",
 		"role": "postdoc",
-		"title": "",
-		"email": "",
+		"title": "Post-Doctoral Fellow",
+		"email": "xuekang.qi@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://staff.ki.se/people/xuekang-qi",
+		"linkedIn": "https://www.linkedin.com/in/xuekang1024/",
+		"yearStarted": "2022",
 		"active": 1,
 		"country": "CN",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "https://scholar.google.com/citations?user=-DqD3dkAAAAJ&hl=zh-CN",
+		"orcid":""
 	},
 	{
 		"name": "Yanbo Pan",
 		"role": "staff",
-		"title": "Senior Research Specialist",
+		"title": "Senior research specialist",
 		"email": "yanbo.pan@ki.se",
 		"website": "",
 		"github": "",
@@ -620,20 +643,53 @@ export const members = [
 		"active": 1,
 		"country": "CN",
 		"pictureLink" :  memberImage,
-		"googleScholar": ""
+		"googleScholar": "",
+		"orcid":""
 	},
 	{
 		"name": "Yaroslav Kaminskiy",
 		"role": "phd",
-		"title": "",
-		"email": "",
+		"title": "PhD Student",
+		"email": "yaroslav.kaminskiy@ki.se",
 		"website": "",
 		"github": "",
-		"kiLink": "",
+		"kiLink": "https://medarbetare.ki.se/people/yaroslav-kaminskiy",
 		"linkedIn": "",
-		"yearStarted": "",
+		"yearStarted": "2022",
 		"active": 1,
 		"country": "RU",
+		"pictureLink" :  memberImage,
+		"googleScholar": "https://scholar.google.com/citations?user=6qRFIvEAAAAJ&hl=ru",
+		"orcid":""
+	},
+	{
+		"name": "Soumitra Marathe",
+		"role": "postdoc",
+		"title": "Post-Doctoral Fellow",
+		"email": "soumitra.marathe@ki.se",
+		"website": "",
+		"github": "",
+		"kiLink": "https://staff.ki.se/people/soumitra-marathe",
+		"linkedIn": "https://www.linkedin.com/in/soumitra-marathe-immuno/",
+		"yearStarted": "2023",
+		"active": 1,
+		"country": "IN",
+		"pictureLink" :  memberImage,
+		"googleScholar": "https://scholar.google.com/citations?user=4llQS7sAAAAJ&hl=en",
+		"orcid":"https://orcid.org/0000-0002-7712-6061"
+	},
+	{
+		"name": "Irene Villanueva Sanz",
+		"role": "phd",
+		"title": "PhD Student",
+		"email": "irene.villanueva.sanz@scilifelab.se",
+		"website": "",
+		"github": "",
+		"kiLink": "https://staff.ki.se/people/irene-villanueva-sanz",
+		"linkedIn": "https://www.linkedin.com/in/irene-villanueva-sanz-606476161/",
+		"yearStarted": "2022",
+		"active": 1,
+		"country": "ES",
 		"pictureLink" :  memberImage,
 		"googleScholar": ""
 	}

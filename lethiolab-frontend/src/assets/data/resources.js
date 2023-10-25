@@ -27,8 +27,8 @@ export const resources =
         "resourceType": "product",
         "resourceName": "Subcell Barcode",
         "resourceDescription": "An exploratory web portal into subcellular location of proteins.",
-        "resourceImage": "https://www.subcellbarcode.org/images/lehtiolab/SubcellLogo.png",
-        "resourceLink": "https://www.subcellbarcode.org/",
+        "resourceImage": "http://www.subcellbarcode.org/images/lehtiolab/SubcellLogo.png",
+        "resourceLink": "http://www.subcellbarcode.org/",
     },
     {
         "resourceType": "course",

@@ -6,8 +6,16 @@
   transform-origin: center;
 }
 
+.logoCont {
+  border: 3px solid #54b3d6;
+}
+
 .hiddenBurgermenu {
   transform: scaleY(0);
+}
+
+nav {
+  background-color: #54b3d6;
 }
 
 .navlinks {
