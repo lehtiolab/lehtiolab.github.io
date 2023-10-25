@@ -13,9 +13,8 @@ import Opportunities from './Opportunities'
 function App() {
   return (
     <Router>
-    	<div className="App overflow-y-hidden">
 			<Navbar />
-			<div className="overflow-y-auto h-screen">
+			<div className="app-page">
 				<Routes>
 					<Route exact path="/" element={<Homepage />} />
 					<Route path="/publications" element={<Publications />} />
@@ -26,7 +25,6 @@ function App() {
 					<Route path="/opportunities" element={<Opportunities />} />
 				</Routes>
 			</div>
-      </div>
   	</Router>
   )
 }

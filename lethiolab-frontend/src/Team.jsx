@@ -1,14 +1,15 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { members } from "./assets/data/members";
 import {roleIconAssign} from "./assets/data/membersRoleIcons";
 import PieChart from "./PieChart";
-import sweden from './assets/img/Flag_of_Sweden.svg.png';
+import { flags } from "./assets/data/membersRoleIcons";
 import './styles/team.scss';
 import emailSVG from './assets/img/at-solid.svg';
-import webSVG from './assets/img/web.svg';
 import linkedinSVG from './assets/img/linkedin.svg';
 import kisvg from './assets/img/ki.svg';
 import githubSVG from './assets/img/github.svg';
+import googleScholar from './assets/img/googleScholar.svg'
+import orcid from './assets/img/orcid.svg'
 
 
 const Team = () => {
@@ -34,32 +35,38 @@ const Team = () => {
 
 	const MemberRender = ({member}) => {
 		const [isFlipped, setIsFlipped] = useState(false);
+		const [isAnimating, setisAnimating] = useState(false);
 
+		console.log(isAnimating)
+
+		useEffect(() => {
+			setisAnimating(true);
+			const timeout = setTimeout(() => {
+				setisAnimating(false);
+			}, 250);
+			return () => clearTimeout(timeout);
+		}, [isFlipped]);
+		
 		return (
-			<div className="memberpage">
-				<div className={`memberpage_container ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
-					<div className="memberpage_container-inner">
-						<div className="memberpage_container-front" disabled>
+			<div className="member-card">
+				<div className={`member-card_container ${isFlipped ? 'flipped' : ''} `} onClick={() => setIsFlipped(!isFlipped)}>
+					<div className="member-card_container-inner">
+						<div className="member-card_container-front" disabled>
 								<img
-									className="memberpage_circle"
-									src={sweden}
+									className="member-card_circle"
+									src={flags[member.country]}
 								/>
 								<img
-									className="memberpage_img"
+									className="member-card_img"
 									src={member.pictureLink}
 									alt={member.name}
 									
 								/>
 						</div>
-						<div className="memberpage_container-back">
+						<div className="member-card_container-back">
 							{member.email &&
 								<a  href={`mailto: ${member.website}`}>
 									<img src={emailSVG} width="35px" alt="Email icon" className="transition hover:scale-110"/> 
-								</a>
-							}
-							{member.website &&
-								<a href={member.website} target="_blank">
-									<img src={webSVG} width="35px" alt="Website icon" className="transition hover:scale-110"/> 
 								</a>
 							}
 							{member.github &&
@@ -77,15 +84,24 @@ const Team = () => {
 									<img src={linkedinSVG} width="30px" alt="LinkedIn icon" className="transition hover:scale-110"/> 
 								</a>
 							}
+							{member.googleScholar &&
+								<a href={member.googleScholar} target="_blank">
+									<img src={googleScholar} width="30px" alt="Google Scholar icon" className="transition hover:scale-110"/> 
+								</a>
+							}
+							{member.orcid &&
+								<a href={member.orcid} target="_blank">
+									<img src={orcid} width="30px" alt="Orcid icon" className="transition hover:scale-110"/> 
+								</a>
+							}
 						</div>
 					</div>
 					
 				</div>
-				<span className="memberpage_icon">
+				<div className="member-card_icon">
 						{roleIconAssign(member.role)}
-				</span>
-				<span 
-					className="text-center"
+				</div>
+				<span
 				>
 					{member.name}
 				</span>
@@ -99,9 +115,9 @@ const Team = () => {
 		<div className="bg-white">
 			<PieChart data={dataArray} setSelectedCountry={setSelectedCountry}/>
 
-			<div className="p-12 text-black">
-				<h1 className="text-2xl font-bold mb-4">Members</h1>
-				<div className="grid grid-cols-5 gap-8">
+			<div className="text-black">
+				<h1 className="text-2xl font-bold">Members</h1>
+				<div className="members-list">
 					{members.map(member => {
 						// check if a country is selected
 						if (selectedCountry) {

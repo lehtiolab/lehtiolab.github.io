@@ -1,23 +1,33 @@
 
-.memberpage {
-	position: relative;
+.members-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
-.memberpage_container {
+.member-card {
+	position: relative;
+	width: 300px;
+	height: 350px;
+	display: grid;
+    justify-content: center;
+}
+
+.member-card_container {
 	border-radius: 50%;
-	height: 312px;
 	-webkit-tap-highlight-color: transparent;
 	transform: scale(0.48);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	width: 400px;
+	height: 400px;
 	cursor: pointer;
 }
 
-.memberpage_container:hover {
+.member-card_container:hover {
 	transform: scale(0.44);
 }
 
-.memberpage_container-inner {
+.member-card_container-inner {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -26,28 +36,58 @@
 	transform-style: preserve-3d;
 }
 
-.memberpage_container.flipped .memberpage_container-inner {
+.member-card_container.flipped .member-card_container-inner {
 	transform: rotateY(180deg);
 }
 
-.memberpage_container-front, .memberpage_container-back {
+@keyframes filterAnimation {
+	0%, 99.99% {
+		filter: initial;
+	  }
+	  100% {
+		filter: brightness(0) saturate(100%);
+	  }
+}
+
+@keyframes revertFilter {
+	0%, 99.99% {
+	  filter: brightness(0) saturate(100%);
+	}
+	100% {
+	  filter: initial;
+	}
+  }
+  
+.member-card_container.disabled {
+    pointer-events: none;
+}
+
+.member-card_container.flipped .member-card_circle, .member-card_container.flipped .member-card_img {
+	animation: filterAnimation 250ms forwards;
+  }
+
+  .member-card_container .member-card_circle, .member-card_container .member-card_img {
+	animation: revertFilter 250ms forwards;
+  }
+  
+
+.member-card_container-front, .member-card_container-back {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	-webkit-backface-visibility: hidden; /* Safari */
-	backface-visibility: hidden;
 }
 
-.memberpage_container-front {
+.member-card_container-front {
 	clip-path: path(
 		"M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
 	);
 	position: relative;
 	transform-origin: 50%;
 	top: -200px;
+	pointer-events: none;
 }
 
-.memberpage_circle {
+.member-card_circle {
 	background-color: #fee7d3;
 	border-radius: 50%;
 	height: 380px;
@@ -58,36 +98,43 @@
 	width: 380px;
 }
 
-.memberpage_img {
+.member-card_img {
 	pointer-events: none;
 	position: relative;
-	transform: translateY(20px) scale(1.15);
 	transform-origin: 50% bottom;
-	transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+	transform: translateY(20px) scale(1.15);
 	left: 22px;
 	top: 225px;
 	width: 340px;
 }
 
-.memberpage_container:hover .memberpage_img {
+.member-card_container:hover .member-card_img {
 	transform: translateY(0) scale(1.3);
 }
 
-.memberpage_icon {
+.member-card_icon {
 	position: absolute;
-	left: 80px;
+	left: 50px;
 	bottom: 50px;
 }
 
-.memberpage_container-back {
+.member-card_container-back {
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
 	color: black;
 	transform: rotateY(180deg);
 	display: flex;
     justify-content: center;
-    top: 60%;
+    top: 50%;
+    height: 100px;
 }
 
-.memberpage_container-back a {
+.member-card_container-back img {
+	filter: invert(1);
+}
+
+.member-card_container-back a {
 	width: 50px;
 	height: 50px;
 }

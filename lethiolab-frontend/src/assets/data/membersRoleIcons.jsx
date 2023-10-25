@@ -1,4 +1,22 @@
 import React from 'react';
+import SWEDEN from './../img/flags/sweden.png'
+import IRAN from './../img/flags/iran.png'
+import CHINA from './../img/flags/china.png'
+import GREECE from './../img/flags/greece.png'
+import INDIA from './../img/flags/india.png'
+import NEWZEALAND from './../img/flags/newzealand.png'
+import ETHIOPIA from './../img/flags/ethiopia.png'
+import UKRAINE from './../img/flags/ukraine.png'
+import RUSSIA from './../img/flags/russia.png'
+import PORTUGAL from './../img/flags/portugal.png'
+import SPAIN from './../img/flags/spain.png'
+import MACEDONIA from './../img/flags/macedonia.png'
+import ROMANIA from './../img/flags/romania.png'
+import NETHERLANDS from './../img/flags/netherlands.png'
+import FINLAND from './../img/flags/finland.png'
+import ITALY from './../img/flags/italy.png'
+import MEXICO from './../img/flags/mexico.png'
+import IRELAND from './../img/flags/ireland.png'
 
 export const roleIconAssign = (role) => {
     switch (role) {
@@ -56,3 +74,25 @@ export const roleIconAssign = (role) => {
           break;
       }
 }
+
+export const flags = {
+	SWEDEN,
+	CHINA,
+	IRAN,
+	GREECE,
+	INDIA,
+	NEWZEALAND,
+	UKRAINE,
+	ETHIOPIA,
+	RUSSIA,
+	PORTUGAL,
+	SPAIN,
+	MACEDONIA,
+	ROMANIA,
+	FINLAND,
+	NETHERLANDS,
+	ITALY,
+	MEXICO,
+	IRELAND
+  };
+

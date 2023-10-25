@@ -9,6 +9,9 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-body {
-  overflow-y: hidden;
+.app-page {
+  height: calc(100vh - 50px);
+  margin-top: 50px;
+  overflow-y: auto;
+  overflow-x: hidden
 }
