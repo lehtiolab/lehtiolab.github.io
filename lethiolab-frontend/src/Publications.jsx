@@ -28,7 +28,15 @@ const Publications = () => {
   for (let i=new Date().getFullYear(); i>=2011; i--) {
     if (publicationByYear[i]) {
       var publicationYearEntries = []
+      var imageSide = 1
       publicationByYear[i].forEach((publication) => {
+        if (imageSide % 2 === 0) {
+          var textOrder = 2
+          var imageOrder = 1
+        } else {
+          var textOrder = 1
+          var imageOrder = 2
+        }
         var publicationAuthours = []
         publication.publicationAuthors.forEach((authour, idx, array) => {
           if (idx === array.length - 1) {
@@ -45,21 +53,23 @@ const Publications = () => {
             }
           }
         })
-        publicationYearEntries.push(<div className="publicationEntry text-left">
-          <div className="publicationText">
+        publicationYearEntries.push(<div className="publicationEntry text-left gap-4 flex flex-row pb-5">
+          <div className="publicationText" style={{order: textOrder}}>
             <Link className="publicationTitle text-3xl text-left" to={publication.publicationLink} target="_blank">{publication.publicationTitle}</Link>
-            <div className="publicationJournalTime text-lg">{publication.publicationJournal}, {publication.publicationDate}</div>
-            <div className="publicationAuthours text-lg">{publicationAuthours}</div>
+            <div className="publicationJournalTime text-black italic text-lg">{publication.publicationJournal}, {publication.publicationDate}</div>
+            <div className="publicationAuthours text-black text-lg text-justify">{publicationAuthours}</div>
           </div>
-          <div className="publicationImage"><img src={publication.publicationImage}/></div>
+          <div className="publicationImage" style={{order: imageOrder}}
+          ><img src={publication.publicationImage}/></div>
       </div>)
+      imageSide += 1
       })
       publicationGrid.push(<div className="publicationYear" id={"year-"+i}>
-        <div className="yearTitle text-5xl text-center">{i}</div><div className="publicationList">{publicationYearEntries}</div></div>)
+        <div className="yearTitle text-5xl text-left">{i}</div><div className="publicationList bg-white flex flex-col gap-1 p-2 rounded pl-10 pr-10">{publicationYearEntries}</div></div>)
     }
   }
   return (
-    <div className="publicationHolder">
+    <div className="flex flex-col w-8/12 mt-2 mb-20 h-fit ml-auto mr-auto gap-5 pt-14">
     {publicationGrid}
     </div>
   )

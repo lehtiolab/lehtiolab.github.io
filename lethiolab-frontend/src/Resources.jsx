@@ -11,44 +11,40 @@ const Resources = () => {
   resources.forEach((resource) => {
     console.log(resource)
     if (resource.resourceType === "product") {
-      productLoad.push(<Link to={resource.resourceLink} target="_blank" className="resourceCard">
-        <div className="resourceDetail">
+      productLoad.push(<Link to={resource.resourceLink} target="_blank" className="resourceCard gap-2 flex flex-row rounded w-1/3 p-2 bg-white pl-6 pr-6">
+        <div className="resourceDetail w-1/2">
           <div className="resourceName text-left text-3xl">{resource.resourceName}</div>
-          <div className="resourceDescription text-left text-justify text-lg">{resource.resourceDescription}</div>
+          <div className="resourceDescription text-left text-left text-lg">{resource.resourceDescription}</div>
         </div>
-        <div className="softwareImage" style={{backgroundImage: "url("+resource.resourceImage+")"}}></div>
+        <div className="softwareImage w-1/2" style={{backgroundImage: "url("+resource.resourceImage+")"}}></div>
       </Link>)
     } else {
-      courseLoad.push(<Link to={resource.resourceLink} target="_blank" className="resourceCard">
-      <div className="resourceDetail">
+      courseLoad.push(<Link to={resource.resourceLink} target="_blank" className="resourceCard gap-2 flex flex-row rounded w-1/3 p-2 bg-white pl-6 pr-6">
+      <div className="resourceDetail w-1/2">
         <div className="resourceName text-left text-3xl">{resource.resourceName}</div>
-        <div className="resourceDescription text-left text-justify text-lg">{resource.resourceDescription}</div>
+        <div className="resourceDescription text-left text-left text-lg">{resource.resourceDescription}</div>
       </div>
-      <div className="softwareImage" style={{backgroundImage: "url("+resource.resourceImage+")"}}></div>
+      <div className="softwareImage w-1/2" style={{backgroundImage: "url("+resource.resourceImage+")"}}></div>
     </Link>)
 
     }
   })
 
   return (
-    <div className="resourceHolder">
-      <div className="resourceSoftware">
+    <div className="resourceHolder w-8/12 h-fit mt-2 mr-auto ml-auto mb-2 flex flex-col pb-20 gap-5 pt-14">
+      <div className="flex flex-col gap-3">
         <div className="resourceTitle text-left text-5xl">Software</div>
-        <div className="resourcGeneral text-left text-justify text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu luctus leo. Nam fermentum augue interdum diam fermentum imperdiet. Pellentesque in sollicitudin enim, lacinia consectetur orci. Proin egestas, sapien sed tempus mollis, lorem ex iaculis augue, at placerat urna justo at metus. Fusce nulla mauris, congue nec dapibus et, malesuada eget ex. Proin elementum placerat ligula, non facilisis justo sagittis ut. Etiam porttitor orci auctor mollis sodales.
-
-        Phasellus vehicula mattis porta. Praesent leo eros, euismod sed gravida sed, pretium in mauris. Pellentesque posuere neque non risus dignissim dapibus. Ut sapien nibh, posuere in est vel, euismod egestas lacus. Sed sed lorem mauris. Mauris ultricies convallis turpis eu facilisis. In sodales, turpis a feugiat maximus, dolor nisl blandit risus, a mollis felis neque non augue. Nullam non purus nec elit pulvinar rutrum. Praesent fringilla faucibus massa, non tempus odio. Suspendisse ut ligula fermentum neque venenatis finibus a ac nisi. Ut eu imperdiet lacus. Vestibulum pharetra, ipsum tristique semper efficitur, dui leo placerat nulla, sed rhoncus dolor augue vitae leo. Cras viverra commodo lectus sed porttitor. Nam laoreet augue ut tortor malesuada, vitae ornare risus euismod. Nunc neque ante, eleifend eget lobortis eu, faucibus interdum nisi.
+        <div className="resourcGeneral text-left text-justify text-lg text-black p-4 rounded bg-white pl-10 pr-10">A collection of software dedicated to supporting oncology decision-making and research built here at the Lehtio Lab. Our user-friendly software offers valuable tools to assist healthcare professionals in their critical work against cancer. With a focus on simplifying access to the latest research and medical insights, we aim to empower oncologists, researchers, and healthcare teams. We're here to provide the resources you need to make informed decisions and enhance patient care. Join us as we work together to make a difference in the fight against cancer.
         </div>
-        <div className="resourceItems">
+        <div className="flex flex-row gap-5">
           {productLoad}
         </div>
       </div>
-      <div className="resourceSoftware">
+      <div className="flex flex-col gap-3">
         <div className="resourceTitle text-left text-5xl">Courses</div>
-        <div className="resourcGeneral text-left text-justify text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu luctus leo. Nam fermentum augue interdum diam fermentum imperdiet. Pellentesque in sollicitudin enim, lacinia consectetur orci. Proin egestas, sapien sed tempus mollis, lorem ex iaculis augue, at placerat urna justo at metus. Fusce nulla mauris, congue nec dapibus et, malesuada eget ex. Proin elementum placerat ligula, non facilisis justo sagittis ut. Etiam porttitor orci auctor mollis sodales.
-
-        Phasellus vehicula mattis porta. Praesent leo eros, euismod sed gravida sed, pretium in mauris. Pellentesque posuere neque non risus dignissim dapibus. Ut sapien nibh, posuere in est vel, euismod egestas lacus. Sed sed lorem mauris. Mauris ultricies convallis turpis eu facilisis. In sodales, turpis a feugiat maximus, dolor nisl blandit risus, a mollis felis neque non augue. Nullam non purus nec elit pulvinar rutrum. Praesent fringilla faucibus massa, non tempus odio. Suspendisse ut ligula fermentum neque venenatis finibus a ac nisi. Ut eu imperdiet lacus. Vestibulum pharetra, ipsum tristique semper efficitur, dui leo placerat nulla, sed rhoncus dolor augue vitae leo. Cras viverra commodo lectus sed porttitor. Nam laoreet augue ut tortor malesuada, vitae ornare risus euismod. Nunc neque ante, eleifend eget lobortis eu, faucibus interdum nisi.
+        <div className="resourcGeneral text-left text-justify text-lg text-black p-4 rounded bg-white pl-10 pr-10">Our team is also responsble for overseeing a selection of courses at Karolinska Instituet. They are designed to explore the profound significance of proteins, the fundamental elements of life. With a focus on understanding the essential role of proteins in health and disease, as well as demystifying proteomic techniques, our offerings aim to inspire a deep appreciation for this vital field of study. Whether you're a budding scientist, a healthcare professional, or simply someone with a curious spirit, our courses provide an unassuming platform for learning and personal growth. We invite you to explore our humble catalog and embark on a journey of discovery in the captivating realm of proteomics.
         </div>
-        <div className="resourceItems">
+        <div className="flex flex-row gap-5">
           {courseLoad}
         </div>
       </div>

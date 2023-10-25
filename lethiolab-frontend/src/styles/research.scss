@@ -1,27 +1,30 @@
-.researchHolder {
-    width: 90%;
-    height: fit-content;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 20px;
+.researchTitle {
+    color: #54b3d6;
+    transition: 0.3s ease;
 }
 
 .researchCard {
-    border: 2px solid red;
-    border-radius: 20px;
-    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.researchLinks {
-    display: flex;
-    flex-direction: column;
+.researchLinks a {
+    color: #54b3d6;
+}
+
+.researchLinks a:hover {
+    color: #8dc0d3;
 }
 
 .resarchRelevant {
     margin-top: 10px;
+}
+
+.textLink {
+    color: #54b3d6;
+    transition: 0.3s ease;
+}
+
+.textLink:hover {
+    color: #8dc0d3;
+    transition: 0.3s ease;
 }

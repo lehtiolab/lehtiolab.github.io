@@ -17,17 +17,17 @@ const Research = () => {
         }
       })
     })
-    researchLoad.push(<div className="researchCard">
+    researchLoad.push(<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5">
         <div className="researchTitle text-5xl text-left">{researchTopic.researchTitle}</div>
-        <div className="researchLead text-3xl text-left">{researchTopic.researchLead}</div>
-        <div className="researchDescription text-justify text-lg" dangerouslySetInnerHTML={{__html: researchTopic.researchDescription}}></div>
-        <div className="resarchRelevant text-3xl text-left">Relevant publications</div>
-        <div className="researchLinks text-left text-lg">{theResearch}</div>
+        <div className="researchLead text-3xl text-black text-left">{researchTopic.researchLead}</div>
+        <div className="researchDescription text-black text-justify text-lg" dangerouslySetInnerHTML={{__html: researchTopic.researchDescription}}></div>
+        <div className="resarchRelevant text-black text-3xl text-left">Relevant publications</div>
+        <div className="researchLinks flex flex-col text-left text-lg">{theResearch}</div>
     </div>)
   })
 
   return (
-    <div className="researchHolder">
+    <div className="researchHolder w-8/12 h-fit mt-12 ml-auto mr-auto mb-20 flex flex-col gap-5 pt-14">
       {researchLoad}
     </div>
   )
