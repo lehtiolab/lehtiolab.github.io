@@ -1,5 +1,9 @@
 import memberImage from './../img/member.png';
 import mariaPernemalm from './../img/team/mariaPernemalm.png'
+import aliRazzak from './../img/team/aliRazzak.png'
+import eduardoAraujo from './../img/team/eduardoAraujo.png'
+import santeriKiviluot from './../img/team/santeriKiviluot.png'
+import unknown from './../img/team/unknown.png'
 
 /*
 The "role" of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -49,7 +53,7 @@ export const members = [
 		"yearStarted": "2021",
 		"active": 1,
 		"country": "NEWZEALAND",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  aliRazzak,
 		"googleScholar": "",
 		"orcid":""
 	},
@@ -70,18 +74,18 @@ export const members = [
 	},
 	{
 		"name": "Eduardo Araújo",
-		"role": "staff",
-		"title": "Research engineer",
-		"email": "",
+		"role": "research",
+		"title": "Research Enginner",
+		"email": "eduardo.araujo@ki.se",
 		"github": "",
-		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"kiLink": "https://medarbetare.ki.se/people/eduardo-araujo",
+		"linkedIn": "https://www.linkedin.com/in/eduardo-ara%C3%BAjo-87897980/",
+		"yearStarted": "2019",
 		"active": 1,
 		"country": "PORTUGAL",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  eduardoAraujo,
 		"googleScholar": "",
-		"orcid":""
+		"orcid":"http://orcid.org/0000-0001-6208-0868"
 	},
 	{
 		"name": "Georgios Mermelekas",
@@ -145,7 +149,7 @@ export const members = [
 	},
 	{
 		"name": "Henrik Johansson",
-		"role": "principal investigator",
+		"role": "staff",
 		"title": "Senior Research Specialist",
 		"email": "henrik.johansson@ki.se",
 		"github": "",
@@ -175,7 +179,7 @@ export const members = [
 	},
 	{
 		"name": "Isabelle Leo",
-		"role": "phd",
+		"role": "student",
 		"title": "PhD Student",
 		"email": "isabelle.leo@ki.se",
 		"github": "",
@@ -183,7 +187,7 @@ export const members = [
 		"linkedIn": "",
 		"yearStarted": "2021",
 		"active": 1,
-		"country": "US",
+		"country": "UNITEDSTATES",
 		"pictureLink" :  memberImage,
 		"googleScholar": "",
 		"orcid":""
@@ -205,7 +209,7 @@ export const members = [
 	},
 	{
 		"name": "Jenny Forshed",
-		"role": "principal investigator",
+		"role": "staff",
 		"title": "Associate professor",
 		"email": "",
 		"github": "",
@@ -229,13 +233,13 @@ export const members = [
 		"yearStarted": "",
 		"active": 1,
 		"country": "NETHERLANDS",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  unknown,
 		"googleScholar": "",
 		"orcid":""
 	},
 	{
 		"name": "Konstantin Barylyuk",
-		"role": "staff",
+		"role": "research",
 		"title": "Research specialist",
 		"email": "konstantin.barylyuk@ki.se",
 		"github": "",
@@ -295,7 +299,7 @@ export const members = [
 	},
 	{
 		"name": "Lukas Orre",
-		"role": "principal investigator",
+		"role": "research",
 		"title": "Principal Researcher",
 		"email": "lukas.orre@ki.se",
 		"github": "",
@@ -310,7 +314,7 @@ export const members = [
 	},
 	{
 		"name": "Maria Pernemalm",
-		"role": "principal investigator",
+		"role": "research",
 		"title": "Principal researcher",
 		"email": "maria.pernemalm@ki.se",
 		"github": "",
@@ -385,7 +389,7 @@ export const members = [
 	},
 	{
 		"name": "Noora Sissala",
-		"role": "phd",
+		"role": "student",
 		"title": "PhD Student",
 		"email": "noora.sissala@ki.se",
 		"github": "",
@@ -400,7 +404,7 @@ export const members = [
 	},
 	{
 		"name": "Olena Berkovska",
-		"role": "phd",
+		"role": "student",
 		"title": "PhD Student",
 		"email": "olena.berkovska@ki.se",
 		"github": "",
@@ -415,7 +419,7 @@ export const members = [
 	},
 	{
 		"name": "Rozbeh Jafari",
-		"role": "principal investigator",
+		"role": "research",
 		"title": "Senior Research Specialist",
 		"email": "rozbeh.jafari@ki.se",
 		"github": "",
@@ -430,7 +434,7 @@ export const members = [
 	},
 	{
 		"name": "Rui Branca",
-		"role": "principal investigator",
+		"role": "research",
 		"title": "Senior Researcher",
 		"email": "rui.mamede-branca@ki.se",
 		"github": "",
@@ -446,15 +450,15 @@ export const members = [
 	{
 		"name": "Santeri Kiviluoto",
 		"role": "staff",
-		"title": "",
-		"email": "",
+		"title": "Hospital Chemist",
+		"email": "santeri.kiviluoto@ki.s",
 		"github": "",
 		"kiLink": "",
-		"linkedIn": "",
-		"yearStarted": "",
+		"linkedIn": "https://www.linkedin.com/in/santerikiviluoto/",
+		"yearStarted": "2019",
 		"active": 1,
-		"country": "FI",
-		"pictureLink" :  memberImage,
+		"country": "FINLAND",
+		"pictureLink" :  santeriKiviluot,
 		"googleScholar": "",
 		"orcid":""
 	},
@@ -466,16 +470,16 @@ export const members = [
 		"github": "",
 		"kiLink": "",
 		"linkedIn": "",
-		"yearStarted": "",
+		"yearStarted": "2023",
 		"active": 1,
 		"country": "IRELAND",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  unknown,
 		"googleScholar": "",
 		"orcid":""
 	},
 	{
 		"name": "Xenia Villalobos",
-		"role": "staff",
+		"role": "research",
 		"title": "Research Coordinator",
 		"email": "xenia.villalobos.alberu@ke.se",
 		"github": "",
@@ -490,7 +494,7 @@ export const members = [
 	},
 	{
 		"name": "Xiaofang Cao",
-		"role": "staff",
+		"role": "research",
 		"title": "Research Engineer",
 		"email": "xiaofang.cao@ki.se",
 		"github": "",
@@ -520,7 +524,7 @@ export const members = [
 	},
 	{
 		"name": "Yanbo Pan",
-		"role": "staff",
+		"role": "research",
 		"title": "Senior research specialist",
 		"email": "yanbo.pan@ki.se",
 		"github": "",
@@ -535,7 +539,7 @@ export const members = [
 	},
 	{
 		"name": "Yaroslav Kaminskiy",
-		"role": "phd",
+		"role": "student",
 		"title": "PhD Student",
 		"email": "yaroslav.kaminskiy@ki.se",
 		"github": "",
@@ -565,7 +569,7 @@ export const members = [
 	},
 	{
 		"name": "Irene Villanueva Sanz",
-		"role": "phd",
+		"role": "student",
 		"title": "PhD Student",
 		"email": "irene.villanueva.sanz@scilifelab.se",
 		"github": "",
@@ -579,7 +583,7 @@ export const members = [
 	},
 	{
 		"name": "Amare Wolide",
-		"role": "phd",
+		"role": "postdoc",
 		"title": "Post-Doctoral Fellow",
 		"email": "amare.wolide@scilifelab.se",
 		"github": "",
