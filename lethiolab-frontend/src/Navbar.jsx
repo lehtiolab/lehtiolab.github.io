@@ -6,7 +6,7 @@ import linkedinSVG from "./assets/img/linkedin.svg";
 import facebook from "./assets/img/facebook.svg";
 import "./styles/navbar.css";
 import { isMobile } from "react-device-detect";
-import { teamIcon, publicationsIcon, researchIcon, resourcesIcon, contactIcon, opportunitiesIcon } from "./assets/data/svgs";
+import { teamIcon, publicationsIcon, researchIcon, resourcesIcon, contactIcon, opportunitiesIcon, githubIcon, twitterIcon } from "./assets/data/svgs";
 
 const Navbar = () => {
 	const location = useLocation();
@@ -87,29 +87,11 @@ const Navbar = () => {
 				Opportunities
 			</NavLink>
 			<span className="navbar-contact-links">
-				<a>
-					<img
-						src={emailSVG}
-						width="35px"
-						alt="Email icon"
-						className="transition hover:scale-110"
-					/>
+				<a href="https://twitter.com/lehtiolab" target="_blank">
+					{twitterIcon}
 				</a>
-				<a>
-					<img
-						src={facebook}
-						width="35px"
-						alt="Email icon"
-						className="transition hover:scale-110"
-					/>
-				</a>
-				<a>
-					<img
-						src={linkedinSVG}
-						width="35px"
-						alt="Email icon"
-						className="transition hover:scale-110"
-					/>
+				<a href="https://github.com/lehtiolab" target="_blank">
+					{githubIcon}
 				</a>
 			</span>
 		</>

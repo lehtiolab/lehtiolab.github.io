@@ -62,13 +62,24 @@ nav {
   margin-top: 3px;
 }
 
-.navbar-contact-links img {
+.navbar-contact-links svg {
   width: 25px;
+  height: 25px;
   cursor: pointer;
-  filter: invert(1);
+  fill: white;
 }
 
-@media (max-width: 915px) {
+.navbar-contact-links svg:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1400px) {
+  .navbar-second-links {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 850px) {
   .navlinks {
     border-style: solid;
   }

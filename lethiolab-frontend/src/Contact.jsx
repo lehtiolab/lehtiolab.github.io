@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import { paperAirplane } from "./assets/data/svgs";
+import { githubIcon, paperAirplane, twitterIcon } from "./assets/data/svgs";
 import "./styles/contact.scss";
 import emailSVG from "./assets/img/at-solid.svg";
 import linkedinSVG from "./assets/img/linkedin.svg";
@@ -140,7 +140,7 @@ const Contact = () => {
 					<div className="contact-page">
 						<div className="contact-page-links">
 							<span className="contact-page-links-icons">
-								<a>
+								<a href={`mailto: `}>
 									<img
 										src={emailSVG}
 										width="35px"
@@ -148,21 +148,11 @@ const Contact = () => {
 										className="transition hover:scale-110"
 									/>
 								</a>
-								<a>
-									<img
-										src={facebook}
-										width="35px"
-										alt="Email icon"
-										className="transition hover:scale-110"
-									/>
+								<a href="https://twitter.com/lehtiolab" target="_blank">
+									{twitterIcon}
 								</a>
-								<a>
-									<img
-										src={linkedinSVG}
-										width="35px"
-										alt="Email icon"
-										className="transition hover:scale-110"
-									/>
+								<a href="https://github.com/lehtiolab" target="_blank">
+									{githubIcon}
 								</a>
 							</span>
 							<iframe

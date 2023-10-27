@@ -1,12 +1,18 @@
 import unknown from './../img/team/unknown.png'
 import memberImage from './../img/member.png';
-import mariaPernemalm from './../img/team/mariaPernemalm.png'
-import aliRazzak from './../img/team/aliRazzak.png'
-import eduardoAraujo from './../img/team/eduardoAraujo.png'
-import santeriKiviluot from './../img/team/santeriKiviluot.png'
-import olenaBerkovska from './../img/team/olenaBerkovska.png'
-import rozbehJafar from './../img/team/rozbehJafar.png'
-import isabelleLeo from './../img/team/isabelleLeo.png'
+import mariaPernemalm from './../img/team/mariaPernemalm.png';
+import aliRazzak from './../img/team/aliRazzak.png';
+import eduardoAraujo from './../img/team/eduardoAraujo.png';
+import santeriKiviluot from './../img/team/santeriKiviluot.png';
+import olenaBerkovska from './../img/team/olenaBerkovska.png';
+import rozbehJafar from './../img/team/rozbehJafar.png';
+import isabelleLeo from './../img/team/isabelleLeo.png';
+import davidTamborero from './../img/team/davidTamborero.png';
+import nooraSissala from './../img/team/nooraSissala.png';
+import xiaofangCao from './../img/team/xiaofangCao.png';
+import ruiBranca from './../img/team/ruiBranca.png';
+import lukasOrre from './../img/team/lukasOrre.png';
+import nidhiSharma from './../img/team/nidhiSharma.png';
 
 /*
 The "role" of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -66,13 +72,13 @@ export const members = [
 		"title": "Senior Research Specialist",
 		"email": "david.tamborero@ki.se",
 		"github": "",
-		"kiLink": "",
+		"kiLink": "https://medarbetare.ki.se/people/david-tamborero",
 		"linkedIn": "",
-		"yearStarted": "",
+		"yearStarted": "2018",
 		"active": 1,
 		"country": "SPAIN",
-		"pictureLink" :  memberImage,
-		"googleScholar": "",
+		"pictureLink" :  davidTamborero,
+		"googleScholar": "https://scholar.google.com/citations?user=4jbj37AAAAAJ&hl=en",
 		"orcid":""
 	},
 	{
@@ -311,7 +317,7 @@ export const members = [
 		"yearStarted": "2003",
 		"active": 1,
 		"country": "SWEDEN",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  lukasOrre,
 		"googleScholar": "https://scholar.google.com/citations?user=6ojfH4YAAAAJ&hl=en",
 		"orcid":"https://orcid.org/0000-0002-0384-1003"
 	},
@@ -386,7 +392,7 @@ export const members = [
 		"yearStarted": "2019",
 		"active": 1,
 		"country": "INDIA",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  nidhiSharma,
 		"googleScholar": "https://scholar.google.com/citations?user=2v7QCVgAAAAJ",
 		"orcid":"https://orcid.org/0000-0002-2475-9340"
 	},
@@ -401,7 +407,7 @@ export const members = [
 		"yearStarted": "2022",
 		"active": 1,
 		"country": "FINLAND",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  nooraSissala,
 		"googleScholar": "https://scholar.google.com/citations?user=KJLnI6sAAAAJ&hl=en",
 		"orcid":""
 	},
@@ -446,7 +452,7 @@ export const members = [
 		"yearStarted": "2009",
 		"active": 1,
 		"country": "PORTUGAL",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  ruiBranca,
 		"googleScholar": "https://scholar.google.com/citations?user=SMSGfEcAAAAJ&hl=en",
 		"orcid":"https://orcid.org/0000-0003-3890-6476"
 	},
@@ -506,7 +512,7 @@ export const members = [
 		"yearStarted": "2018",
 		"active": 1,
 		"country": "CHINA",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  xiaofangCao,
 		"googleScholar": "",
 		"orcid":""
 	},

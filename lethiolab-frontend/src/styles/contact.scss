@@ -24,8 +24,14 @@
   padding: 10px;
 }
 
-.contact-page-links-icons img {
-  fill: aliceblue;
+.contact-page-links-icons img, .contact-page-links-icons svg{
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.contact-page-links-icons img:hover, .contact-page-links-icons svg:hover{
+  transform: scale(1.1);
 }
 
 .contact-page-form {
