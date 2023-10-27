@@ -19,6 +19,9 @@ nav {
 }
 
 .navlinks {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   padding: 0px 0px;
   box-shadow: inset 0 0 0 0 white;
   color: white;
@@ -28,14 +31,41 @@ nav {
   border-radius: 5px;
 }
 
+.navlinks svg {
+  transition: fill .3s ease-in-out;
+  fill: white;
+}
+
 .navlinks:hover {
   box-shadow: inset 200px 0 0 0 white;
   color: #54b3d6;
 }
 
+.navlinks:hover svg, .navlinks.active svg {
+  fill: #54b3d6;
+}
+
 .navlinks.active {
   box-shadow: inset 200px 0 0 0 white;
   color: #54b3d6;
+}
+
+.navbar-contact-links {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.navbar-second-links {
+  margin-right: -30px;
+  margin-top: 3px;
+}
+
+.navbar-contact-links img {
+  width: 25px;
+  cursor: pointer;
+  filter: invert(1);
 }
 
 @media (max-width: 915px) {

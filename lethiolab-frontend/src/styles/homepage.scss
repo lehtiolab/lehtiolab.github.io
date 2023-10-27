@@ -1,11 +1,11 @@
-.custom-height {
-    height: calc(100vh - 60px);
+.welcome-page {
+    height: calc(100vh - 50px);
 }
 
 .news-links {
     box-shadow: inset 0px 0 0 0 #54b3d6;
-    color: #ffffff;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-size: 1vw;
 }
 
 .news-links:hover {
@@ -15,4 +15,20 @@
 
 #reactgooglegraph-1 svg g:last-child {
     pointer-events: none;
+}
+
+.welcome-page-first, .welcome-page-second, .welcome-page-third {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-size: 0.7vw;
+    overflow: hidden;
+    color: black;
+}
+
+@media (max-width: 1300px) {
+    .welcome-page-first, .welcome-page-second, .welcome-page-third {
+        font-size: 1vw;
+    }
 }

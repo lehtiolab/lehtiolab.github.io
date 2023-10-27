@@ -32,6 +32,8 @@ const ContactMobile = () => {
 
 	return (
 			<div className="mobile-contact-page">
+				<h1> We'd love to hear from you.</h1>
+				<h2> Here's how we can keep in touch: </h2>
 				<div className="mobile-contact-page-links">
 					<span className="mobile-contact-page-links-icons">
 						<a>

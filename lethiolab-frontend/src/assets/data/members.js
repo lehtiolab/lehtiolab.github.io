@@ -1,9 +1,12 @@
+import unknown from './../img/team/unknown.png'
 import memberImage from './../img/member.png';
 import mariaPernemalm from './../img/team/mariaPernemalm.png'
 import aliRazzak from './../img/team/aliRazzak.png'
 import eduardoAraujo from './../img/team/eduardoAraujo.png'
 import santeriKiviluot from './../img/team/santeriKiviluot.png'
-import unknown from './../img/team/unknown.png'
+import olenaBerkovska from './../img/team/olenaBerkovska.png'
+import rozbehJafar from './../img/team/rozbehJafar.png'
+import isabelleLeo from './../img/team/isabelleLeo.png'
 
 /*
 The "role" of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -188,7 +191,7 @@ export const members = [
 		"yearStarted": "2021",
 		"active": 1,
 		"country": "UNITEDSTATES",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  isabelleLeo,
 		"googleScholar": "",
 		"orcid":""
 	},
@@ -413,7 +416,7 @@ export const members = [
 		"yearStarted": "2020",
 		"active": 1,
 		"country": "UKRAINE",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  olenaBerkovska,
 		"googleScholar": "https://scholar.google.com/citations?user=HWRPAwIAAAAJ&hl",
 		"orcid":"https://orcid.org/0000-0002-8811-0591"
 	},
@@ -428,7 +431,7 @@ export const members = [
 		"yearStarted": "2015",
 		"active": 1,
 		"country": "IRAN",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  rozbehJafar,
 		"googleScholar": "",
 		"orcid":"https://orcid.org/0000-0002-3396-4709"
 	},

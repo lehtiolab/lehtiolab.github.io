@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "./assets/img/logo.png";
+import emailSVG from "./assets/img/at-solid.svg";
+import linkedinSVG from "./assets/img/linkedin.svg";
+import facebook from "./assets/img/facebook.svg";
 import "./styles/navbar.css";
 import { isMobile } from "react-device-detect";
+import { teamIcon, publicationsIcon, researchIcon, resourcesIcon, contactIcon, opportunitiesIcon } from "./assets/data/svgs";
 
 const Navbar = () => {
 	const location = useLocation();
@@ -18,6 +22,8 @@ const Navbar = () => {
 						: "navlinks"
 				}
 			>
+
+				{publicationsIcon}
 				Publications
 			</NavLink>
 			<NavLink
@@ -28,6 +34,7 @@ const Navbar = () => {
 						: "navlinks"
 				}
 			>
+				{researchIcon}
 				Research
 			</NavLink>
 			<NavLink
@@ -38,6 +45,7 @@ const Navbar = () => {
 						: "navlinks"
 				}
 			>
+				{resourcesIcon}
 				Resources
 			</NavLink>
 		</>
@@ -53,6 +61,7 @@ const Navbar = () => {
 						: "navlinks"
 				}
 			>
+				{teamIcon}
 				Team
 			</NavLink>
 			<NavLink
@@ -63,6 +72,7 @@ const Navbar = () => {
 						: "navlinks"
 				}
 			>
+				{contactIcon}
 				Contact
 			</NavLink>
 			<NavLink
@@ -73,8 +83,35 @@ const Navbar = () => {
 						: "navlinks"
 				}
 			>
+				{opportunitiesIcon}
 				Opportunities
 			</NavLink>
+			<span className="navbar-contact-links">
+				<a>
+					<img
+						src={emailSVG}
+						width="35px"
+						alt="Email icon"
+						className="transition hover:scale-110"
+					/>
+				</a>
+				<a>
+					<img
+						src={facebook}
+						width="35px"
+						alt="Email icon"
+						className="transition hover:scale-110"
+					/>
+				</a>
+				<a>
+					<img
+						src={linkedinSVG}
+						width="35px"
+						alt="Email icon"
+						className="transition hover:scale-110"
+					/>
+				</a>
+			</span>
 		</>
 	);
 
@@ -126,7 +163,7 @@ const Navbar = () => {
 								/>
 							</NavLink>
 						</div>
-						<div className="flex space-x-4 justify-around">
+						<div className="flex space-x-4 justify-around navbar-second-links">
 							{renderSecondLinks()}
 						</div>
 					</div>

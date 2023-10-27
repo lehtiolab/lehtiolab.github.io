@@ -180,7 +180,7 @@ const Team = () => {
 				<>
 					<div className="members-pie">
 						<PieChart data={dataArray} setSelectedCountry={setSelectedCountry}/>
-						<p>We take immense pride in recognizing and nurturing these individual strengths, ensuring that every voice is heard and valued. <br/> Welcome to meet the our diverse team from all over the world!</p>
+						<p>We take immense pride in recognizing and nurturing individual qualities and strengths, ensuring that every voice is heard and valued. <br/> Welcome to meet our diverse team from all over the world!</p>
 					</div>
 					<div className="text-black">
 						<h1 className="text-2xl font-bold">Members</h1>

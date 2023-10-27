@@ -14,7 +14,7 @@ const News = () => {
   return (
     <ul>
         {sortedNews.map(news =>
-			<li key={news.id} className="text-xxxs sm:text-xxs md:text-xs lg:text-ms xl:text-base 2xl:text-md pb-1 news-links">
+			<li key={news.id} className="news-links">
 				{news.date} | {news.title}
 			</li>
 			)}
