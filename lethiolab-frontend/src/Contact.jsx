@@ -2,11 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { githubIcon, paperAirplane, twitterIcon } from "./assets/data/svgs";
 import "./styles/contact.scss";
-import emailSVG from "./assets/img/at-solid.svg";
-import linkedinSVG from "./assets/img/linkedin.svg";
-import facebook from "./assets/img/facebook.svg";
 import ContactMobile from "./ContactMobile";
 import { isMobile } from "react-device-detect";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -15,7 +13,18 @@ const Contact = () => {
 		topic: "",
 		message: "",
 	});
+	const [formErrors, setFormErrors] = useState({
+		name: "",
+		email: "",
+		topic: "",
+		message: "",
+	});
 	const [isAnimating, setIsAnimating] = useState(false);
+
+	const isValidEmail = (email) => {
+		const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+		return emailPattern.test(email);
+	};
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -36,15 +45,67 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
+		let errors = {};
+		if (!formData.name.trim()) {
+			errors.name = "Name is required";
+		}
+
+		// Email validation
+		if (!formData.email.trim()) {
+			errors.email = "Email is required";
+		} else if (!isValidEmail(formData.email)) {
+			errors.email = "Invalid email format";
+		}
+
+		if (!formData.topic.trim()) {
+			errors.topic = "Name is required";
+		}
+
+		// Message validation
+		if (!formData.message.trim()) {
+			errors.message = "Message is required";
+		}
+
+		setFormErrors(errors);
+
+		if (errors.email) {
+			alert("E-mail wrong format!");
+			return;
+		}
+		else if (!errors.name && !errors.email && !errors.message) {
+			emailjs
+				.init('dvwMCUpmOGKSyaRru')
+				.send(
+					"service_myc8yse",
+					"template_0nup4m5",
+					formData,
+				)
+				.then(
+					(response) => {
+						console.log("SUCCESS!", response.status, response.text);
+					},
+					(error) => {
+						console.log("FAILED...", error);
+					}
+				);
+			// reset form data
+			setFormData({
+				name: "",
+				email: "",
+				message: "",
+			});
+		} else {
+			alert("All fields are mandatory!");
+			return;
+		}
+
 		if (isAnimating) return;
 		setIsAnimating(true);
 
 		// Animate with GSAP
 		// Animate with GSAP
 		const tl = gsap.timeline({
-			onComplete: () => {
-				console.log(formData); // Process the form data here after animation
-			},
+			onComplete: () => {},
 		});
 
 		gsap.set([foldRef.current], {
@@ -140,18 +201,16 @@ const Contact = () => {
 					<div className="contact-page">
 						<div className="contact-page-links">
 							<span className="contact-page-links-icons">
-								<a href={`mailto: `}>
-									<img
-										src={emailSVG}
-										width="35px"
-										alt="Email icon"
-										className="transition hover:scale-110"
-									/>
-								</a>
-								<a href="https://twitter.com/lehtiolab" target="_blank">
+								<a
+									href="https://twitter.com/lehtiolab"
+									target="_blank"
+								>
 									{twitterIcon}
 								</a>
-								<a href="https://github.com/lehtiolab" target="_blank">
+								<a
+									href="https://github.com/lehtiolab"
+									target="_blank"
+								>
 									{githubIcon}
 								</a>
 							</span>
@@ -182,7 +241,10 @@ const Contact = () => {
 										gradientUnits="userSpaceOnUse"
 									>
 										<stop offset="0" stopColor="#fbad37" />
-										<stop offset=".86" stopColor="#f7901f" />
+										<stop
+											offset=".86"
+											stopColor="#f7901f"
+										/>
 										<stop offset="1" stopColor="#f78f1e" />
 									</linearGradient>
 									<linearGradient
@@ -365,7 +427,11 @@ const Contact = () => {
 										d="m104.19,248.41L1.84,328.25h219.94l-102.1-79.75c-4.54-3.56-10.91-3.59-15.49-.09Z"
 									/>
 								</g>
-								<g id="fold" ref={foldRef} style={{ opacity: 0 }}>
+								<g
+									id="fold"
+									ref={foldRef}
+									style={{ opacity: 0 }}
+								>
 									<path
 										fill="url(#linear-gradient)"
 										d="m120.25,115.81l103.37,81.52H0l103.37-81.52c4.92-3.98,11.96-3.98,16.89,0Z"

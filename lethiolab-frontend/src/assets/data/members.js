@@ -13,6 +13,11 @@ import xiaofangCao from './../img/team/xiaofangCao.png';
 import ruiBranca from './../img/team/ruiBranca.png';
 import lukasOrre from './../img/team/lukasOrre.png';
 import nidhiSharma from './../img/team/nidhiSharma.png';
+import akramEmdadi from './../img/team/akramEmdadi.png';
+import ioannisSiavelis from './../img/team/ioannisSiavelis.png';
+import ireneSanz from './../img/team/ireneSanz.png';
+import xuekangQi from './../img/team/xuekangQi.png';
+
 
 /*
 The "role" of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -47,7 +52,7 @@ export const members = [
 		"yearStarted": "2022",
 		"active": 1,
 		"country": "IRAN",
-		"pictureLink" : memberImage,
+		"pictureLink" : akramEmdadi,
 		"googleScholar": "",
 		"orcid":""
 	},
@@ -182,7 +187,7 @@ export const members = [
 		"yearStarted": "2016",
 		"active": 1,
 		"country": "GREECE",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  ioannisSiavelis,
 		"googleScholar": "",
 		"orcid":"https://orcid.org/0009-0000-0758-8140"
 	},
@@ -527,7 +532,7 @@ export const members = [
 		"yearStarted": "2022",
 		"active": 1,
 		"country": "CHINA",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  xuekangQi,
 		"googleScholar": "https://scholar.google.com/citations?user=-DqD3dkAAAAJ&hl=zh-CN",
 		"orcid":""
 	},
@@ -587,7 +592,7 @@ export const members = [
 		"yearStarted": "2022",
 		"active": 1,
 		"country": "SPAIN",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  ireneSanz,
 		"googleScholar": ""
 	},
 	{
