@@ -168,7 +168,7 @@ const Team = () => {
 
 
 	return (
-		<div className="bg-white">
+		<div>
 
 			{isMobile ?
 				<div className="members-list">
@@ -180,10 +180,9 @@ const Team = () => {
 				<>
 					<div className="members-pie">
 						<PieChart data={dataArray} setSelectedCountry={setSelectedCountry}/>
-						<p>We take immense pride in recognizing and nurturing individual qualities and strengths, ensuring that every voice is heard and valued. <br/> Welcome to meet our diverse team from all over the world!</p>
+						<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5">At the heart of our ethos lies a deep commitment to acknowledging and fostering the unique qualities and strengths of each individual, a principle that underlines our belief in the importance of every voice being not only heard but also genuinely valued. With open arms, we invite you to get acquainted with our diverse team, a remarkable assembly of individuals hailing from all corners of the globe. Together, we celebrate the rich tapestry of perspectives and experiences that this global diversity brings to our group.</div>
 					</div>
 					<div className="text-black">
-						<h1 className="text-2xl font-bold">Members</h1>
 						<div className="members-list">
 							{members.map(member => {
 								// check if a country is selected
