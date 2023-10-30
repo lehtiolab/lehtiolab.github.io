@@ -19,12 +19,12 @@ const Resources = () => {
         <div className="softwareImage w-1/2" style={{backgroundImage: "url("+resource.resourceImage+")"}}></div>
       </Link>)
     } else {
-      courseLoad.push(<Link to={resource.resourceLink} target="_blank" className="resourceCard gap-2 flex flex-row rounded w-1/3 p-2 bg-white pl-6 pr-6">
+      courseLoad.push(<Link to={resource.resourceLink} target="_blank" className="resourceCard gap-2 flex flex-row rounded w-full p-2 bg-white pl-6 pr-6">
       <div className="resourceDetail w-1/2">
         <div className="resourceName text-left text-3xl">{resource.resourceName}</div>
         <div className="resourceDescription text-left text-left text-lg">{resource.resourceDescription}</div>
       </div>
-      <div className="softwareImage w-1/2" style={{backgroundImage: "url("+resource.resourceImage+")"}}></div>
+      <div className="softwareImage w-1/2 h-auto text-center"><img src={resource.resourceImage} style={{height:"250px",width:"auto", marginLeft:"auto", marginRight:"auto"}}></img></div>
     </Link>)
 
     }
@@ -44,7 +44,7 @@ const Resources = () => {
         <div className="resourceTitle text-left text-5xl">Courses</div>
         <div className="resourcGeneral text-left text-justify text-lg text-black p-4 rounded bg-white pl-10 pr-10">Our team is also responsble for overseeing a selection of courses at Karolinska Instituet. They are designed to explore the profound significance of proteins, the fundamental elements of life. With a focus on understanding the essential role of proteins in health and disease, as well as demystifying proteomic techniques, our offerings aim to inspire a deep appreciation for this vital field of study. Whether you're a budding scientist, a healthcare professional, or simply someone with a curious spirit, our courses provide an unassuming platform for learning and personal growth. We invite you to explore our humble catalog and embark on a journey of discovery in the captivating realm of proteomics.
         </div>
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-col gap-5">
           {courseLoad}
         </div>
       </div>
