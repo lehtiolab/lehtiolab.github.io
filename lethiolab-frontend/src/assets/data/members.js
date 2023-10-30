@@ -17,6 +17,9 @@ import akramEmdadi from './../img/team/akramEmdadi.png';
 import ioannisSiavelis from './../img/team/ioannisSiavelis.png';
 import ireneSanz from './../img/team/ireneSanz.png';
 import xuekangQi from './../img/team/xuekangQi.png';
+import henrikJohansson from './../img/team/henrikJohansson.png';
+import mahshidZarrineh from './../img/team/mahshidZarrineh.png';
+
 
 
 /*
@@ -172,7 +175,7 @@ export const members = [
 		"yearStarted": "2008",
 		"active": 1,
 		"country": "SWEDEN",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  henrikJohansson,
 		"googleScholar": "",
 		"orcid":"https://orcid.org/0000-0003-4729-4205"
 	},
@@ -367,7 +370,7 @@ export const members = [
 		"yearStarted": "2022",
 		"active": 1,
 		"country": "IRAN",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  mahshidZarrineh,
 		"googleScholar": "",
 		"orcid":""
 	},

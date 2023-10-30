@@ -1,24 +1,31 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './styles/carousel.scss';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import img1 from './assets/img/carousel/photo1.png';
+import img2 from './assets/img/carousel/photo2.png';
+import img3 from './assets/img/carousel/photo3.png';
+import img4 from './assets/img/carousel/photo4.png';
+import img5 from './assets/img/carousel/photo5.png';
+
 
 
 function MyCarousel() {
     const images = [
-        "https://i.chzbgr.com/full/9742359040/hE97724A6",
-        "https://i.chzbgr.com/full/9800564736/hCC8F5078/frog-161-look-aint-he-cute-this-is-true-cuteness-nature",
-        "https://i.chzbgr.com/full/9742358528/hDC138262",
-        "https://i.chzbgr.com/full/9742243584/hC192CA10",
-        "https://i.chzbgr.com/full/9742359808/h1CCAD94B",
+        img1, img2, img3, img4, img5
     ];
     
     const altTexts = ["Pikachu", "Frog", "Feminist", "Shut", "Swear"];
 
-
   return (
 
-		<Carousel showThumbs={true} className="my-carousel">
+    <Carousel 
+    showThumbs={true} 
+    className="my-carousel"
+    autoPlay={true}
+    interval={5000}
+    infiniteLoop={true}
+>
             {images.map((img, index) => (
                 <div key={index}>
                      <img src={img} className="carousel-image" />

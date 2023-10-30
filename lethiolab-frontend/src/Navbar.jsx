@@ -132,7 +132,7 @@ const Navbar = () => {
 				</nav>
 			) : (
 				<nav className="w-full shadow-md fixed top-0 left-0 h-14 z-50">
-					<div className="grid content-center grid-cols-layout items-center h-[50px]">
+					<div className="grid content-center grid-cols-layout items-center h-[50px] text-xl">
 						<div className="flex space-x-4 justify-around">
 							{renderFirstLinks()}
 						</div>

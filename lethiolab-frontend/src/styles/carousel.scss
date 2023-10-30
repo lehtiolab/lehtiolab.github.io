@@ -1,6 +1,12 @@
+.my-carousel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
 
 .my-carousel .carousel-image {
-    max-height: 750px; /* Set the maximum height for the focused image */
+    max-height: 750px;
 }
 
 .my-carousel .thumbs-wrapper {
@@ -8,13 +14,14 @@
 }
 
 .my-carousel .thumb {
-  height: 125px !important; 
+  height: 150px !important; 
   width: 20% !important;
   border: none !important;
   padding: 0px !important;
   margin: 0px !important;
-  margin-right: 2px !important  ;
+  margin-right: 2px !important;
   object-fit: cover;
+  overflow: unset !important;
 }
 
 .my-carousel .thumb:hover {

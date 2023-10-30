@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef} from "react";
 import { gsap } from "gsap";
 import { githubIcon, paperAirplane, twitterIcon } from "./assets/data/svgs";
 import "./styles/contact.scss";
@@ -8,12 +8,6 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		topic: "",
-		message: "",
-	});
-	const [formErrors, setFormErrors] = useState({
 		name: "",
 		email: "",
 		topic: "",
@@ -65,8 +59,6 @@ const Contact = () => {
 		if (!formData.message.trim()) {
 			errors.message = "Message is required";
 		}
-
-		setFormErrors(errors);
 
 		if (errors.email) {
 			alert("E-mail wrong format!");
@@ -196,7 +188,7 @@ const Contact = () => {
 		<>
 			{!isMobile && (
 				<div className="contact">
-					<h1>We'd love to hear from you</h1>
+					<h1>We'd love to hear from you!</h1>
 					<h2>Here's how we can keep in touch:</h2>
 					<div className="contact-page">
 						<div className="contact-page-links">

@@ -9,8 +9,8 @@ const Homepage = () => {
   return (
     <div>
         <div className="flex welcome-page">
-			<div className="flex flex-col w-2/5">
-                <div className="h-2/5 welcome-page-first">
+			<div className="w-2/5 welcome-page-left">
+                <div className="welcome-page-first">
 					<h1> 
 						Welcome to the Lehtiolab website!
 					</h1>
@@ -24,24 +24,22 @@ const Homepage = () => {
 						sunt minim consectetur qui cillum consequat reprehenderit. Ad consequat exercitation elit pariatur id amet nulla laborum Lorem
 						 est occaecat dolor. </p>
                 </div>
-                <div className="h-2/5 p-6 text-left welcome-page-second">
+                <div className="p-6 text-left welcome-page-second">
 					<h1> 
 							News
 					</h1>
 					<br/>
 					<News />
 				</div>
-				<div className="h-1/5 welcome-page-third">
-					<Sponsors />
-				</div>
             </div>
 
-			<div className="flex flex-col w-4/5 bg-green-500">
+			<div className="w-4/5">
 				<MyCarousel />
 			</div>
 		</div>
-    
-
+		<>
+			<Sponsors />
+		</>
     </div>
 
   )

@@ -2,6 +2,11 @@
     height: calc(100vh - 50px);
 }
 
+.welcome-page-left {
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+}
+
 .news-links {
     box-shadow: inset 0px 0 0 0 #54b3d6;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;

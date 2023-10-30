@@ -1,3 +1,14 @@
+import barncancerfondenLogo from "./../img/sponsors/barncancerfonden.png";
+import cancerfondenLogo from "./../img/sponsors/cancerFondenLogo.png";
+import astrazenecaLogo from "./../img/sponsors/astrazenecaLogo.png";
+import seventhFrameworkLogo from "./../img/sponsors/seventhFrameworkLogo.png"
+import kiLogo from "./../img/sponsors/kiLogo.png"
+import scilifelab from "./../img/sponsors/scilifelab.png"
+import vinnovaLogo from "./../img/sponsors/vinnovaLogo.png"
+import gehealthcareLogo from "./../img/sponsors/gehealthcareLogo.png"
+import rahfoLogo from "./../img/sponsors/rahfoLogo.png"
+import regionStockholmLogo from "./../img/sponsors/regionStockholmLogo.png"
+
 /*
 The order in the list will determine the order of the sponsors
 
@@ -9,52 +20,53 @@ export const sponsors =
 [
     {
         "sponsorName": "karolinska institutet",
-        "sponsorImage": "",
+        "sponsorImage": kiLogo,
         "sponsorLink": "https://ki.se/"
     },
     {
         "sponsorName": "SciLifeLab",
-        "sponsorImage": "",
+        "sponsorImage": scilifelab,
         "sponsorLink": "https://www.scilifelab.se/"
     },
     {
         "sponsorName": "Vinnova",
-        "sponsorImage": "",
+        "sponsorImage": vinnovaLogo,
         "sponsorLink": "https://www.vinnova.se/"
     },
     {
         "sponsorName": "Cancerfonden",
-        "sponsorImage": "",
+        "sponsorImage": cancerfondenLogo,
         "sponsorLink": "https://www.cancerfonden.se/"
     },
     {
         "sponsorName": "Region Stockholm",
-        "sponsorImage": "",
+        "sponsorImage": regionStockholmLogo,
         "sponsorLink": "https://www.regionstockholm.se/"
     },
     {
         "sponsorName": "Barncancer Fonden",
-        "sponsorImage": "",
+        "sponsorImage": barncancerfondenLogo,
         "sponsorLink": "https://www.barncancerfonden.se/"
     },
     {
         "sponsorName": "GE Healthcare",
-        "sponsorImage": "",
+        "sponsorImage": gehealthcareLogo,
         "sponsorLink": "https://www.gehealthcare.com/"
     },
     {
         "sponsorName": "Radiumhemmets Forsknings Fonder",
-        "sponsorImage": "",
+        "sponsorImage": rahfoLogo,
         "sponsorLink": "https://rahfo.se/"
     },
     {
         "sponsorName": "AstraZeneca",
-        "sponsorImage": "",
+        "sponsorImage": astrazenecaLogo,
         "sponsorLink": "https://www.astrazeneca.com/"
     },
     {
         "sponsorName": "7th Framework Programme",
-        "sponsorImage": "",
+        "sponsorImage": seventhFrameworkLogo,
         "sponsorLink": "https://ec.europa.eu/commission/presscorner/detail/de/MEMO_16_146"
     }
 ]
+
