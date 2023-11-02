@@ -65,9 +65,8 @@ const Contact = () => {
 			return;
 		}
 		else if (!errors.name && !errors.email && !errors.message) {
-			emailjs
-				.init('dvwMCUpmOGKSyaRru')
-				.send(
+			emailjs.init('dvwMCUpmOGKSyaRru');
+			emailjs.send(
 					"service_myc8yse",
 					"template_0nup4m5",
 					formData,

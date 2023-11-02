@@ -4,7 +4,7 @@
 
 .welcome-page-left {
     display: grid;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 2fr 2fr 3fr;
 }
 
 .news-links {
@@ -36,4 +36,8 @@
     .welcome-page-first, .welcome-page-second, .welcome-page-third {
         font-size: 1vw;
     }
+}
+
+.carousel-div {
+    overflow: hidden;
 }

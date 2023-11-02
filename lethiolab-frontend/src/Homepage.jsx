@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <div>
         <div className="flex welcome-page">
-			<div className="w-2/5 welcome-page-left">
+			<div className="w-1/2 welcome-page-left">
                 <div className="welcome-page-first">
 					<h1> 
 						Welcome to the Lehtiolab website!
@@ -31,15 +31,17 @@ const Homepage = () => {
 					<br/>
 					<News />
 				</div>
+				<div className="p-6 text-left welcome-page-third">
+					<Sponsors />
+					<News />
+				</div>
             </div>
 
-			<div className="w-4/5">
+			<div className="w-1/2 carousel-div">
 				<MyCarousel />
 			</div>
 		</div>
-		<>
-			<Sponsors />
-		</>
+
     </div>
 
   )

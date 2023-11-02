@@ -19,7 +19,9 @@ import ireneSanz from './../img/team/ireneSanz.png';
 import xuekangQi from './../img/team/xuekangQi.png';
 import henrikJohansson from './../img/team/henrikJohansson.png';
 import mahshidZarrineh from './../img/team/mahshidZarrineh.png';
-
+import yanboPan from './../img/team/yanboPan.png';
+import markusJonsson from './../img/team/markusJonsson.png';
+import janneLehtio from './../img/team/janneLehtio.png';
 
 
 /*
@@ -220,7 +222,7 @@ export const members = [
 		"yearStarted": "2003",
 		"active": 1,
 		"country": "FINLAND",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  janneLehtio,
 		"googleScholar": "https://scholar.google.com/citations?hl=en&user=NPJWeVIAAAAJ",
 		"orcid":"https://orcid.org/0000-0002-8100-9562"
 	},
@@ -355,7 +357,7 @@ export const members = [
 		"yearStarted": "2021",
 		"active": 1,
 		"country": "SWEDEN",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  markusJonsson,
 		"googleScholar": "",
 		"orcid":""
 	},
@@ -550,7 +552,7 @@ export const members = [
 		"yearStarted": "2015",
 		"active": 1,
 		"country": "CHINA",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  yanboPan,
 		"googleScholar": "",
 		"orcid":""
 	},

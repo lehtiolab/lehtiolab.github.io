@@ -22,12 +22,12 @@ function MyCarousel() {
     <Carousel 
     showThumbs={true} 
     className="my-carousel"
-    autoPlay={true}
+    
     interval={5000}
     infiniteLoop={true}
 >
             {images.map((img, index) => (
-                <div key={index}>
+                <div key={index} className="carousel-list">
                      <img src={img} className="carousel-image" />
                 </div>
             ))}

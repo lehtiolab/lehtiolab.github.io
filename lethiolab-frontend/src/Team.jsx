@@ -172,7 +172,15 @@ const Team = () => {
 
 			{isMobile ?
 				<div className="members-list">
-					{members.map(member => {
+					{members
+					.sort((a, b) => {
+						const lastNameA = a.name.split(' ').pop();
+						const lastNameB = b.name.split(' ').pop();
+						if (lastNameA < lastNameB) return -1;
+						if (lastNameA > lastNameB) return 1;
+						return 0;
+					  })
+					.map(member => {
     					return <MemberRenderMobile key={member.name} member={member} />;
 					})}
 				</div>
@@ -184,7 +192,15 @@ const Team = () => {
 					</div>
 					<div className="text-black">
 						<div className="members-list">
-							{members.map(member => {
+							{members
+							.sort((a, b) => {
+								const lastNameA = a.name.split(' ').pop();
+								const lastNameB = b.name.split(' ').pop();
+								if (lastNameA < lastNameB) return -1;
+								if (lastNameA > lastNameB) return 1;
+								return 0;
+							  })
+							.map(member => {
 								// check if a country is selected
 								if (selectedCountry) {
 								// render the member only if their country matches the selectedCountry

@@ -1,27 +1,30 @@
-.my-carousel {
+.my-carousel .slider-wrapper, .my-carousel div, .my-carousel div li {
+  height: calc(100vh - 150px);
+}
+
+.my-carousel .slider-wrapper .carousel-image {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between
+  object-fit: cover !important;
 }
 
-.my-carousel .carousel-image {
-    max-height: 750px;
-}
-
-.my-carousel .thumbs-wrapper {
+.my-carousel .thumbs-wrapper, .my-carousel .thumbs-wrapper ul {
   margin: 0px !important;
+  height: 100px !important;
 }
 
 .my-carousel .thumb {
-  height: 150px !important; 
-  width: 20% !important;
   border: none !important;
   padding: 0px !important;
   margin: 0px !important;
   margin-right: 2px !important;
-  object-fit: cover;
   overflow: unset !important;
+  height: 100%;
+  width: 20% !important;
+}
+
+.my-carousel .thumbs-wrapper .thumb img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .my-carousel .thumb:hover {
