@@ -22,7 +22,7 @@ function MyCarousel() {
     <Carousel 
     showThumbs={true} 
     className="my-carousel"
-    
+    autoPlay={true}
     interval={5000}
     infiniteLoop={true}
 >

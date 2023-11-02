@@ -22,6 +22,10 @@ import mahshidZarrineh from './../img/team/mahshidZarrineh.png';
 import yanboPan from './../img/team/yanboPan.png';
 import markusJonsson from './../img/team/markusJonsson.png';
 import janneLehtio from './../img/team/janneLehtio.png';
+import harisBabacic from './../img/team/harisBabacic.png';
+import konstantinBarylyuk from './../img/team/konstantinBarylyuk.png';
+import soumitraMarathe from './../img/team/soumitraMarathe.png';
+import lauraGheorghe from './../img/team/lauraGheorghe.png';
 
 
 /*
@@ -147,7 +151,7 @@ export const members = [
 		"yearStarted": "2018",
 		"active": 1,
 		"country": "MACEDONIA",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  harisBabacic,
 		"googleScholar": "https://scholar.google.com/citations?user=1Y0NWRkAAAAJ&hl=en",
 		"orcid":""
 	},
@@ -267,7 +271,7 @@ export const members = [
 		"yearStarted": "2022",
 		"active": 1,
 		"country": "RUSSIA",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  konstantinBarylyuk,
 		"googleScholar": "https://scholar.google.com/citations?user=iV2j9ZkAAAAJ",
 		"orcid":"https://orcid.org/0000-0002-3580-0345"
 	},
@@ -282,7 +286,7 @@ export const members = [
 		"yearStarted": "2023",
 		"active": 1,
 		"country": "ROMANIA",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  lauraGheorghe,
 		"googleScholar": "",
 		"orcid":""
 	},
@@ -582,7 +586,7 @@ export const members = [
 		"yearStarted": "2023",
 		"active": 1,
 		"country": "INDIA",
-		"pictureLink" :  memberImage,
+		"pictureLink" :  soumitraMarathe,
 		"googleScholar": "https://scholar.google.com/citations?user=4llQS7sAAAAJ&hl=en",
 		"orcid":"https://orcid.org/0000-0002-7712-6061"
 	},
