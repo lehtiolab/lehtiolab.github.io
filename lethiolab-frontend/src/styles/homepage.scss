@@ -3,6 +3,7 @@
 }
 
 .welcome-page-left {
+    width: 50%;
     display: grid;
     grid-template-rows: 2fr 2fr 3fr;
 }
@@ -30,14 +31,48 @@
     font-size: 0.7vw;
     overflow: hidden;
     color: black;
-}
-
-@media (max-width: 1300px) {
-    .welcome-page-first, .welcome-page-second, .welcome-page-third {
-        font-size: 1vw;
-    }
+    padding: 1.5rem;
 }
 
 .carousel-div {
+    width: 50%;
     overflow: hidden;
+}
+
+@media (max-width: 1300px) {
+
+    .welcome-page {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .welcome-page-left {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px; 
+    }
+
+    .welcome-page-first {
+        grid-column: 1; /* Places in the first column */
+    }
+
+    .welcome-page-second {
+        grid-column: 2; /* Places in the second column */
+    }
+
+    .welcome-page-third {
+        grid-column: 1 / span 2; /* Spans across two columns */
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .welcome-page-first, .welcome-page-second, .welcome-page-third {
+        font-size: 1vw;
+    }
+
+    .carousel-div {
+        width: 100%;
+    }
 }

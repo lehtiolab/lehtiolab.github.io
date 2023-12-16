@@ -30,3 +30,9 @@
 .my-carousel .thumb:hover {
   opacity: 0.7;
 }
+
+@media (max-width: 1300px) {
+  .my-carousel .slider-wrapper, .my-carousel div, .my-carousel div li {
+    height: 100%;
+  }
+}

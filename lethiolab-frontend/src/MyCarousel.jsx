@@ -2,10 +2,10 @@ import React from 'react';
 import './styles/carousel.scss';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import img1 from './assets/img/carousel/photo1.png';
-import img2 from './assets/img/carousel/photo2.png';
-import img3 from './assets/img/carousel/photo3.png';
-import img4 from './assets/img/carousel/photo4.png';
+import img1 from './assets/img/carousel/meeting-room.png';
+import img2 from './assets/img/carousel/christmas-pic.png';
+import img3 from './assets/img/carousel/team-pic.png';
+import img4 from './assets/img/carousel/travel-pic.png';
 import img5 from './assets/img/carousel/photo5.png';
 
 
@@ -15,7 +15,7 @@ function MyCarousel() {
         img1, img2, img3, img4, img5
     ];
     
-    const altTexts = ["Pikachu", "Frog", "Feminist", "Shut", "Swear"];
+    const altTexts = ["Meeting Room", "Christmas Potluck", "Team Selfie", "Travel excursion", "pic5"];
 
   return (
 
