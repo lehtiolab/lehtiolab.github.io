@@ -15,14 +15,8 @@ const Homepage = () => {
 						Welcome to the Lehtiolab website!
 					</h1>
 					<br/>
-					<p>
-						Esse nostrud sit ut et ipsum qui incididunt. Laborum reprehenderit culpa deserunt est et voluptate irure pariatur irure 
-						commodo aliqua ut voluptate. Officia mollit qui sit culpa sunt amet ea. Duis duis commodo incididunt exercitation quis qui 
-						consectetur consequat dolor pariatur. 
-						<br/><br/>
-						Lorem magna cupidatat ullamco Lorem irure do 
-						sunt minim consectetur qui cillum consequat reprehenderit. Ad consequat exercitation elit pariatur id amet nulla laborum Lorem
-						 est occaecat dolor. </p>
+					<p className="text-xl">
+					We are Lehtiö lab. We engage in developing mass spectrometry based methods to improve the depth of proteome analysis. Additionally, we apply multilayer bioinformatic analyses to examine the proteome in the context of the genome and transcriptome. Interpreting multilevel “omics” data provides an understanding of how genome aberrations impact the proteome. We apply this understanding to identify biomarkers which aid in selecting the most effective therapies for cancer patients. </p>
                 </div>
                 <div className="text-left welcome-page-second">
 					<h1> 
