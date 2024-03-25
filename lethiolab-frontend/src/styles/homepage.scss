@@ -5,13 +5,13 @@
 .welcome-page-left {
     width: 50%;
     display: grid;
-    grid-template-rows: 2fr 2fr 3fr;
+    grid-template-rows: 2fr 2fr 1.5fr;
 }
 
 .news-links {
     box-shadow: inset 0px 0 0 0 #54b3d6;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    font-size: 1vw;
+    font-size: 1.25vw;
 }
 
 .news-links:hover {
@@ -27,11 +27,33 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     display: flex;
     flex-direction: column;
-    padding: 40px;
     font-size: 0.7vw;
     overflow: hidden;
     color: black;
-    padding: 1.5rem;
+    padding: 20px;
+    margin: 0.5rem 1rem;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 0.25rem;
+}
+
+.welcome-page-first {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.welcome-page-first h1, .welcome-page-second h1  {
+    font-size: 3rem;
+    color: #54b3d6;
+}
+
+.welcome-page-first p {
+    font-size: 1vw;
+    overflow: auto;
+}
+
+.welcome-page-first p {
+    margin-top: 20px;
 }
 
 .carousel-div {
@@ -40,7 +62,6 @@
 }
 
 @media (max-width: 1300px) {
-
     .welcome-page {
         display: flex;
         flex-direction: column;
@@ -55,21 +76,39 @@
     }
 
     .welcome-page-first {
-        grid-column: 1; /* Places in the first column */
+        margin: 0.5rem 1rem;
+        grid-column: 1; 
     }
 
     .welcome-page-second {
-        grid-column: 2; /* Places in the second column */
+        grid-column: 2;
     }
 
     .welcome-page-third {
-        grid-column: 1 / span 2; /* Spans across two columns */
+        grid-column: 1 / span 2;
         padding: 5px;
         margin-bottom: 10px;
     }
 
     .welcome-page-first, .welcome-page-second, .welcome-page-third {
-        font-size: 1vw;
+        font-size: 0.5rem;
+    }
+
+    .welcome-page-first h1, .welcome-page-second h1  {
+        font-size: 1rem;
+    }
+
+    .welcome-page-second {
+        justify-content: space-evenly;
+    }
+
+    .welcome-page-first p{
+        font-size: 1.5vw;
+        margin-top: 0px;
+    }
+
+    .news-links{
+        font-size: 1.5vw;
     }
 
     .carousel-div {

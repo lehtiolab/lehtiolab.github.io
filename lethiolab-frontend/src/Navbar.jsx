@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "./assets/img/logo.png";
-import emailSVG from "./assets/img/at-solid.svg";
-import linkedinSVG from "./assets/img/linkedin.svg";
-import facebook from "./assets/img/facebook.svg";
 import "./styles/navbar.css";
 import { isMobile } from "react-device-detect";
 import { teamIcon, publicationsIcon, researchIcon, resourcesIcon, contactIcon, opportunitiesIcon, githubIcon, twitterIcon } from "./assets/data/svgs";
@@ -86,14 +83,15 @@ const Navbar = () => {
 				{opportunitiesIcon}
 				Opportunities
 			</NavLink>
-			<span className="navbar-contact-links">
+			{!isMobile &&
+				<span className="navbar-contact-links">
 				<a href="https://twitter.com/lehtiolab" target="_blank">
 					{twitterIcon}
 				</a>
 				<a href="https://github.com/lehtiolab" target="_blank">
 					{githubIcon}
 				</a>
-			</span>
+			</span>}
 		</>
 	);
 

@@ -55,7 +55,7 @@ const Team = () => {
 				</div>
 				<div className="member-card_links">
 					{member.email &&
-						<a  href={`mailto: ${member.website}`} onClick={(e) => e.stopPropagation()}>
+						<a  href={`mailto: ${member.email}`} onClick={(e) => e.stopPropagation()}>
 							<img src={emailSVG} width="35px" alt="Email icon" className="transition hover:scale-110"/> 
 						</a>
 					}
@@ -121,7 +121,7 @@ const Team = () => {
 						</div>
 						<div className="member-card_container-back">
 							{member.email &&
-								<a  href={`mailto: ${member.website}`} onClick={(e) => e.stopPropagation()}>
+								<a  href={`mailto: ${member.email}`} onClick={(e) => e.stopPropagation()}>
 									<img src={emailSVG} width="35px" alt="Email icon" className="transition hover:scale-110"/> 
 								</a>
 							}
