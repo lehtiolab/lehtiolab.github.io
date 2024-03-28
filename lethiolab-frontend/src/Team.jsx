@@ -29,10 +29,11 @@ const Team = () => {
 	});
 	
 	const dataArray = Object.entries(countryCounts).map(([country, count]) => {
-	  return [country, count];
+	  return {label: country, value: count};
 	});
+
+	dataArray.sort((a, b) => a.label.localeCompare(b.label));
 	
-	dataArray.splice(0, 0, ['Country', 'Members']);
 
 	const MemberRenderMobile = ({member}) => {
 		return (
@@ -91,18 +92,7 @@ const Team = () => {
 
 	const MemberRender = ({member}) => {
 		const [isFlipped, setIsFlipped] = useState(false);
-		const [isAnimating, setisAnimating] = useState(false);
 
-		console.log(isAnimating)
-
-		useEffect(() => {
-			setisAnimating(true);
-			const timeout = setTimeout(() => {
-				setisAnimating(false);
-			}, 250);
-			return () => clearTimeout(timeout);
-		}, [isFlipped]);
-		
 		return (
 			<div className="member-card">
 				<div className={`member-card_container ${isFlipped ? 'flipped' : ''} `} onClick={() => setIsFlipped(!isFlipped)}>
@@ -172,6 +162,13 @@ const Team = () => {
 
 			{isMobile ?
 				<div className="members-list">
+					<div className="researchCard text-xs bg-white rounded p-2 pr-10 pl-5 pb-5 pt-5 mb-4">
+							At the heart of our ethos lies a deep commitment to acknowledging and fostering the unique qualities and strengths of each 
+							individual, a principle that underlines our belief in the importance of every voice being not only heard but also genuinely 
+							valued. With open arms, we invite you to get acquainted with our diverse team, a remarkable assembly of individuals hailing 
+							from all corners of the globe. Together, we celebrate the rich tapestry of perspectives and experiences that this global 
+							diversity brings to our group.
+						</div>
 					{members
 					.sort((a, b) => {
 						const lastNameA = a.name.split(' ').pop();
@@ -187,8 +184,16 @@ const Team = () => {
 				:
 				<>
 					<div className="members-pie">
-						<PieChart data={dataArray} setSelectedCountry={setSelectedCountry}/>
-						<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5">At the heart of our ethos lies a deep commitment to acknowledging and fostering the unique qualities and strengths of each individual, a principle that underlines our belief in the importance of every voice being not only heard but also genuinely valued. With open arms, we invite you to get acquainted with our diverse team, a remarkable assembly of individuals hailing from all corners of the globe. Together, we celebrate the rich tapestry of perspectives and experiences that this global diversity brings to our group.</div>
+
+						<PieChart data={dataArray} selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry}/>
+
+						<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5">
+							At the heart of our ethos lies a deep commitment to acknowledging and fostering the unique qualities and strengths of each 
+							individual, a principle that underlines our belief in the importance of every voice being not only heard but also genuinely 
+							valued. With open arms, we invite you to get acquainted with our diverse team, a remarkable assembly of individuals hailing 
+							from all corners of the globe. Together, we celebrate the rich tapestry of perspectives and experiences that this global 
+							diversity brings to our group.
+						</div>
 					</div>
 					<div className="text-black">
 						<div className="members-list">
@@ -206,7 +211,7 @@ const Team = () => {
 								// render the member only if their country matches the selectedCountry
 								if (member.country === selectedCountry) {
 									return (
-										<MemberRender member={member} />
+										<MemberRender key={member.name} member={member} />
 									);
 								} else {
 									// skip rendering this member if their country doesn't match the selectedCountry

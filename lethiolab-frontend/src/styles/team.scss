@@ -153,8 +153,12 @@
 	width: 90px;
 }
 
+.donut-chart .donut-chart-legend{
+}
+
 @media (max-width: 900px) {
 	.members-list {
+		margin-top: 25px;
 		gap: 10px;
 	}
 
@@ -214,6 +218,5 @@
 	.member-card_info > :nth-child(2) {
 		font-size: x-small;
 	}
-
 }
 

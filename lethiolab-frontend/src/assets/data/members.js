@@ -210,7 +210,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2021",
 		active: 1,
-		country: "UNITEDSTATES",
+		country: "UNITED STATES",
 		pictureLink :  isabelleLeo,
 		googleScholar: "",
 		orcid:""
@@ -315,7 +315,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "",
 		active: 1,
-		country: "",
+		country: "SYRIA",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
