@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "./assets/img/logo.png";
+import logo from "./assets/img/logo_big.png";
 import "./styles/navbar.css";
 import { isMobile } from "react-device-detect";
 import { teamIcon, publicationsIcon, researchIcon, resourcesIcon, contactIcon, opportunitiesIcon, githubIcon, twitterIcon } from "./assets/data/svgs";
@@ -9,7 +9,7 @@ const Navbar = () => {
 	const location = useLocation();
 	const [isOpen, setIsOpen] = useState(false);
 
-	const renderFirstLinks = () => (
+	const renderLinks = () => (
 		<>
 			<NavLink
 				to="/publications"
@@ -19,7 +19,6 @@ const Navbar = () => {
 						: "navlinks"
 				}
 			>
-
 				{publicationsIcon}
 				Publications
 			</NavLink>
@@ -45,11 +44,6 @@ const Navbar = () => {
 				{resourcesIcon}
 				Resources
 			</NavLink>
-		</>
-	);
-
-	const renderSecondLinks = () => (
-		<>
 			<NavLink
 				to="/team"
 				className={
@@ -95,13 +89,6 @@ const Navbar = () => {
 		</>
 	);
 
-	const renderLinks = () => (
-		<>
-			{renderFirstLinks()}
-			{renderSecondLinks()}
-		</>
-	);
-
 	return (
 		<>
 			{isMobile ? (
@@ -130,21 +117,16 @@ const Navbar = () => {
 				</nav>
 			) : (
 				<nav className="w-full shadow-md fixed top-0 left-0 h-14 z-50">
-					<div className="grid content-center grid-cols-layout items-center h-[50px] text-xl">
-						<div className="flex space-x-4 justify-around">
-							{renderFirstLinks()}
-						</div>
-						<div className="logoCont flex justify-center bg-white rounded-full w-32 h-36 items-center">
+					<div className="navbar-list">
 							<NavLink to="/">
 								<img
 									src={logo}
 									alt="Website Logo"
-									className="h-20 mt-9"
+									className="h-10 "
 								/>
 							</NavLink>
-						</div>
 						<div className="flex space-x-4 justify-around navbar-second-links">
-							{renderSecondLinks()}
+							{renderLinks()}
 						</div>
 					</div>
 				</nav>

@@ -73,6 +73,14 @@ nav {
   transform: scale(1.1);
 }
 
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 35px 0 0;
+}
+
 @media (max-width: 1400px) {
   .navbar-second-links {
     margin-right: 0px;
