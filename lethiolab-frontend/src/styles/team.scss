@@ -153,8 +153,19 @@
 	width: 90px;
 }
 
-.donut-chart .donut-chart-legend{
+.doughnut {
+	position: relative;;
 }
+
+.country-selection {
+	font-size: large;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    top: 180px;
+    left: 75px;
+}
+
 
 @media (max-width: 900px) {
 	.members-list {

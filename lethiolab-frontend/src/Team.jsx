@@ -29,7 +29,9 @@ const Team = () => {
 	});
 	
 	const dataArray = Object.entries(countryCounts).map(([country, count]) => {
-	  return {label: country, value: count};
+		if (country === 'NEWZEALAND') {return {label: 'NEW ZEALAND', value: count};}
+		else if (country === 'UNITEDSTATES') {return {label: 'UNITED STATES', value: count};}
+	  	else {return {label: country, value: count};}
 	});
 
 	dataArray.sort((a, b) => a.label.localeCompare(b.label));
@@ -187,7 +189,7 @@ const Team = () => {
 
 						<PieChart data={dataArray} selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry}/>
 
-						<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5">
+						<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5 ml-12">
 							At the heart of our ethos lies a deep commitment to acknowledging and fostering the unique qualities and strengths of each 
 							individual, a principle that underlines our belief in the importance of every voice being not only heard but also genuinely 
 							valued. With open arms, we invite you to get acquainted with our diverse team, a remarkable assembly of individuals hailing 

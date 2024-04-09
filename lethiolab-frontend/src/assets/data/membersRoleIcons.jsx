@@ -10,6 +10,7 @@ import UKRAINE from './../img/flags/ukraine.png'
 import RUSSIA from './../img/flags/russia.png'
 import PORTUGAL from './../img/flags/portugal.png'
 import SPAIN from './../img/flags/spain.png'
+import CATALONIA from './../img/flags/catalonia.png'
 import MACEDONIA from './../img/flags/macedonia.png'
 import ROMANIA from './../img/flags/romania.png'
 import NETHERLANDS from './../img/flags/netherlands.png'
@@ -83,6 +84,7 @@ export const flags = {
 	RUSSIA,
 	PORTUGAL,
 	SPAIN,
+	CATALONIA,
 	MACEDONIA,
 	ROMANIA,
 	FINLAND,

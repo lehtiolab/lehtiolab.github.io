@@ -26,7 +26,10 @@ import konstantinBarylyuk from './../img/team/konstantinBarylyuk.png';
 import soumitraMarathe from './../img/team/soumitraMarathe.png';
 import lauraGheorghe from './../img/team/lauraGheorghe.png';
 import xeniaVillalobos from './../img/team/xeniaVillalobos.png'
-
+import yaroslavKaminskiy from './../img/team/yaroslavKaminskiy.png';
+import georgiosMermelekas from './../img/team/georgiosMermelekas.png';
+import mahnazNikpour from './../img/team/mahnazNikpour.png';
+import lauraLevi from './../img/team/lauraLevi.png';
 
 /*
 The role of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -90,7 +93,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2018",
 		active: 1,
-		country: "SPAIN",
+		country: "CATALONIA",
 		pictureLink :  davidTamborero,
 		googleScholar: "https://scholar.google.com/citations?user=4jbj37AAAAAJ&hl=en",
 		orcid:""
@@ -121,7 +124,7 @@ export const members = [
 		yearStarted: "2017",
 		active: 1,
 		country: "GREECE",
-		pictureLink :  unknown,
+		pictureLink :  georgiosMermelekas,
 		googleScholar: "https://scholar.google.com/citations?user=r8OKg80AAAAJ&hl=en&oi=ao",
 		orcid:"https://orcid.org/0009-0002-1736-9114"
 	},
@@ -210,7 +213,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2021",
 		active: 1,
-		country: "UNITED STATES",
+		country: "UNITEDSTATES",
 		pictureLink :  isabelleLeo,
 		googleScholar: "",
 		orcid:""
@@ -270,7 +273,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/kbarylyuk",
 		yearStarted: "2022",
 		active: 1,
-		country: "RUSSIA",
+		country: "",
 		pictureLink :  konstantinBarylyuk,
 		googleScholar: "https://scholar.google.com/citations?user=iV2j9ZkAAAAJ",
 		orcid:"https://orcid.org/0000-0002-3580-0345"
@@ -301,7 +304,7 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		country: "ITALY",
-		pictureLink :  unknown,
+		pictureLink :  lauraLevi,
 		googleScholar: "",
 		orcid:""
 	},
@@ -369,7 +372,7 @@ export const members = [
 		name: "Mahshid Zarrineh",
 		role: "postdoc",
 		title: "Research Engineer",
-		email: "mahnaz.nikpour@ki.se",
+		email: "mahshid.zarrineh@ki.se",
 		github: "",
 		kiLink: "https://staff.ki.se/people/mahnaz-nikpour",
 		linkedIn: "linkedin.com/in/mahnaz-nikpour-b93a9477",
@@ -391,7 +394,7 @@ export const members = [
 		yearStarted: "2022",
 		active: 1,
 		country: "IRAN",
-		pictureLink :  unknown,
+		pictureLink :  mahnazNikpour,
 		googleScholar: "",
 		orcid:""
 	},
@@ -571,7 +574,7 @@ export const members = [
 		yearStarted: "2022",
 		active: 1,
 		country: "RUSSIA",
-		pictureLink :  unknown,
+		pictureLink :  yaroslavKaminskiy,
 		googleScholar: "https://scholar.google.com/citations?user=6qRFIvEAAAAJ&hl=ru",
 		orcid:""
 	},
