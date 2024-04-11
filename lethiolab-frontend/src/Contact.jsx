@@ -319,7 +319,7 @@ const Contact = () => {
 									ref={formRef}
 								>
 									<div>
-										<h2>Send us a message!</h2>
+										<h2>Send us a message:</h2>
 										<input
 											type="text"
 											name="name"

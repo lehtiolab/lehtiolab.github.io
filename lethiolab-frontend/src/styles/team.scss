@@ -166,14 +166,24 @@
     left: 75px;
 }
 
+.alumni {
+	padding: 50px;
+	margin-top: 40px;
+	font-size: medium;
+}
 
-@media (max-width: 900px) {
-	.members-list {
+.alumni h3 {
+	margin-bottom: 15px;
+}
+
+
+@media (max-width: 850px) {
+	.mobile.members-list {
 		margin-top: 25px;
 		gap: 10px;
 	}
 
-	.member-card {
+	.mobile.members-list .member-card {
 		width: 100px;
     	height: 200px;
 		display: flex;
@@ -182,28 +192,28 @@
 		flex-direction: column;
 	}
 
-	.member-card_container-front {
+	.mobile.members-list .member-card_container-front {
 		-webkit-clip-path: none;
 		clip-path: none;
 		top: 0px;
 		height: 100px;
 	}
 
-	.member-card_img {
+	.mobile.members-list .member-card_img {
 		transform: none;
 		left: 20px;
 		width: 78px;
 		top: 10px;
 	}
 
-	.member-card_circle {
+	.mobile.members-list .member-card_circle {
 		height: 75px;
 		left: 10px;
 		top: 0px;
 		width: 75px;
 	}
 
-	.member-card_links {
+	.mobile.members-list .member-card_links {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -212,22 +222,23 @@
 		padding: 0 5px;
 	}
 
-	.member-card_links img {
+	.mobile.members-list .member-card_links img {
 		width: 15px;
 	}
 
-	.member-card_info {
+	.mobile.members-list .member-card_info {
 		display: flex;
 		margin-top: 10px;
 		font-size: small;
 		flex-direction: column;
 	}
 
-	.member-card_info > :nth-child(1) {
+	.mobile.members-list .member-card_info > :nth-child(2) {
+		font-size: x-small;
 	}
 
-	.member-card_info > :nth-child(2) {
-		font-size: x-small;
+	.alumni {
+		font-size: small;
 	}
 }
 

@@ -15,7 +15,7 @@
 }
 
 nav {
-  background-color: #54b3d6;
+  background-color: #0f4255;
 }
 
 .navlinks {
@@ -93,6 +93,6 @@ nav {
   }
   .navlinks.active{
     box-shadow: none;
-    color: rgb(136, 255, 154);
+    color: #54b3d6;
   }
 }

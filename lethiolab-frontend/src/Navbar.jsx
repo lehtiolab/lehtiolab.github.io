@@ -93,7 +93,12 @@ const Navbar = () => {
 		<>
 			{isMobile ? (
 				<nav>
-					<div className="flex space-x-4">
+					<div className="flex space-x-4 justify-between">
+						<img
+							src={logo}
+							alt="Website Logo"
+							className="h-10 mt-1 ml-2"
+						/>
 						<button
 							className="h-12 w-12 border-2 border-black rounded flex flex-col justify-center items-center group gap-1"
 							onClick={() => setIsOpen(!isOpen)}
@@ -109,8 +114,8 @@ const Navbar = () => {
 					</div>
 					<div
 						className={`${
-							isOpen ? "block" : "hidden"
-						} grid grid-cols-2`}
+							isOpen ? "fixed" : "hidden"
+						} grid bg-[#0f4255] w-full`}
 					>
 						{renderLinks()}
 					</div>

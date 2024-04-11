@@ -36,7 +36,6 @@ const Team = () => {
 
 	dataArray.sort((a, b) => a.label.localeCompare(b.label));
 	
-
 	const MemberRenderMobile = ({member}) => {
 		return (
 			<div className="member-card">
@@ -163,7 +162,7 @@ const Team = () => {
 		<div>
 
 			{isMobile ?
-				<div className="members-list">
+				<div className="mobile members-list">
 					<div className="researchCard text-xs bg-white rounded p-2 pr-10 pl-5 pb-5 pt-5 mb-4">
 							At the heart of our ethos lies a deep commitment to acknowledging and fostering the unique qualities and strengths of each 
 							individual, a principle that underlines our belief in the importance of every voice being not only heard but also genuinely 
@@ -231,16 +230,14 @@ const Team = () => {
 				</>
 			}
 
-			<div className="p-12 h-18 text-black">
+			<div className="alumni">
+				<h3 className="text-3xl"> Alumni </h3>
 				<div>
-					<h3 className="text-3xl "> Alumni </h3>
-					<div>
-						Elena Panizz, Yan Zhou, Yafeng Zhu, Taner Arslan, Nate Vacanti, Matthias Stahl, Kaveh Goudarzi, Jürgen Eirich, Hillevi Andersson-Sand, 
-						Fabio Socciarelli, Elena Kunold, Sara Ståhl, Psa Perez-Bercoff, Oliver Frings, Nina Lagerquist, Mohammad Pirmoradian, Lyris Godoy, 
-						Luigi de Petris, Lingie Tao, Lina Hultin-Rosenberg, Kristian Björnstad, Kie Kasuga, Kaveh Moazemi, Kannan Sampath, Johnathon Andersson, 
-						Johan Lengquist, Jessie Dahlström, Hitoshi Takahashi, Hasan Bhuiyan, Hanna Kjellin, Gianluca Maddalo, Freddy Cliquet, Erik Fredlund, 
-						Davide Tamburro, Anna Lindahl, Anders Nordström, Alejandro Woodbridge, Alar Aab
-					</div>
+					Elena Panizz, Yan Zhou, Yafeng Zhu, Taner Arslan, Nate Vacanti, Matthias Stahl, Kaveh Goudarzi, Jürgen Eirich, Hillevi Andersson-Sand, 
+					Fabio Socciarelli, Elena Kunold, Sara Ståhl, Psa Perez-Bercoff, Oliver Frings, Nina Lagerquist, Mohammad Pirmoradian, Lyris Godoy, 
+					Luigi de Petris, Lingie Tao, Lina Hultin-Rosenberg, Kristian Björnstad, Kie Kasuga, Kaveh Moazemi, Kannan Sampath, Johnathon Andersson, 
+					Johan Lengquist, Jessie Dahlström, Hitoshi Takahashi, Hasan Bhuiyan, Hanna Kjellin, Gianluca Maddalo, Freddy Cliquet, Erik Fredlund, 
+					Davide Tamburro, Anna Lindahl, Anders Nordström, Alejandro Woodbridge, Alar Aab
 				</div>
 			</div>
 		</div>
