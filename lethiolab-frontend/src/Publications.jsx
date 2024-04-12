@@ -41,13 +41,13 @@ const Publications = () => {
         publication.publicationAuthors.forEach((authour, idx, array) => {
           if (idx === array.length - 1) {
             if (authour.includes("*")) {
-              publicationAuthours.push(<span className="groupAuthour text-xl font-bold">{authour.replace("*","")}</span>)
+              publicationAuthours.push(<span className="groupAuthour font-bold">{authour.replace("*","")}</span>)
             } else {
               publicationAuthours.push(authour)
             }
           } else {
             if (authour.includes("*")) {
-              publicationAuthours.push(<span className="groupAuthour text-xl font-bold">{authour.replace("*","")}, </span>)
+              publicationAuthours.push(<span className="groupAuthour font-bold">{authour.replace("*","")}, </span>)
             } else {
               publicationAuthours.push(authour+", ")
             }
@@ -55,9 +55,9 @@ const Publications = () => {
         })
         publicationYearEntries.push(<div className="publicationEntry text-left gap-4 flex flex-row pb-5">
           <div className="publicationText" style={{order: textOrder}}>
-            <Link className="publicationTitle text-3xl text-left" to={publication.publicationLink} target="_blank">{publication.publicationTitle}</Link>
-            <div className="publicationJournalTime text-black italic text-lg">{publication.publicationJournal}, {publication.publicationDate}</div>
-            <div className="publicationAuthours text-black text-lg text-justify">{publicationAuthours}</div>
+            <Link className="publicationTitle text-left" to={publication.publicationLink} target="_blank">{publication.publicationTitle}</Link>
+            <div className="publicationJournalTime text-black italic ">{publication.publicationJournal}, {publication.publicationDate}</div>
+            <div className="publicationAuthours text-black text-justify">{publicationAuthours}</div>
           </div>
           <div className="publicationImage" style={{order: imageOrder}}
           ><img src={publication.publicationImage}/></div>
@@ -65,7 +65,7 @@ const Publications = () => {
       imageSide += 1
       })
       publicationGrid.push(<div className="publicationYear" id={"year-"+i}>
-        <div className="yearTitle text-5xl text-left">{i}</div><div className="publicationList bg-white flex flex-col gap-1 p-2 rounded pl-10 pr-10">{publicationYearEntries}</div></div>)
+        <div className="yearTitle text-left">{i}</div><div className="publicationList bg-white flex flex-col gap-1 p-2 rounded pl-10 pr-10">{publicationYearEntries}</div></div>)
     }
   }
   return (

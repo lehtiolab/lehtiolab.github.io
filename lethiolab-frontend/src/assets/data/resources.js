@@ -34,14 +34,14 @@ export const resources =
         "resourceType": "course",
         "resourceName": "Mass spectrometry-based proteomics: When and How.",
         "resourceDescription": "The aim of this course is to give an overview of mass spectrometry based proteomics for researchers who would like to be able to apply these techniques in their own research.",
-        "resourceImage": "https://proteomics.se/app_direct/forall_shinyproxy/KI.png",
+        "resourceImage": "/src/assets/img/sponsors/kiLogo.png",
         "resourceLink": "https://kiwas.ki.se/katalog/katalog/kurs/5456",
     },
     {
         "resourceType": "course",
         "resourceName": "Omics Data Analysis: From Quantitative Data to Biological Information",
         "resourceDescription": "During recent years omics data has become an integral part of many biomedical and clinical research projects. This broad introductory course aims at bridging the gap between classical biomedical research, omics technologies and bioinformatics. The course will give students an introduction to omics technologies and basic knowledge of omics data analysis workflows.",
-        "resourceImage": "https://proteomics.se/app_direct/forall_shinyproxy/KI.png",
+        "resourceImage": "/src/assets/img/sponsors/kiLogo.png",
         "resourceLink": "https://kiwas.ki.se/katalog/katalog/kurs/6202",
     }
 ]

@@ -1,8 +1,13 @@
+.burgeroutline {
+  border-color: #54b3d6;
+  margin-right: 10px !important;
+}
+
 .burgermenu {
   transition: transform 0.3s;
   width: 100%;
   height: 3px;
-  background-color: black;
+  background-color: #54b3d6;
   transform-origin: center;
 }
 

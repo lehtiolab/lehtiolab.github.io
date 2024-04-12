@@ -14,7 +14,7 @@ import img7 from './assets/img/carousel/lab-pic-3.jpg';
 
 function MyCarousel() {
     const images = [
-        img5, img6, img7, img1, img2, img3, img4
+        img2, img6, img3, img1, img4
     ];
     
     const altTexts = ["Meeting Room", "Christmas Potluck", "Team Selfie", "Travel excursion", "pic5"];

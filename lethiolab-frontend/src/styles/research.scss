@@ -1,6 +1,11 @@
+.researchDescImg {
+    flex-direction: row;
+}
+
 .researchTitle {
     color: #54b3d6;
     transition: 0.3s ease;
+    font-size: 2.5rem
 }
 
 .researchCard {
@@ -34,4 +39,26 @@
     width: auto;
     margin-right: auto;
     margin-left: auto;
+}
+
+.researchDescription {
+    width: 67%;
+}
+
+.researchImageHolder {
+    width: 33%
+}
+
+@media (max-width: 768px) {
+    .researchDescImg {
+        flex-direction: column;
+    }
+
+    .researchDescription {
+        width: 100%;
+    }
+    
+    .researchImageHolder {
+        width: 100%
+    }
 }

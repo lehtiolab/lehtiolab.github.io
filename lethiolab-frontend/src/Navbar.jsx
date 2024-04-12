@@ -92,15 +92,17 @@ const Navbar = () => {
 	return (
 		<>
 			{isMobile ? (
-				<nav>
+				<nav className="w-full shadow-md fixed top-0 left-0 h-14 z-50">
 					<div className="flex space-x-4 justify-between">
-						<img
-							src={logo}
-							alt="Website Logo"
-							className="h-10 mt-1 ml-2"
-						/>
+						<NavLink to="/" className="ml-2">
+							<img
+								src={logo}
+								alt="Website Logo"
+								className="h-10 mt-1"
+							/>
+						</NavLink>
 						<button
-							className="h-12 w-12 border-2 border-black rounded flex flex-col justify-center items-center group gap-1"
+							className="burgeroutline h-10 mt-2 w-12 border-2 rounded flex flex-col justify-center items-center group gap-1"
 							onClick={() => setIsOpen(!isOpen)}
 						>
 							<div
@@ -123,7 +125,7 @@ const Navbar = () => {
 			) : (
 				<nav className="w-full shadow-md fixed top-0 left-0 h-14 z-50">
 					<div className="navbar-list">
-							<NavLink to="/">
+							<NavLink to="/" className="ml-2">
 								<img
 									src={logo}
 									alt="Website Logo"
