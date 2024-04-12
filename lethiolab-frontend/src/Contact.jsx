@@ -209,7 +209,9 @@ const Contact = () => {
 								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25098.281494367853!2d18.02350506365473!3d59.345010439249194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d9c044c1fe5%3A0xfff6f935131557c1!2sSciLifeLab!5e0!3m2!1sen!2sse!4v1697799327295!5m2!1sen!2sse"
 								width="700"
 								height="450"
-								style={{ border: "0" }}
+								style={{
+									border: "2px solid #0F4255"
+								  }}
 								allowFullScreen
 								loading="lazy"
 								referrerPolicy="no-referrer-when-downgrade"

@@ -11,6 +11,7 @@ import githubSVG from './assets/img/github.svg';
 import googleScholar from './assets/img/googleScholar.svg';
 import orcid from './assets/img/orcid.svg';
 import { isMobile } from "react-device-detect";
+import ImageLoader from "./ImageLoader";
 
 
 const Team = () => {
@@ -44,7 +45,7 @@ const Team = () => {
 						className="member-card_circle"
 						src={flags[member.country]}
 					/>
-					<img
+					<ImageLoader
 						className="member-card_img"
 						src={member.pictureLink}
 						alt={member.name}
@@ -103,7 +104,7 @@ const Team = () => {
 								className="member-card_circle"
 								src={flags[member.country]}
 							/>
-							<img
+							<ImageLoader
 								className="member-card_img"
 								src={member.pictureLink}
 								alt={member.name}
@@ -160,7 +161,6 @@ const Team = () => {
 
 	return (
 		<div>
-
 			{isMobile ?
 				<div className="mobile members-list">
 					<div className="researchCard text-xs bg-white rounded p-2 pr-10 pl-5 pb-5 pt-5 mb-4">
