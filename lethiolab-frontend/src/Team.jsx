@@ -28,11 +28,13 @@ const Team = () => {
 		countryCounts[country] += 1;
 	  }
 	});
+
+	console.log(countryCounts)
 	
 	const dataArray = Object.entries(countryCounts).map(([country, count]) => {
 		if (country === 'NEWZEALAND') {return {label: 'NEW ZEALAND', value: count};}
-		else if (country === 'UNITEDSTATES') {return {label: 'UNITED STATES', value: count};}
-	  	else {return {label: country, value: count};}
+			else if (country === 'UNITEDSTATES') {return {label: 'UNITED STATES', value: count};}
+			else {return {label: country, value: count};}
 	});
 
 	dataArray.sort((a, b) => a.label.localeCompare(b.label));

@@ -26,6 +26,12 @@ const PieChart = ({ data, selectedCountry, setSelectedCountry }) => {
 		}
 	};
 	
+	const countryConvert = (label) => {
+		if (label === 'NEWZEALAND') {return 'NEW ZEALAND';}
+		else if (label === 'UNITEDSTATES') {return 'UNITED STATES';}
+		else {return label;}
+	}
+	
 	const onClick = (event) => {
 		const elements = getElementAtEvent(chartRef.current, event);
 		if (!elements.length) return;
@@ -36,7 +42,9 @@ const PieChart = ({ data, selectedCountry, setSelectedCountry }) => {
 		if (selectedCountry === label) {
 			setSelectedCountry(null);
 		} else {
-			setSelectedCountry(label);
+			if (label === 'NEW ZEALAND') {setSelectedCountry('NEWZEALAND');}
+			else if (label === 'UNITED STATES') {setSelectedCountry('UNITEDSTATES');}
+			else {setSelectedCountry(label);}
 		}
 	};
 
@@ -44,7 +52,7 @@ const PieChart = ({ data, selectedCountry, setSelectedCountry }) => {
   return (
 	<div className='doughnut' style={{ width: '400px', height: '400px' }}>
     	<Doughnut data={chartData} options={options} ref={chartRef} onClick={onClick} />
-		<p className='country-selection'>{selectedCountry}</p>
+		<p className='country-selection'>{countryConvert(selectedCountry)}</p>
  	</div>
   );
 };

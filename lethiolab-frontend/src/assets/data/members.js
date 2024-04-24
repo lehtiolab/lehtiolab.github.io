@@ -30,6 +30,9 @@ import yaroslavKaminskiy from './../img/team/yaroslavKaminskiy.png';
 import georgiosMermelekas from './../img/team/georgiosMermelekas.png';
 import mahnazNikpour from './../img/team/mahnazNikpour.png';
 import lauraLevi from './../img/team/lauraLevi.png';
+import ghazalehAssadi from './../img/team/ghazalehAssadi.png'
+import dmitriiRudakovskii from './../img/team/dmitriiRudakovskii.png'
+import amareWolide from './../img/team/amareWolide.png'
 
 /*
 The role of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -139,7 +142,7 @@ export const members = [
 		yearStarted: "",
 		active: 1,
 		country: "IRAN",
-		pictureLink :  unknown,
+		pictureLink :  ghazalehAssadi,
 		googleScholar: "",
 		orcid:""
 	},
@@ -273,7 +276,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/kbarylyuk",
 		yearStarted: "2022",
 		active: 1,
-		country: "",
+		country: "UNKNOWN",
 		pictureLink :  konstantinBarylyuk,
 		googleScholar: "https://scholar.google.com/citations?user=iV2j9ZkAAAAJ",
 		orcid:"https://orcid.org/0000-0002-3580-0345"
@@ -318,7 +321,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "",
 		active: 1,
-		country: "SYRIA",
+		country: "UNKNOWN",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -618,7 +621,22 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		country: "ETHIOPIA",
-		pictureLink :  unknown,
+		pictureLink :  amareWolide,
 		googleScholar: ""
-	}
+	},
+	{
+		name: "Dmitrii Rudakovskii",
+		role: "programmer",
+		title: "System Developer",
+		email: "dmitrii.rudakovskii@ki.se",
+		github: "https://github.com/cryint",
+		kiLink: "",
+		linkedIn: "https://www.linkedin.com/in/cryint/",
+		yearStarted: "2024",
+		active: 1,
+		country: "RUSSIA",
+		pictureLink : dmitriiRudakovskii,
+		googleScholar: "",
+		orcid:""
+	},
 ]
