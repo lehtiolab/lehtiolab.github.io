@@ -9,18 +9,30 @@ The order in the list will determine the order of the position appearance
 "positionLink" is the link to the position page
 "positionAffiliation" is the projects the position is affilitated with but can also be all or something entirely unique
 "positionContact" is the person to be contacted regarding the position
+"active" is a boolean value determining if the position is active or not
 */
 export const opportunities = 
 [
     {
-        "positionType": "",
-        "positionPostDate": "",
-        "positionTitle": "",
-        "positionKeySkills": [],
-        "positionDescription": "",
-        "positionLink": "",
-        "positionAffiliation": [],
-        "positionContact": "",
-        "active": "",
+        "positionType": "staff",
+        "positionPostDate": "01/01/2990",
+        "positionTitle": "nice guy",
+        "positionKeySkills": ["live","love","laugh"],
+        "positionDescription": "Does work well",
+        "positionLink": "https://www.google.com/",
+        "positionAffiliation": ["MTNP","ALL"],
+        "positionContact": "ali.aht.razzak@gmail.com",
+        "active": 1,
+    },
+    {
+        "positionType": "academic",
+        "positionPostDate": "01/01/2990",
+        "positionTitle": "nice guy",
+        "positionKeySkills": ["live","love","laugh"],
+        "positionDescription": "Does work well",
+        "positionLink": "https://www.google.com/",
+        "positionAffiliation": ["MTNP","ALL"],
+        "positionContact": "ali.aht.razzak@gmail.com",
+        "active": 1,
     }
 ]

@@ -3,13 +3,41 @@
     flex-direction: row;
 }
 
-.resourceTitle {
+.opportunityTitle {
     font-size: 2.5rem;
+}
+
+.positionTitle {
+    color: #54b3d6;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.opporunityCard {
+    color: #54b3d6;
+    transition: 0.3s ease;
+}
+
+.opporunityCard:hover {
+    color: #8dc0d3;
+}
+
+.opporunityCard {
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.positionDate,
+.positionKeySkills,
+.positionDescription,
+.positionAffiliation,
+.positionContact {
+    color: black;
+    font-weight: normal;
 }
 
 @media (max-width: 768px) {
     .opportunitiesHolder {
         flex-direction: column;
     }
-    
 }
