@@ -22,7 +22,6 @@ import yanboPan from './../img/team/yanboPan.png';
 import markusJonsson from './../img/team/markusJonsson.png';
 import janneLehtio from './../img/team/janneLehtio.png';
 import harisBabacic from './../img/team/harisBabacic.png';
-import konstantinBarylyuk from './../img/team/konstantinBarylyuk.png';
 import soumitraMarathe from './../img/team/soumitraMarathe.png';
 import lauraGheorghe from './../img/team/lauraGheorghe.png';
 import xeniaVillalobos from './../img/team/xeniaVillalobos.png'
@@ -33,6 +32,7 @@ import lauraLevi from './../img/team/lauraLevi.png';
 import ghazalehAssadi from './../img/team/ghazalehAssadi.png'
 import dmitriiRudakovskii from './../img/team/dmitriiRudakovskii.png'
 import amareWolide from './../img/team/amareWolide.png'
+import koviGovindarajan from './../img/team/koviGovindarajan.png'
 
 /*
 The role of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -265,21 +265,6 @@ export const members = [
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
-	},
-	{
-		name: "Konstantin Barylyuk",
-		role: "research",
-		title: "Research specialist",
-		email: "konstantin.barylyuk@ki.se",
-		github: "",
-		kiLink: "https://medarbetare.ki.se/people/konstantin-barylyuk",
-		linkedIn: "https://www.linkedin.com/in/kbarylyuk",
-		yearStarted: "2022",
-		active: 1,
-		country: "UNKNOWN",
-		pictureLink :  konstantinBarylyuk,
-		googleScholar: "https://scholar.google.com/citations?user=iV2j9ZkAAAAJ",
-		orcid:"https://orcid.org/0000-0002-3580-0345"
 	},
 	{
 		name: "Laura Gheorghe",
@@ -639,4 +624,35 @@ export const members = [
 		googleScholar: "",
 		orcid:""
 	},
+	{
+		name: "Dmitrii Rudakovskii",
+		role: "programmer",
+		title: "System Developer",
+		email: "dmitrii.rudakovskii@ki.se",
+		github: "https://github.com/cryint",
+		kiLink: "",
+		linkedIn: "https://www.linkedin.com/in/cryint/",
+		yearStarted: "2024",
+		active: 1,
+		country: "RUSSIA",
+		pictureLink : dmitriiRudakovskii,
+		googleScholar: "",
+		orcid:""
+	},
+	{
+		name: "Kovi Govindarajan",
+		role: "student",
+		title: "System Developer",
+		email: "rishyashrung@gmail.com",
+		github: "",
+		kiLink: "",
+		linkedIn: "",
+		yearStarted: "2024",
+		active: 1,
+		country: "INDIA",
+		pictureLink : koviGovindarajan,
+		googleScholar: "",
+		orcid:""
+	},
+	
 ]

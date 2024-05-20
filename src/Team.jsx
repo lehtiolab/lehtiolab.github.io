@@ -154,7 +154,7 @@ const Team = () => {
 				<div className="member-card_info">
 					<b><span>{member.name}</span></b><br/>
 					<span>{member.title}</span> <br/>
-					<span>Member since {member.yearStarted}</span> 
+					{member.yearStarted && <span>Member since {member.yearStarted}</span>}
 				</div>
 			</div>
 		)
@@ -239,7 +239,7 @@ const Team = () => {
 					Fabio Socciarelli, Elena Kunold, Sara Ståhl, Psa Perez-Bercoff, Oliver Frings, Nina Lagerquist, Mohammad Pirmoradian, Lyris Godoy, 
 					Luigi de Petris, Lingie Tao, Lina Hultin-Rosenberg, Kristian Björnstad, Kie Kasuga, Kaveh Moazemi, Kannan Sampath, Johnathon Andersson, 
 					Johan Lengquist, Jessie Dahlström, Hitoshi Takahashi, Hasan Bhuiyan, Hanna Kjellin, Gianluca Maddalo, Freddy Cliquet, Erik Fredlund, 
-					Davide Tamburro, Anna Lindahl, Anders Nordström, Alejandro Woodbridge, Alar Aab
+					Davide Tamburro, Anna Lindahl, Anders Nordström, Alejandro Woodbridge, Alar Aab, Konstantin Barylyuk
 				</div>
 			</div>
 		</div>
