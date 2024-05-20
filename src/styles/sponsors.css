@@ -1,22 +1,18 @@
 .sponsors-container {
-    height: 100%;
-    overflow: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
   
-  .sponsor-logo {
-    max-width: 120px;
-  }
+.sponsor-logo {
+	max-width: 220px;
+}
 
-  .sponsors-container img:hover {
+.sponsors-container img:hover {
     transform: scale(1.1);
-  }
-  
-  @media (max-width: 1300px) {
-  
-  }
+}
