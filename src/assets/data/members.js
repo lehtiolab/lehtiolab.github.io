@@ -55,6 +55,16 @@ pictureLink is their prefered picture link, default take from existing page but 
 googleScholar is their google scholar link
 */
 
+/* new team allocations
+Breast cancer: #23d160
+MTBP: #fa6332
+Proteomics platform: ???
+Admin: ???
+Plasma proteomics: #209cee
+Childhood cancer: #ffdd57
+Lung cancer: #00d1b2
+Proteomics method: ???
+*/
 export const members = [
 	{
 		name: "Akram Embadi",
@@ -66,7 +76,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/akram-emdadi-0b48762a/",
 		yearStarted: "2022",
 		active: 1,
-		country: "IRAN",
+		team: "Breast cancer",
 		pictureLink : akramEmdadi,
 		googleScholar: "",
 		orcid:""
@@ -81,7 +91,7 @@ export const members = [
 		linkedIn: "https://linkedin.com/in/ali-razzak-datasci",
 		yearStarted: "2021",
 		active: 1,
-		country: "NEWZEALAND",
+		team: "Molecular tumor board portal",
 		pictureLink :  aliRazzak,
 		googleScholar: "",
 		orcid:""
@@ -96,7 +106,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2018",
 		active: 1,
-		country: "CATALONIA",
+		team: "Molecular tumor board portal",
 		pictureLink :  davidTamborero,
 		googleScholar: "https://scholar.google.com/citations?user=4jbj37AAAAAJ&hl=en",
 		orcid:""
@@ -111,7 +121,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/eduardo-ara%C3%BAjo-87897980/",
 		yearStarted: "2019",
 		active: 1,
-		country: "PORTUGAL",
+		team: "Proteomics platform",
 		pictureLink :  eduardoAraujo,
 		googleScholar: "",
 		orcid:"http://orcid.org/0000-0001-6208-0868"
@@ -126,7 +136,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/george-mermelekas-318a0640/",
 		yearStarted: "2017",
 		active: 1,
-		country: "GREECE",
+		team: "Proteomics platform",
 		pictureLink :  georgiosMermelekas,
 		googleScholar: "https://scholar.google.com/citations?user=r8OKg80AAAAJ&hl=en&oi=ao",
 		orcid:"https://orcid.org/0009-0002-1736-9114"
@@ -141,7 +151,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "",
 		active: 1,
-		country: "IRAN",
+		team: "Admin",
 		pictureLink :  ghazalehAssadi,
 		googleScholar: "",
 		orcid:""
@@ -156,7 +166,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/harisbabacic/",
 		yearStarted: "2018",
 		active: 1,
-		country: "MACEDONIA",
+		team: "Plasma proteomics",
 		pictureLink :  harisBabacic,
 		googleScholar: "https://scholar.google.com/citations?user=1Y0NWRkAAAAJ&hl=en",
 		orcid:""
@@ -171,7 +181,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/helena-bäckvall-94743950/",
 		yearStarted: "2006",
 		active: 1,
-		country: "SWEDEN",
+		team: "Admin",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0002-1531-9271"
@@ -186,7 +196,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/henrik-johansson-4025a38b/",
 		yearStarted: "2008",
 		active: 1,
-		country: "SWEDEN",
+		team: "Breast cancer",
 		pictureLink :  henrikJohansson,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0003-4729-4205"
@@ -201,7 +211,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2016",
 		active: 1,
-		country: "GREECE",
+		team: "Breast cancer",
 		pictureLink :  ioannisSiavelis,
 		googleScholar: "",
 		orcid:"https://orcid.org/0009-0000-0758-8140"
@@ -216,7 +226,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2021",
 		active: 1,
-		country: "UNITEDSTATES",
+		team: "Childhood cancer",
 		pictureLink :  isabelleLeo,
 		googleScholar: "",
 		orcid:""
@@ -231,7 +241,7 @@ export const members = [
 		linkedIn: "https://se.linkedin.com/in/janne-lehtiö-6531712",
 		yearStarted: "2003",
 		active: 1,
-		country: "FINLAND",
+		team: "Proteomics platform",
 		pictureLink :  janneLehtio,
 		googleScholar: "https://scholar.google.com/citations?hl=en&user=NPJWeVIAAAAJ",
 		orcid:"https://orcid.org/0000-0002-8100-9562"
@@ -246,7 +256,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "",
 		active: 1,
-		country: "SWEDEN",
+		team: "Clinical proteomics",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -261,7 +271,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "",
 		active: 1,
-		country: "NETHERLANDS",
+		team: "Proteomics methods",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -276,7 +286,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2023",
 		active: 1,
-		country: "ROMANIA",
+		team: "Molecular tumor board portal",
 		pictureLink :  lauraGheorghe,
 		googleScholar: "",
 		orcid:""
@@ -291,7 +301,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2023",
 		active: 1,
-		country: "ITALY",
+		team: "Admin",
 		pictureLink :  lauraLevi,
 		googleScholar: "",
 		orcid:""
@@ -306,7 +316,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "",
 		active: 1,
-		country: "UNKNOWN",
+		team: "Childhood cancer",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -321,7 +331,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/lukas-orre-70699781/",
 		yearStarted: "2003",
 		active: 1,
-		country: "SWEDEN",
+		team: "Lung cancer",
 		pictureLink :  lukasOrre,
 		googleScholar: "https://scholar.google.com/citations?user=6ojfH4YAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0002-0384-1003"
@@ -336,7 +346,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/maria-pernemalm-09a02810/",
 		yearStarted: "2005",
 		active: 1,
-		country: "SWEDEN",
+		team: "Plasma proteomics",
 		pictureLink :  mariaPernemalm,
 		googleScholar: "https://orcid.org/0000-0003-4624-031X",
 		orcid:""
@@ -351,7 +361,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2021",
 		active: 1,
-		country: "SWEDEN",
+		team: "Molecular tumor board portal",
 		pictureLink :  markusJonsson,
 		googleScholar: "",
 		orcid:""
@@ -366,7 +376,7 @@ export const members = [
 		linkedIn: "linkedin.com/in/mahnaz-nikpour-b93a9477",
 		yearStarted: "2022",
 		active: 1,
-		country: "IRAN",
+		team: "Breast cancer",
 		pictureLink :  mahshidZarrineh,
 		googleScholar: "",
 		orcid:""
@@ -381,7 +391,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2022",
 		active: 1,
-		country: "IRAN",
+		team: "Clinical proteomics",
 		pictureLink :  mahnazNikpour,
 		googleScholar: "",
 		orcid:""
@@ -396,7 +406,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/neuro-nsharma/",
 		yearStarted: "2019",
 		active: 1,
-		country: "INDIA",
+		team: "Plasma proteomics",
 		pictureLink :  nidhiSharma,
 		googleScholar: "https://scholar.google.com/citations?user=2v7QCVgAAAAJ",
 		orcid:"https://orcid.org/0000-0002-2475-9340"
@@ -411,7 +421,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/noorasissala/",
 		yearStarted: "2022",
 		active: 1,
-		country: "FINLAND",
+		team: "Plasma proteomics",
 		pictureLink :  nooraSissala,
 		googleScholar: "https://scholar.google.com/citations?user=KJLnI6sAAAAJ&hl=en",
 		orcid:""
@@ -426,7 +436,7 @@ export const members = [
 		linkedIn: "www.linkedin.com/in/olena-berkovska",
 		yearStarted: "2020",
 		active: 1,
-		country: "UKRAINE",
+		team: "Lung cancer",
 		pictureLink :  olenaBerkovska,
 		googleScholar: "https://scholar.google.com/citations?user=HWRPAwIAAAAJ&hl",
 		orcid:"https://orcid.org/0000-0002-8811-0591"
@@ -441,7 +451,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/rozbehjafari/",
 		yearStarted: "2015",
 		active: 1,
-		country: "IRAN",
+		team: "Childhood cancer",
 		pictureLink :  rozbehJafar,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0002-3396-4709"
@@ -456,7 +466,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2009",
 		active: 1,
-		country: "PORTUGAL",
+		team: "Proteomics methods",
 		pictureLink :  ruiBranca,
 		googleScholar: "https://scholar.google.com/citations?user=SMSGfEcAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0003-3890-6476"
@@ -471,7 +481,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/santerikiviluoto/",
 		yearStarted: "2019",
 		active: 1,
-		country: "FINLAND",
+		team: "Clinical proteomics",
 		pictureLink :  santeriKiviluot,
 		googleScholar: "",
 		orcid:""
@@ -486,7 +496,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2023",
 		active: 1,
-		country: "IRELAND",
+		team: "Admin",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -501,7 +511,7 @@ export const members = [
 		linkedIn: "https://es.linkedin.com/in/xenia-villalobos-alber%C3%BA-71495512",
 		yearStarted: "2023",
 		active: 1,
-		country: "MEXICO",
+		team: "Admin",
 		pictureLink :  xeniaVillalobos,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0003-1232-980X"
@@ -516,7 +526,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/xiaofang-cao-0598bb28/",
 		yearStarted: "2018",
 		active: 1,
-		country: "CHINA",
+		team: "Proteomics platform",
 		pictureLink :  xiaofangCao,
 		googleScholar: "",
 		orcid:""
@@ -531,7 +541,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/xuekang1024/",
 		yearStarted: "2022",
 		active: 1,
-		country: "CHINA",
+		team: "Childhood cancer",
 		pictureLink :  xuekangQi,
 		googleScholar: "https://scholar.google.com/citations?user=-DqD3dkAAAAJ&hl=zh-CN",
 		orcid:""
@@ -546,7 +556,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2015",
 		active: 1,
-		country: "CHINA",
+		team: "Proteomics platform",
 		pictureLink :  yanboPan,
 		googleScholar: "",
 		orcid:""
@@ -561,7 +571,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2022",
 		active: 1,
-		country: "RUSSIA",
+		team: "Proteomics methods",
 		pictureLink :  yaroslavKaminskiy,
 		googleScholar: "https://scholar.google.com/citations?user=6qRFIvEAAAAJ&hl=ru",
 		orcid:""
@@ -576,7 +586,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/soumitra-marathe-immuno/",
 		yearStarted: "2023",
 		active: 1,
-		country: "INDIA",
+		team: "Proteomics platform",
 		pictureLink :  soumitraMarathe,
 		googleScholar: "https://scholar.google.com/citations?user=4llQS7sAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0002-7712-6061"
@@ -591,7 +601,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/irene-villanueva-sanz-606476161/",
 		yearStarted: "2022",
 		active: 1,
-		country: "SPAIN",
+		team: "Plasma proteomics",
 		pictureLink :  ireneSanz,
 		googleScholar: ""
 	},
@@ -605,7 +615,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/amare-wolide-5319681b4/",
 		yearStarted: "2023",
 		active: 1,
-		country: "ETHIOPIA",
+		team: "Plasma proteomics",
 		pictureLink :  amareWolide,
 		googleScholar: ""
 	},
@@ -619,7 +629,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/cryint/",
 		yearStarted: "2024",
 		active: 1,
-		country: "RUSSIA",
+		team: "Molecular tumor board portal",
 		pictureLink : dmitriiRudakovskii,
 		googleScholar: "",
 		orcid:""
@@ -634,7 +644,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2024",
 		active: 1,
-		country: "INDIA",
+		team: "Lung cancer",
 		pictureLink : koviGovindarajan,
 		googleScholar: "",
 		orcid:""
