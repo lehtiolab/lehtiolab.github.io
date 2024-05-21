@@ -625,21 +625,6 @@ export const members = [
 		orcid:""
 	},
 	{
-		name: "Dmitrii Rudakovskii",
-		role: "programmer",
-		title: "System Developer",
-		email: "dmitrii.rudakovskii@ki.se",
-		github: "https://github.com/cryint",
-		kiLink: "",
-		linkedIn: "https://www.linkedin.com/in/cryint/",
-		yearStarted: "2024",
-		active: 1,
-		country: "RUSSIA",
-		pictureLink : dmitriiRudakovskii,
-		googleScholar: "",
-		orcid:""
-	},
-	{
 		name: "Kovi Govindarajan",
 		role: "student",
 		title: "System Developer",

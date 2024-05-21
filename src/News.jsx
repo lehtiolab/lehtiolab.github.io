@@ -2,16 +2,7 @@ import React from 'react';
 
 const News = () => {
     const news = [
-		{date: '10.10.2023', title: 'Article title number one'},
-		{date: '10.09.2023', title: 'Article title number two'},
-		{date: '02.10.2023', title: 'Article title number three'},
-		{date: '17.10.2023', title: 'Article title number four'},
-		{date: '10.05.2023', title: 'Article title number five'},
-		{date: '10.05.2023', title: 'Article title number five'},
-		{date: '10.05.2023', title: 'Article title number five'},
-		{date: '10.05.2023', title: 'Article title number five'},
-		{date: '10.05.2023', title: 'Article title number five'},
-		{date: '10.05.2023', title: 'Article title number five'},
+		{date: '23.05.2024', title: 'New website launched!'}
 	];
     
 	const sortedNews = news.sort((a, b) => {
