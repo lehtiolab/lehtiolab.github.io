@@ -58,7 +58,7 @@ googleScholar is their google scholar link
 /* new team allocations
 Breast cancer: #23d160
 MTBP: #fa6332
-Proteomics platform: ???
+Core facility: ???
 Admin: ???
 Plasma proteomics: #209cee
 Childhood cancer: #ffdd57
@@ -121,7 +121,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/eduardo-ara%C3%BAjo-87897980/",
 		yearStarted: "2019",
 		active: 1,
-		team: "Proteomics platform",
+		team: "Core facility",
 		pictureLink :  eduardoAraujo,
 		googleScholar: "",
 		orcid:"http://orcid.org/0000-0001-6208-0868"
@@ -136,7 +136,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/george-mermelekas-318a0640/",
 		yearStarted: "2017",
 		active: 1,
-		team: "Proteomics platform",
+		team: "Core facility",
 		pictureLink :  georgiosMermelekas,
 		googleScholar: "https://scholar.google.com/citations?user=r8OKg80AAAAJ&hl=en&oi=ao",
 		orcid:"https://orcid.org/0009-0002-1736-9114"
@@ -241,7 +241,7 @@ export const members = [
 		linkedIn: "https://se.linkedin.com/in/janne-lehtiö-6531712",
 		yearStarted: "2003",
 		active: 1,
-		team: "Proteomics platform",
+		team: "Core facility",
 		pictureLink :  janneLehtio,
 		googleScholar: "https://scholar.google.com/citations?hl=en&user=NPJWeVIAAAAJ",
 		orcid:"https://orcid.org/0000-0002-8100-9562"
@@ -526,7 +526,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/xiaofang-cao-0598bb28/",
 		yearStarted: "2018",
 		active: 1,
-		team: "Proteomics platform",
+		team: "Core facility",
 		pictureLink :  xiaofangCao,
 		googleScholar: "",
 		orcid:""
@@ -556,7 +556,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2015",
 		active: 1,
-		team: "Proteomics platform",
+		team: "Core facility",
 		pictureLink :  yanboPan,
 		googleScholar: "",
 		orcid:""
@@ -586,7 +586,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/soumitra-marathe-immuno/",
 		yearStarted: "2023",
 		active: 1,
-		team: "Proteomics platform",
+		team: "Core facility",
 		pictureLink :  soumitraMarathe,
 		googleScholar: "https://scholar.google.com/citations?user=4llQS7sAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0002-7712-6061"

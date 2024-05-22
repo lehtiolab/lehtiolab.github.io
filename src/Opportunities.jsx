@@ -12,10 +12,12 @@ const Opportunities = () => {
         staffLoad.push(<Link to={opportunity.positionLink} target="_blank" className="opporunityCard gap-2 flex flex-row rounded w-full p-2 bg-white pl-6 pr-6">
           <div className="positionDetail">
             <div className="positionTitle text-left">{opportunity.positionTitle}</div>
-            <div className="positionDate text-left">{opportunity.positionPostDate}</div>
-            <div className="positionDescription text-left">{opportunity.positionDescription}</div>
+            <div className="positionDate text-left">Published on: {opportunity.positionPostDate}</div>
+            <div className="positionDate text-left">Application deadline: {opportunity.applicationDeadline}</div>
             <div className="positionKeySkills text-left">Key skills: {opportunity.positionKeySkills.join(", ")}</div>
+            <div className="positionDescription text-left">{opportunity.positionDescription}</div>
             <div className="positionAffiliation text-left">{opportunity.positionAffiliation.join(", ")}</div>
+            <br/>
             <div className="positionContact text-left">For further questions contact {opportunity.positionContact}</div>
           </div>
         </Link>)
@@ -23,10 +25,12 @@ const Opportunities = () => {
         academicLoad.push(<Link to={opportunity.positionLink} target="_blank" className="opporunityCard gap-2 flex flex-row rounded w-full p-2 bg-white pl-6 pr-6">
         <div className="positionDetail">
           <div className="positionTitle text-left">{opportunity.positionTitle}</div>
-          <div className="positionDate text-left">{opportunity.positionPostDate}</div>
-          <div className="positionDescription text-left">{opportunity.positionDescription}</div>
+          <div className="positionDate text-left">Published on: {opportunity.positionPostDate}</div>
+          <div className="positionDate text-left">Application deadline: {opportunity.applicationDeadline}</div>
           <div className="positionKeySkills text-left">Key skills: {opportunity.positionKeySkills.join(", ")}</div>
+          <div className="positionDescription text-left">{opportunity.positionDescription}</div>
           <div className="positionAffiliation text-left">{opportunity.positionAffiliation.join(", ")}</div>
+          <br/>
           <div className="positionContact text-left">For further questions contact {opportunity.positionContact}</div>
         </div>
       </Link>)
