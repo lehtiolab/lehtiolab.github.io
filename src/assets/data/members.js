@@ -126,7 +126,6 @@ export const members = [
 		yearStarted: "2019",
 		active: 1,
 		team: "Proteomics platform",
-		bg: "proteomicsPlatform",
 		pictureLink :  eduardoAraujo,
 		googleScholar: "",
 		orcid:"http://orcid.org/0000-0001-6208-0868"
@@ -142,7 +141,6 @@ export const members = [
 		yearStarted: "2017",
 		active: 1,
 		team: "Proteomics platform",
-		bg: "proteomicsPlatform",
 		pictureLink :  georgiosMermelekas,
 		googleScholar: "https://scholar.google.com/citations?user=r8OKg80AAAAJ&hl=en&oi=ao",
 		orcid:"https://orcid.org/0009-0002-1736-9114"
@@ -254,7 +252,6 @@ export const members = [
 		yearStarted: "2003",
 		active: 1,
 		team: "Proteomics platform",
-		bg: "proteomicsPlatform",
 		pictureLink :  janneLehtio,
 		googleScholar: "https://scholar.google.com/citations?hl=en&user=NPJWeVIAAAAJ",
 		orcid:"https://orcid.org/0000-0002-8100-9562"
@@ -558,7 +555,6 @@ export const members = [
 		yearStarted: "2018",
 		active: 1,
 		team: "Proteomics platform",
-		bg: "proteomicsPlatform",
 		pictureLink :  xiaofangCao,
 		googleScholar: "",
 		orcid:""
@@ -590,7 +586,6 @@ export const members = [
 		yearStarted: "2015",
 		active: 1,
 		team: "Proteomics platform",
-		bg: "proteomicsPlatform",
 		pictureLink :  yanboPan,
 		googleScholar: "",
 		orcid:""
@@ -622,7 +617,6 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		team: "Proteomics platform",
-		bg: "proteomicsPlatform",
 		pictureLink :  soumitraMarathe,
 		googleScholar: "https://scholar.google.com/citations?user=4llQS7sAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0002-7712-6061"
