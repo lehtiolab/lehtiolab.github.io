@@ -38,14 +38,13 @@ const Team = () => {
 
 	//23d160 - breast cancer
 	//ff7c4b -mtbp
-	//a71eff - proteomics platform
 	//6493ff - admin
 	//ff1536 - plasma proteomics
 	//ffdd57 - childhood cancer
 	//82135f - core facility
 	//ffa5c7 - proteomics method
 	//23f3d9 - lung cancer
-	const colors = ['#6493ff', '#23d160', '#ffdd57', '#82135f', '#23f3d9', '#ff7c4b', '#ff1536', '#ffa5c7', '#a71eff', ];
+	const colors = ['#6493ff', '#23d160', '#ffdd57', '#82135f', '#23f3d9', '#ff7c4b', '#ff1536', '#ffa5c7',];
 	
 	const MemberRenderMobile = ({member}) => {
 		return (
