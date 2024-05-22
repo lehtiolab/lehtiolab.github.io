@@ -20,6 +20,16 @@ import MEXICO from './../img/flags/mexico.png'
 import IRELAND from './../img/flags/ireland.png'
 import UNITEDSTATES from './../img/flags/unitedstates.png'
 
+import breastCancer from './../img/team-themes/breast-cancer.png'
+import lungCancer from './../img/team-themes/lung-cancer.png'
+import childhoodCancer from './../img/team-themes/childhood-cancer.png'
+import plasmaProteomics from './../img/team-themes/plasma-proteomics.png'
+import mtbp from './../img/team-themes/mtbp.png'
+import admin from './../img/team-themes/admin.png'
+import proteomicsPlatform from './../img/team-themes/proteomics-platform.png'
+import proteomicsMethod from './../img/team-themes/proteomics-method.png'
+import coreFacility from './../img/team-themes/coreFacility.png'
+
 export const roleIconAssign = (role) => {
     switch (role) {
         case 'leader':
@@ -93,5 +103,17 @@ export const flags = {
 	MEXICO,
 	IRELAND,
 	UNITEDSTATES
-  };
+};
+
+export const sections = {
+	breastCancer,
+	lungCancer,
+	childhoodCancer,
+	plasmaProteomics,
+	proteomicsMethod,
+	proteomicsPlatform,
+	mtbp,
+	admin,
+	coreFacility
+}
 

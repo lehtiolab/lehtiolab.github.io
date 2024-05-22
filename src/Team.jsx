@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { members } from "./assets/data/members";
 import {roleIconAssign} from "./assets/data/membersRoleIcons";
 import PieChart from "./PieChart";
-import { flags } from "./assets/data/membersRoleIcons";
+import { sections } from "./assets/data/membersRoleIcons";
 import './styles/team.scss';
 import emailSVG from './assets/img/at-solid.svg';
 import linkedinSVG from './assets/img/linkedin.svg';
@@ -15,29 +15,37 @@ import ImageLoader from "./ImageLoader";
 
 
 const Team = () => {
-	const [selectedCountry, setSelectedCountry] = useState(null);
+	const [selectedTeam, setSelectedTeam] = useState(null);
 
-	const countryCounts = {};
+	const teamCounts = {};
 
 	// calculate how many members are from each country
 	members.forEach((member) => {
-	  const country = member.country;
-	  if (!countryCounts[country]) {
-		countryCounts[country] = 1;
+	  const team = member.team;
+	  if (!teamCounts[team]) {
+		teamCounts[team] = 1;
 	  } else {
-		countryCounts[country] += 1;
+		teamCounts[team] += 1;
 	  }
 	});
 
-	console.log(countryCounts)
 	
-	const dataArray = Object.entries(countryCounts).map(([country, count]) => {
-		if (country === 'NEWZEALAND') {return {label: 'NEW ZEALAND', value: count};}
-			else if (country === 'UNITEDSTATES') {return {label: 'UNITED STATES', value: count};}
-			else {return {label: country, value: count};}
+	const dataArray = Object.entries(teamCounts).map(([team, count]) => {
+		return {label: team, value: count};
 	});
 
 	dataArray.sort((a, b) => a.label.localeCompare(b.label));
+
+	//23d160 - breast cancer
+	//ff7c4b -mtbp
+	//a71eff - proteomics platform
+	//6493ff - admin
+	//ff1536 - plasma proteomics
+	//ffdd57 - childhood cancer
+	//82135f - core facility
+	//ffa5c7 - proteomics method
+	//23f3d9 - lung cancer
+	const colors = ['#6493ff', '#23d160', '#ffdd57', '#82135f', '#23f3d9', '#ff7c4b', '#ff1536', '#ffa5c7', '#a71eff', ];
 	
 	const MemberRenderMobile = ({member}) => {
 		return (
@@ -45,7 +53,7 @@ const Team = () => {
 				<div className="member-card_container-front" >
 					<img
 						className="member-card_circle"
-						src={flags[member.country]}
+						src={sections[member.bg]}
 					/>
 					<ImageLoader
 						className="member-card_img"
@@ -104,7 +112,7 @@ const Team = () => {
 						<div className="member-card_container-front" >
 							<img
 								className="member-card_circle"
-								src={flags[member.country]}
+								src={sections[member.bg]}
 							/>
 							<ImageLoader
 								className="member-card_img"
@@ -188,7 +196,7 @@ const Team = () => {
 				<>
 					<div className="members-pie">
 
-						<PieChart data={dataArray} selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry}/>
+						<PieChart data={dataArray} colors={colors} selectedTeam={selectedTeam} setSelectedTeam={setSelectedTeam}/>
 
 						<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5 ml-12">
 							At the heart of our ethos lies a deep commitment to acknowledging and fostering the unique qualities and strengths of each 
@@ -210,14 +218,14 @@ const Team = () => {
 							  })
 							.map(member => {
 								// check if a country is selected
-								if (selectedCountry) {
-								// render the member only if their country matches the selectedCountry
-								if (member.country === selectedCountry) {
+								if (selectedTeam) {
+								// render the member only if their country matches the selectedTeam
+								if (member.team === selectedTeam) {
 									return (
 										<MemberRender key={member.name} member={member} />
 									);
 								} else {
-									// skip rendering this member if their country doesn't match the selectedCountry
+									// skip rendering this member if their country doesn't match the selectedTeam
 									return null;
 								}
 								} else {

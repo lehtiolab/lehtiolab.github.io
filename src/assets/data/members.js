@@ -55,16 +55,17 @@ pictureLink is their prefered picture link, default take from existing page but 
 googleScholar is their google scholar link
 */
 
-/* new team allocations
-Breast cancer: #23d160
-MTBP: #fa6332
-Proteomics platform: ???
-Admin: ???
-Plasma proteomics: #209cee
-Childhood cancer: #ffdd57
-Lung cancer: #00d1b2
-Proteomics method: ???
-*/
+
+//23d160 - breast cancer
+//ff7c4b -mtbp
+//a71eff - proteomics platform
+//6493ff - admin
+//ff1536 - plasma proteomics
+//ffdd57 - childhood cancer
+//82135f - core facility
+//ffa5c7 - proteomics method
+//23f3d9 - lung cancer
+
 export const members = [
 	{
 		name: "Akram Embadi",
@@ -77,6 +78,7 @@ export const members = [
 		yearStarted: "2022",
 		active: 1,
 		team: "Breast cancer",
+		bg: "breastCancer",
 		pictureLink : akramEmdadi,
 		googleScholar: "",
 		orcid:""
@@ -92,6 +94,7 @@ export const members = [
 		yearStarted: "2021",
 		active: 1,
 		team: "Molecular tumor board portal",
+		bg: "mtbp",
 		pictureLink :  aliRazzak,
 		googleScholar: "",
 		orcid:""
@@ -107,6 +110,7 @@ export const members = [
 		yearStarted: "2018",
 		active: 1,
 		team: "Molecular tumor board portal",
+		bg: "mtbp",
 		pictureLink :  davidTamborero,
 		googleScholar: "https://scholar.google.com/citations?user=4jbj37AAAAAJ&hl=en",
 		orcid:""
@@ -122,6 +126,7 @@ export const members = [
 		yearStarted: "2019",
 		active: 1,
 		team: "Proteomics platform",
+		bg: "proteomicsPlatform",
 		pictureLink :  eduardoAraujo,
 		googleScholar: "",
 		orcid:"http://orcid.org/0000-0001-6208-0868"
@@ -137,6 +142,7 @@ export const members = [
 		yearStarted: "2017",
 		active: 1,
 		team: "Proteomics platform",
+		bg: "proteomicsPlatform",
 		pictureLink :  georgiosMermelekas,
 		googleScholar: "https://scholar.google.com/citations?user=r8OKg80AAAAJ&hl=en&oi=ao",
 		orcid:"https://orcid.org/0009-0002-1736-9114"
@@ -152,6 +158,7 @@ export const members = [
 		yearStarted: "",
 		active: 1,
 		team: "Admin",
+		bg: "admin",
 		pictureLink :  ghazalehAssadi,
 		googleScholar: "",
 		orcid:""
@@ -167,6 +174,7 @@ export const members = [
 		yearStarted: "2018",
 		active: 1,
 		team: "Plasma proteomics",
+		bg: "plasmaProteomics",
 		pictureLink :  harisBabacic,
 		googleScholar: "https://scholar.google.com/citations?user=1Y0NWRkAAAAJ&hl=en",
 		orcid:""
@@ -182,6 +190,7 @@ export const members = [
 		yearStarted: "2006",
 		active: 1,
 		team: "Admin",
+		bg: "admin",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0002-1531-9271"
@@ -197,6 +206,7 @@ export const members = [
 		yearStarted: "2008",
 		active: 1,
 		team: "Breast cancer",
+		bg: "breastCancer",
 		pictureLink :  henrikJohansson,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0003-4729-4205"
@@ -212,6 +222,7 @@ export const members = [
 		yearStarted: "2016",
 		active: 1,
 		team: "Breast cancer",
+		bg: "breastCancer",
 		pictureLink :  ioannisSiavelis,
 		googleScholar: "",
 		orcid:"https://orcid.org/0009-0000-0758-8140"
@@ -227,6 +238,7 @@ export const members = [
 		yearStarted: "2021",
 		active: 1,
 		team: "Childhood cancer",
+		bg: "childhoodCancer",
 		pictureLink :  isabelleLeo,
 		googleScholar: "",
 		orcid:""
@@ -242,6 +254,7 @@ export const members = [
 		yearStarted: "2003",
 		active: 1,
 		team: "Proteomics platform",
+		bg: "proteomicsPlatform",
 		pictureLink :  janneLehtio,
 		googleScholar: "https://scholar.google.com/citations?hl=en&user=NPJWeVIAAAAJ",
 		orcid:"https://orcid.org/0000-0002-8100-9562"
@@ -256,7 +269,8 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "",
 		active: 1,
-		team: "Clinical proteomics",
+		team: "Core Facility",
+		bg: "coreFacility",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -272,6 +286,7 @@ export const members = [
 		yearStarted: "",
 		active: 1,
 		team: "Proteomics methods",
+		bg: "proteomicsMethod",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -287,6 +302,7 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		team: "Molecular tumor board portal",
+		bg: "mtbp",
 		pictureLink :  lauraGheorghe,
 		googleScholar: "",
 		orcid:""
@@ -302,6 +318,7 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		team: "Admin",
+		bg: "admin",
 		pictureLink :  lauraLevi,
 		googleScholar: "",
 		orcid:""
@@ -317,6 +334,7 @@ export const members = [
 		yearStarted: "",
 		active: 1,
 		team: "Childhood cancer",
+		bg: "childhoodCancer",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -332,6 +350,7 @@ export const members = [
 		yearStarted: "2003",
 		active: 1,
 		team: "Lung cancer",
+		bg: "lungCancer",
 		pictureLink :  lukasOrre,
 		googleScholar: "https://scholar.google.com/citations?user=6ojfH4YAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0002-0384-1003"
@@ -347,6 +366,7 @@ export const members = [
 		yearStarted: "2005",
 		active: 1,
 		team: "Plasma proteomics",
+		bg: "plasmaProteomics",
 		pictureLink :  mariaPernemalm,
 		googleScholar: "https://orcid.org/0000-0003-4624-031X",
 		orcid:""
@@ -362,6 +382,7 @@ export const members = [
 		yearStarted: "2021",
 		active: 1,
 		team: "Molecular tumor board portal",
+		bg: "mtbp",
 		pictureLink :  markusJonsson,
 		googleScholar: "",
 		orcid:""
@@ -377,6 +398,7 @@ export const members = [
 		yearStarted: "2022",
 		active: 1,
 		team: "Breast cancer",
+		bg: "breastCancer",
 		pictureLink :  mahshidZarrineh,
 		googleScholar: "",
 		orcid:""
@@ -391,7 +413,8 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2022",
 		active: 1,
-		team: "Clinical proteomics",
+		team: "Core Facility",
+		bg: "coreFacility",
 		pictureLink :  mahnazNikpour,
 		googleScholar: "",
 		orcid:""
@@ -407,6 +430,7 @@ export const members = [
 		yearStarted: "2019",
 		active: 1,
 		team: "Plasma proteomics",
+		bg: "plasmaProteomics",
 		pictureLink :  nidhiSharma,
 		googleScholar: "https://scholar.google.com/citations?user=2v7QCVgAAAAJ",
 		orcid:"https://orcid.org/0000-0002-2475-9340"
@@ -422,6 +446,7 @@ export const members = [
 		yearStarted: "2022",
 		active: 1,
 		team: "Plasma proteomics",
+		bg: "plasmaProteomics",
 		pictureLink :  nooraSissala,
 		googleScholar: "https://scholar.google.com/citations?user=KJLnI6sAAAAJ&hl=en",
 		orcid:""
@@ -437,6 +462,7 @@ export const members = [
 		yearStarted: "2020",
 		active: 1,
 		team: "Lung cancer",
+		bg: "lungCancer",
 		pictureLink :  olenaBerkovska,
 		googleScholar: "https://scholar.google.com/citations?user=HWRPAwIAAAAJ&hl",
 		orcid:"https://orcid.org/0000-0002-8811-0591"
@@ -452,6 +478,7 @@ export const members = [
 		yearStarted: "2015",
 		active: 1,
 		team: "Childhood cancer",
+		bg: "childhoodCancer",
 		pictureLink :  rozbehJafar,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0002-3396-4709"
@@ -467,6 +494,7 @@ export const members = [
 		yearStarted: "2009",
 		active: 1,
 		team: "Proteomics methods",
+		bg: "proteomicsMethod",
 		pictureLink :  ruiBranca,
 		googleScholar: "https://scholar.google.com/citations?user=SMSGfEcAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0003-3890-6476"
@@ -481,7 +509,8 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/santerikiviluoto/",
 		yearStarted: "2019",
 		active: 1,
-		team: "Clinical proteomics",
+		team: "Core Facility",
+		bg: "coreFacility",
 		pictureLink :  santeriKiviluot,
 		googleScholar: "",
 		orcid:""
@@ -497,6 +526,7 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		team: "Admin",
+		bg: "admin",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -512,6 +542,7 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		team: "Admin",
+		bg: "admin",
 		pictureLink :  xeniaVillalobos,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0003-1232-980X"
@@ -527,6 +558,7 @@ export const members = [
 		yearStarted: "2018",
 		active: 1,
 		team: "Proteomics platform",
+		bg: "proteomicsPlatform",
 		pictureLink :  xiaofangCao,
 		googleScholar: "",
 		orcid:""
@@ -542,6 +574,7 @@ export const members = [
 		yearStarted: "2022",
 		active: 1,
 		team: "Childhood cancer",
+		bg: "childhoodCancer",
 		pictureLink :  xuekangQi,
 		googleScholar: "https://scholar.google.com/citations?user=-DqD3dkAAAAJ&hl=zh-CN",
 		orcid:""
@@ -557,6 +590,7 @@ export const members = [
 		yearStarted: "2015",
 		active: 1,
 		team: "Proteomics platform",
+		bg: "proteomicsPlatform",
 		pictureLink :  yanboPan,
 		googleScholar: "",
 		orcid:""
@@ -572,6 +606,7 @@ export const members = [
 		yearStarted: "2022",
 		active: 1,
 		team: "Proteomics methods",
+		bg: "proteomicsMethod",
 		pictureLink :  yaroslavKaminskiy,
 		googleScholar: "https://scholar.google.com/citations?user=6qRFIvEAAAAJ&hl=ru",
 		orcid:""
@@ -587,6 +622,7 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		team: "Proteomics platform",
+		bg: "proteomicsPlatform",
 		pictureLink :  soumitraMarathe,
 		googleScholar: "https://scholar.google.com/citations?user=4llQS7sAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0002-7712-6061"
@@ -602,6 +638,7 @@ export const members = [
 		yearStarted: "2022",
 		active: 1,
 		team: "Plasma proteomics",
+		bg: "plasmaProteomics",
 		pictureLink :  ireneSanz,
 		googleScholar: ""
 	},
@@ -616,6 +653,7 @@ export const members = [
 		yearStarted: "2023",
 		active: 1,
 		team: "Plasma proteomics",
+		bg: "plasmaProteomics",
 		pictureLink :  amareWolide,
 		googleScholar: ""
 	},
@@ -630,6 +668,7 @@ export const members = [
 		yearStarted: "2024",
 		active: 1,
 		team: "Molecular tumor board portal",
+		bg: "mtbp",
 		pictureLink : dmitriiRudakovskii,
 		googleScholar: "",
 		orcid:""
@@ -645,6 +684,7 @@ export const members = [
 		yearStarted: "2024",
 		active: 1,
 		team: "Lung cancer",
+		bg: "lungCancer",
 		pictureLink : koviGovindarajan,
 		googleScholar: "",
 		orcid:""

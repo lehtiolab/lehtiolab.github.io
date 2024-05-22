@@ -4,14 +4,20 @@ import { CategoryScale } from "chart.js";
 import { useState } from "react";
 import { Doughnut, getElementAtEvent } from "react-chartjs-2";
 
-const PieChart = ({ data, selectedCountry, setSelectedCountry }) => {
+const PieChart = ({ data, selectedTeam, setSelectedTeam, colors }) => {
 	Chart.register(CategoryScale);
 	const chartRef = useRef();
+
+	const colorMap = {};
+	data.forEach((item, index) => {
+		colorMap[item.label] = colors[index];
+	});
 
 	const [chartData, setChartData] = useState({
 		labels: data.map(item => item.label),
 		datasets: [{
 			data: data.map(item => item.value),
+			backgroundColor: data.map(item => colorMap[item.label]),
 		}]
 	});
 
@@ -21,16 +27,10 @@ const PieChart = ({ data, selectedCountry, setSelectedCountry }) => {
 		aspectRatio: 1,
 		plugins: {
 			legend: {
-			display: false,
+				display: false,
 			}
 		}
 	};
-	
-	const countryConvert = (label) => {
-		if (label === 'NEWZEALAND') {return 'NEW ZEALAND';}
-		else if (label === 'UNITEDSTATES') {return 'UNITED STATES';}
-		else {return label;}
-	}
 	
 	const onClick = (event) => {
 		const elements = getElementAtEvent(chartRef.current, event);
@@ -39,22 +39,19 @@ const PieChart = ({ data, selectedCountry, setSelectedCountry }) => {
 		const { index } = elements[0];
 		const label = data[index].label;
 
-		if (selectedCountry === label) {
-			setSelectedCountry(null);
+		if (selectedTeam === label) {
+			setSelectedTeam(null);
 		} else {
-			if (label === 'NEW ZEALAND') {setSelectedCountry('NEWZEALAND');}
-			else if (label === 'UNITED STATES') {setSelectedCountry('UNITEDSTATES');}
-			else {setSelectedCountry(label);}
+			setSelectedTeam(label);
 		}
 	};
 
-
-  return (
-	<div className='doughnut' style={{ width: '400px', height: '400px' }}>
-    	<Doughnut data={chartData} options={options} ref={chartRef} onClick={onClick} />
-		<p className='country-selection'>{countryConvert(selectedCountry)}</p>
- 	</div>
-  );
+	return (
+		<div className='doughnut' style={{ width: '400px', height: '400px' }}>
+			<Doughnut data={chartData} options={options} ref={chartRef} onClick={onClick} />
+			<p className='country-selection'>{selectedTeam}</p>
+		</div>
+	);
 };
 
 export default PieChart;

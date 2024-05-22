@@ -23,8 +23,6 @@ const ContactMobile = () => {
 		}));
 	};
 
-	console.log(isSent);
-
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setIsSent(true);
