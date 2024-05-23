@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://lehtiolab.github.io/lehtiolab",
+  "homepage": "http://lehtiolab.github.io/lehtiolab-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
