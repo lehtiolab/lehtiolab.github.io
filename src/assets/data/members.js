@@ -470,7 +470,7 @@ export const members = [
 	{
 		name: "Rozbeh Jafari",
 		role: "research",
-		title: "Senior Research Specialist",
+		title: "Principal Researcher",
 		email: "rozbeh.jafari@ki.se",
 		github: "",
 		kiLink: "https://staff.ki.se/people/rozbeh-jafari",
