@@ -19,7 +19,7 @@ const Research = () => {
     })
     researchLoad.push(<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5">
         <div className="researchTitle text-left">{researchTopic.researchTitle}</div>
-        <div className="researchLead text-black text-left">{researchTopic.researchLead}</div>
+        <div className="researchLead text-black text-left font-bold">{researchTopic.researchLead}</div>
         <div className="researchDescImg flex gap-5 items-center">
           <div className="researchDescription text-black text-justify" dangerouslySetInnerHTML={{__html: researchTopic.researchDescription}}></div>
           <div className="researchImageHolder"><img src={researchTopic.researchImage}/></div>

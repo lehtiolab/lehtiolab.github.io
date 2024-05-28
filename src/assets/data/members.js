@@ -589,8 +589,8 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2015",
 		active: 1,
-		team: "Core Facility",
-		bg: "coreFacility",
+		team: "Lung cancer",
+		bg: "lungCancer",
 		pictureLink :  yanboPan,
 		googleScholar: "",
 		orcid:""
@@ -621,8 +621,8 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/soumitra-marathe-immuno/",
 		yearStarted: "2023",
 		active: 1,
-		team: "Core Facility",
-		bg: "coreFacility",
+		team: "Lung cancer",
+		bg: "lungCancer",
 		pictureLink :  soumitraMarathe,
 		googleScholar: "https://scholar.google.com/citations?user=4llQS7sAAAAJ&hl=en",
 		orcid:"https://orcid.org/0000-0002-7712-6061"
@@ -652,8 +652,8 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/amare-wolide-5319681b4/",
 		yearStarted: "2023",
 		active: 1,
-		team: "Plasma proteomics",
-		bg: "plasmaProteomics",
+		team: "Lung cancer",
+		bg: "lungCancer",
 		pictureLink :  amareWolide,
 		googleScholar: ""
 	},
@@ -683,8 +683,8 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2024",
 		active: 1,
-		team: "Lung cancer",
-		bg: "lungCancer",
+		team: "Proteomics methods",
+		bg: "proteomicsMethods",
 		pictureLink : koviGovindarajan,
 		googleScholar: "",
 		orcid:""
