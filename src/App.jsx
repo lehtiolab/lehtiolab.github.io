@@ -9,9 +9,15 @@ import Research from './Research';
 import Resources from './Resources'
 import Contact from './Contact';
 import Opportunities from './Opportunities'
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-SQHQTBJNLB');
 
 function App() {
-  return (
+	React.useEffect(() => {
+	  ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
+	}, [window.location.pathname]);
+	return (
     <HashRouter>
 			<Navbar />
 			<div className="app-page">
