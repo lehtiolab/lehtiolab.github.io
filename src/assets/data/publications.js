@@ -257,5 +257,21 @@ export const publications =
         "publicationDate": "06/07/2020",
         "publicationImage": "/molcell_lukas.jpg",
         "publicationLink": "https://doi.org/10.7554/elife.57894",
+    },
+    {
+        "publicationTitle": "Deep thermal profiling for detection of functional proteoform groups",
+        "publicationJournal": "Nature Chemical Biology",
+        "publicationAuthors": ["Nils Kurzawa", "*Isabelle Rose Leo", "Matthias Stahl", "Elena Kunold", "Isabelle Becher", "Anastasia Audrey", "*Georgios Mermelekas", "Wolfgang Huber", "André Mateus", "Mikhail M. Savitski", "*Rozbeh Jafari"],
+        "publicationDate": "20/03/2023",
+        "publicationImage": "/rozbeh_nature.png",
+        "publicationLink": "https://doi.org/10.1038/s41589-023-01284-8",
+    },
+    {
+        "publicationTitle": "Targeting autophagy as a therapeutic strategy in pediatric acute lymphoblastic leukemia",
+        "publicationJournal": "Scientific reports",
+        "publicationAuthors": ["Henri Colyn Bwanika", "*Isabelle Rose Leo", "Nona Struyf", "Asimina Talanti", "*Luay Aswad", "Aishwarya Konnur", "Ann-Charlotte Björklund", "Mats Heyman", "Georgios Rassidakis", "Tom Erkers", "Brinton Seashore-Ludlow", "*Rozbeh Jafari", "Katja Pokrovskaja Tamm"],
+        "publicationDate": "18/02/2024",
+        "publicationImage": "/rozbeh_reports.png",
+        "publicationLink": "https://doi.org/10.1038/s41598-024-54400-6",
     }
 ]
