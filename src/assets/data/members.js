@@ -2,7 +2,6 @@ import unknown from './../img/team/unknown.png'
 import mariaPernemalm from './../img/team/mariaPernemalm.png';
 import aliRazzak from './../img/team/aliRazzak.png';
 import eduardoAraujo from './../img/team/eduardoAraujo.png';
-import santeriKiviluot from './../img/team/santeriKiviluot.png';
 import olenaBerkovska from './../img/team/olenaBerkovska.png';
 import rozbehJafar from './../img/team/rozbehJafar.png';
 import isabelleLeo from './../img/team/isabelleLeo.png';
@@ -502,7 +501,7 @@ export const members = [
 	{
 		name: "Santeri Kiviluoto",
 		role: "staff",
-		title: "Hospital Chemist",
+		title: "Affiliated to research",
 		email: "santeri.kiviluoto@ki.s",
 		github: "",
 		kiLink: "",
@@ -511,7 +510,7 @@ export const members = [
 		active: 1,
 		team: "Core Facility",
 		bg: "coreFacility",
-		pictureLink :  santeriKiviluot,
+		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
 	},
