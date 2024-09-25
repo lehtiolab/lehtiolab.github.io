@@ -38,7 +38,7 @@ const Team = () => {
 
 	//23d160 - breast cancer
 	//ff7c4b -mtbp
-	//6493ff - admin
+	//6493ff - admin/ClinProt
 	//ff1536 - plasma proteomics
 	//ffdd57 - childhood cancer
 	//82135f - core facility
@@ -246,7 +246,7 @@ const Team = () => {
 					Fabio Socciarelli, Elena Kunold, Sara Ståhl, Psa Perez-Bercoff, Oliver Frings, Nina Lagerquist, Mohammad Pirmoradian, Lyris Godoy, 
 					Luigi de Petris, Lingie Tao, Lina Hultin-Rosenberg, Kristian Björnstad, Kie Kasuga, Kaveh Moazemi, Kannan Sampath, Johnathon Andersson, 
 					Johan Lengquist, Jessie Dahlström, Hitoshi Takahashi, Hasan Bhuiyan, Hanna Kjellin, Gianluca Maddalo, Freddy Cliquet, Erik Fredlund, 
-					Davide Tamburro, Anna Lindahl, Anders Nordström, Alejandro Woodbridge, Alar Aab, Konstantin Barylyuk
+					Davide Tamburro, Anna Lindahl, Anders Nordström, Alejandro Woodbridge, Alar Aab, Konstantin Barylyuk, Maria Pernemalm, Nidhi Sharma
 				</div>
 			</div>
 		</div>

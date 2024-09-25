@@ -2,6 +2,7 @@ import React from 'react';
 
 const News = () => {
     const news = [
+		{date: '09.09.2024', title: 'Had our offsite meeting & new members joined!'},
 		{date: '23.05.2024', title: 'New website launched!'}
 	];
     

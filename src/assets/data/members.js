@@ -59,13 +59,61 @@ googleScholar is their google scholar link
 //ff7c4b -mtbp
 //a71eff - proteomics platform
 //6493ff - admin
-//ff1536 - plasma proteomics
+//ff1536 - applied proteomics
 //ffdd57 - childhood cancer
 //82135f - core facility
 //ffa5c7 - proteomics method
 //23f3d9 - lung cancer
 
 export const members = [
+	{
+		name: "Igor Schliemann",
+		role: "student",
+		title: "PhD Student",
+		email: "Igor.schliemann@ki.se",
+		github: "https://github.com/justinseby",
+		kiLink: "https://ki.se/en/people/igor-schliemann",
+		linkedIn: "http://linkedin.com/in/igor-schliemann-4724409a",
+		yearStarted: "2023",
+		active: 1,
+		team: "Lung cancer",
+		bg: "lungCancer",
+		pictureLink : unknown,
+		googleScholar: "",
+		orcid:""
+	},
+	{
+		name: "Justin Seby",
+		role: "student",
+		title: "PhD Student",
+		email: "justin.seby@ki.se",
+		github: "https://github.com/justinseby",
+		kiLink: "https://ki.se/en/people/justin-seby",
+		linkedIn: "https://www.linkedin.com/in/justinseby/",
+		yearStarted: "2024",
+		active: 1,
+		team: "Applied proteomics",
+		bg: "appliedProteomics",
+		pictureLink : unknown,
+		googleScholar: "https://scholar.google.com/citations?user=mxMVQXgAAAAJ&hl=en&authuser=2",
+		orcid:""
+	},
+	{
+		name: "Jenny Forshed",
+		role: "staff",
+		title: "Principal Researcher",
+		email: "jenny.forshed@ki.se",
+		github: "",
+		kiLink: "https://staff.ki.se/people/jenny-forshed",
+		linkedIn: "https://www.linkedin.com/in/jenny-forshed-26911716",
+		yearStarted: "2006",
+		active: 1,
+		team: "Applied proteomics",
+		bg: "appliedProteomics",
+		pictureLink : unknown,
+		googleScholar: "",
+		orcid:""
+	},
 	{
 		name: "Akram Embadi",
 		role: "postdoc",
@@ -156,7 +204,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "",
 		active: 1,
-		team: "Admin",
+		team: "Admin/ClinProt",
 		bg: "admin",
 		pictureLink :  ghazalehAssadi,
 		googleScholar: "",
@@ -172,8 +220,8 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/harisbabacic/",
 		yearStarted: "2018",
 		active: 1,
-		team: "Plasma proteomics",
-		bg: "plasmaProteomics",
+		team: "Applied proteomics",
+		bg: "appliedProteomics",
 		pictureLink :  harisBabacic,
 		googleScholar: "https://scholar.google.com/citations?user=1Y0NWRkAAAAJ&hl=en",
 		orcid:""
@@ -188,7 +236,7 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/helena-bäckvall-94743950/",
 		yearStarted: "2006",
 		active: 1,
-		team: "Admin",
+		team: "Admin/ClinProt",
 		bg: "admin",
 		pictureLink :  unknown,
 		googleScholar: "",
@@ -220,8 +268,8 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2016",
 		active: 1,
-		team: "Breast cancer",
-		bg: "breastCancer",
+		team: "Applied proteomics",
+		bg: "appliedProteomics",
 		pictureLink :  ioannisSiavelis,
 		googleScholar: "",
 		orcid:"https://orcid.org/0009-0000-0758-8140"
@@ -252,27 +300,11 @@ export const members = [
 		linkedIn: "https://se.linkedin.com/in/janne-lehtiö-6531712",
 		yearStarted: "2003",
 		active: 1,
-		team: "Core Facility",
-		bg: "coreFacility",
+		team: "Applied proteomics",
+		bg: "appliedProteomics",
 		pictureLink :  janneLehtio,
 		googleScholar: "https://scholar.google.com/citations?hl=en&user=NPJWeVIAAAAJ",
 		orcid:"https://orcid.org/0000-0002-8100-9562"
-	},
-	{
-		name: "Jenny Forshed",
-		role: "staff",
-		title: "Associate professor",
-		email: "",
-		github: "",
-		kiLink: "",
-		linkedIn: "",
-		yearStarted: "",
-		active: 1,
-		team: "Core Facility",
-		bg: "coreFacility",
-		pictureLink :  unknown,
-		googleScholar: "",
-		orcid:""
 	},
 	{
 		name: "Jorrit Boekel",
@@ -316,7 +348,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2023",
 		active: 1,
-		team: "Admin",
+		team: "Admin/ClinProt",
 		bg: "admin",
 		pictureLink :  lauraLevi,
 		googleScholar: "",
@@ -355,22 +387,6 @@ export const members = [
 		orcid:"https://orcid.org/0000-0002-0384-1003"
 	},
 	{
-		name: "Maria Pernemalm",
-		role: "research",
-		title: "Principal researcher",
-		email: "maria.pernemalm@ki.se",
-		github: "",
-		kiLink: "https://staff.ki.se/people/maria-pernemalm",
-		linkedIn: "https://www.linkedin.com/in/maria-pernemalm-09a02810/",
-		yearStarted: "2005",
-		active: 1,
-		team: "Plasma proteomics",
-		bg: "plasmaProteomics",
-		pictureLink :  mariaPernemalm,
-		googleScholar: "https://orcid.org/0000-0003-4624-031X",
-		orcid:""
-	},
-	{
 		name: "Markus Jonsson",
 		role: "programmer",
 		title: "Software developer",
@@ -388,7 +404,7 @@ export const members = [
 	},
 	{
 		name: "Mahshid Zarrineh",
-		role: "postdoc",
+		role: "staff",
 		title: "Research Engineer",
 		email: "mahshid.zarrineh@ki.se",
 		github: "",
@@ -419,22 +435,6 @@ export const members = [
 		orcid:""
 	},
 	{
-		name: "Nidhi Sharma",
-		role: "postdoc",
-		title: "Postdoctoral Fellow",
-		email: "nidhi.sharma@ki.se",
-		github: "",
-		kiLink: "https://staff.ki.se/people/nidhi-sharma",
-		linkedIn: "https://www.linkedin.com/in/neuro-nsharma/",
-		yearStarted: "2019",
-		active: 1,
-		team: "Plasma proteomics",
-		bg: "plasmaProteomics",
-		pictureLink :  nidhiSharma,
-		googleScholar: "https://scholar.google.com/citations?user=2v7QCVgAAAAJ",
-		orcid:"https://orcid.org/0000-0002-2475-9340"
-	},
-	{
 		name: "Noora Sissala",
 		role: "student",
 		title: "PhD Student",
@@ -444,8 +444,8 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/noorasissala/",
 		yearStarted: "2022",
 		active: 1,
-		team: "Plasma proteomics",
-		bg: "plasmaProteomics",
+		team: "Applied proteomics",	
+		bg: "appliedProteomics",
 		pictureLink :  nooraSissala,
 		googleScholar: "https://scholar.google.com/citations?user=KJLnI6sAAAAJ&hl=en",
 		orcid:""
@@ -508,8 +508,8 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/santerikiviluoto/",
 		yearStarted: "2019",
 		active: 1,
-		team: "Core Facility",
-		bg: "coreFacility",
+		team: "Admin/ClinProt",
+		bg: "admin",
 		pictureLink :  unknown,
 		googleScholar: "",
 		orcid:""
@@ -524,7 +524,7 @@ export const members = [
 		linkedIn: "",
 		yearStarted: "2023",
 		active: 1,
-		team: "Admin",
+		team: "Admin/ClinProt",
 		bg: "admin",
 		pictureLink :  unknown,
 		googleScholar: "",
@@ -540,7 +540,7 @@ export const members = [
 		linkedIn: "https://es.linkedin.com/in/xenia-villalobos-alber%C3%BA-71495512",
 		yearStarted: "2023",
 		active: 1,
-		team: "Admin",
+		team: "Admin/ClinProt",
 		bg: "admin",
 		pictureLink :  xeniaVillalobos,
 		googleScholar: "",
@@ -636,8 +636,8 @@ export const members = [
 		linkedIn: "https://www.linkedin.com/in/irene-villanueva-sanz-606476161/",
 		yearStarted: "2022",
 		active: 1,
-		team: "Plasma proteomics",
-		bg: "plasmaProteomics",
+		team: "Lung cancer",
+		bg: "lungCancer",
 		pictureLink :  ireneSanz,
 		googleScholar: ""
 	},
@@ -683,7 +683,7 @@ export const members = [
 		yearStarted: "2024",
 		active: 1,
 		team: "Proteomics methods",
-		bg: "proteomicsMethods",
+		bg: "proteomicsMethod",
 		pictureLink : koviGovindarajan,
 		googleScholar: "",
 		orcid:""

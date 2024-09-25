@@ -24,7 +24,7 @@ export const opportunities =
         "positionLink": "https://ki.varbi.com/en/what:job/jobID:725271/type:job/where:4/apply:1",
         "positionAffiliation": ["Core Facility"],
         "positionContact": "helena.backvall@ki.se",
-        "active": 1,
+        "active": 0,
     },
     {
         "positionType": "academic",
@@ -36,6 +36,6 @@ export const opportunities =
         "positionLink": "https://kidoktorand.varbi.com/en/what:job/jobID:728452/type:job/where:4/apply:1",
         "positionAffiliation": [],
         "positionContact": "ioannis.siavelis@ki.se",
-        "active": 1,
+        "active": 0,
     }
 ]

@@ -23,7 +23,7 @@ import UNITEDSTATES from './../img/flags/unitedstates.png'
 import breastCancer from './../img/team-themes/breast-cancer.png'
 import lungCancer from './../img/team-themes/lung-cancer.png'
 import childhoodCancer from './../img/team-themes/childhood-cancer.png'
-import plasmaProteomics from './../img/team-themes/plasma-proteomics.png'
+import appliedProteomics from './../img/team-themes/plasma-proteomics.png'
 import mtbp from './../img/team-themes/mtbp.png'
 import admin from './../img/team-themes/admin.png'
 import proteomicsPlatform from './../img/team-themes/proteomics-platform.png'
@@ -109,7 +109,7 @@ export const sections = {
 	breastCancer,
 	lungCancer,
 	childhoodCancer,
-	plasmaProteomics,
+	appliedProteomics,
 	proteomicsMethod,
 	proteomicsPlatform,
 	mtbp,

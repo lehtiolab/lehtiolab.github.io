@@ -11,13 +11,6 @@ The order in the list will determine the order of the project
 export const research = 
 [
     {
-        "researchTitle": "Plasma proteomics",
-        "researchLead": "Maria Pernemalm",
-        "researchImage": "mariaresearchpicture.jpg",
-        "researchDescription": "<ul style='padding-left:20px'><li style='list-style-type:disc'>Goal: Develop an accurate and sensitive pipeline for mass spectrometry-based analysis of the plasma proteome.</li><li style='list-style-type:disc'>Challenge: Difficulty in detecting protein biomarkers in plasma due to skewed protein concentration distribution and high patient-to-patient variability.</li><li style='list-style-type:disc'>Methodology: Developing HiRIEF-based methodologies for global proteome analysis and targeted MRM-analysis of the plasma proteome.</li><li style='list-style-type:disc'>Incorporating Advances: Utilizing proteogenomics field advancements, including data on single amino acid variants in analyses.</li><li style='list-style-type:disc'>Applications:<ul style='padding-left:20px'><li style='list-style-type:disc'>Discovering diagnostic, prognostic, and predictive biomarkers in plasma.<li>Analyzing the protein corona of nanoparticles.</li><li style='list-style-type:disc'>Quantifying proteins from immunocapture analysis.</li><li style='list-style-type:disc'>Analyzing biological fluids such as pleural effusion, cystic fluid, and cerebrospinal fluid.</li></ul></ul>",
-        "researchLinks": ["https://doi.org/10.1002/1878-0261.13355","https://doi.org/10.1186/s12931-023-02364-y","https://doi.org/10.3389/fendo.2022.971313"]
-    },
-    {
         "researchTitle": "Lung cancer",
         "researchLead": "Lukas Orre",
         "researchImage": "lukasresearchpicture.jpeg",
