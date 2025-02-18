@@ -371,6 +371,22 @@ export const members = [
 		orcid:""
 	},
 	{
+		name: "Luca Gaessler",
+		role: "student",
+		title: "PhD student",
+		email: "luca.gaessler@ki.se",
+		github: "",
+		kiLink: "https://ki.se/en/people/luca-gaessler",
+		linkedIn: "",
+		yearStarted: "2025",
+		active: 1,
+		team: "Breast cancer",
+		bg: "breastCancer",
+		pictureLink :  unknown,
+		googleScholar: "",
+		orcid:""
+	},
+	{
 		name: "Lukas Orre",
 		role: "research",
 		title: "Principal Researcher",
