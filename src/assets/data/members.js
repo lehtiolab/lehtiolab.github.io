@@ -32,6 +32,7 @@ import ghazalehAssadi from './../img/team/ghazalehAssadi.png'
 import dmitriiRudakovskii from './../img/team/dmitriiRudakovskii.png'
 import amareWolide from './../img/team/amareWolide.png'
 import koviGovindarajan from './../img/team/koviGovindarajan.png'
+import lucaGaessler from './../img/team/lucaGaessler.png'
 
 /*
 The role of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -382,7 +383,7 @@ export const members = [
 		active: 1,
 		team: "Breast cancer",
 		bg: "breastCancer",
-		pictureLink :  unknown,
+		pictureLink :  lucaGaessler,
 		googleScholar: "",
 		orcid:""
 	},
