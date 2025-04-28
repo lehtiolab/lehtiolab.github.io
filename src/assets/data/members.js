@@ -378,7 +378,7 @@ export const members = [
 		email: "luca.gaessler@ki.se",
 		github: "",
 		kiLink: "https://ki.se/en/people/luca-gaessler",
-		linkedIn: "",
+		linkedIn: "www.linkedin.com/in/luca-gaessler",
 		yearStarted: "2025",
 		active: 1,
 		team: "Breast cancer",
