@@ -30,6 +30,20 @@ import proteomicsPlatform from './../img/team-themes/proteomics-platform.png'
 import proteomicsMethod from './../img/team-themes/proteomics-method.png'
 import coreFacility from './../img/team-themes/coreFacility.png'
 
+// teamMeta.js
+export const TEAM_META = {
+  lungCancer:          { label: 'Lung cancer',                color: '#23f3d9' },
+  appliedProteomics:   { label: 'Applied proteomics',         color: '#ff1536' },
+  admin:               { label: 'Admin/ClinProt',             color: '#6493ff' },
+  proteomicsMethod:    { label: 'Proteomics methods',         color: '#ffa5c7' },
+  proteomicsPlatform:  { label: 'Proteomics platform',        color: '#a71eff' },
+  mtbp:                { label: 'Molecular tumor board portal', color: '#ff7c4b' },
+  coreFacility:        { label: 'Core Facility',              color: '#82135f' },
+  breastCancer:        { label: 'Breast cancer',              color: '#23d160' },
+  childhoodCancer:     { label: 'Childhood cancer',           color: '#ffdd57' },
+};
+
+
 export const roleIconAssign = (role) => {
     switch (role) {
         case 'leader':

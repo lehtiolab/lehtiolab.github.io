@@ -12,12 +12,18 @@ import googleScholar from './assets/img/googleScholar.svg';
 import orcid from './assets/img/orcid.svg';
 import { isMobile } from "react-device-detect";
 import ImageLoader from "./ImageLoader";
+import { TEAM_META } from "./assets/data/membersRoleIcons";
 
 
 const Team = () => {
 	const [selectedTeam, setSelectedTeam] = useState(null);
 
 	const teamCounts = {};
+	const countsByBg = members.reduce((acc, m) => {
+    if (!m.bg) return acc;
+    acc[m.bg] = (acc[m.bg] || 0) + 1;
+    return acc;
+  }, {});
 
 	// calculate how many members are from each country
 	members.forEach((member) => {
@@ -30,11 +36,17 @@ const Team = () => {
 	});
 
 	
-	const dataArray = Object.entries(teamCounts).map(([team, count]) => {
-		return {label: team, value: count};
-	});
+	const dataArray = Object.entries(countsByBg).map(([bg, count]) => {
+    const meta = TEAM_META[bg] || {};
+    return {
+      bg,
+      label: meta.label || bg,
+      value: count,
+      color: meta.color || '#cccccc',
+    };
+  }).sort((a, b) => a.label.localeCompare(b.label));
 
-	dataArray.sort((a, b) => a.label.localeCompare(b.label));
+  const selectedLabel = selectedTeam ? (TEAM_META[selectedTeam]?.label || selectedTeam) : '';
 
 	//23d160 - breast cancer
 	//ff7c4b -mtbp
@@ -45,6 +57,20 @@ const Team = () => {
 	//ffa5c7 - proteomics method
 	//23f3d9 - lung cancer
 	const colors = ['#6493ff', '#23d160', '#ffdd57', '#82135f', '#23f3d9', '#ff7c4b', '#ff1536', '#ffa5c7',];
+	// Team.jsx (top-level, keep labels exactly as in member.team)
+const TEAM_COLORS = {
+  'admin/clinprot': '#6493ff',
+  'breast cancer': '#23d160',
+  'childhood cancer': '#ffdd57',
+  'core facility': '#82135f',
+  'lung cancer': '#23f3d9',
+  'mtbp': '#ff7c4b',
+  'plasma proteomics': '#ff1536',
+  'proteomics method': '#ffa5c7',
+};
+
+
+
 	
 	const MemberRenderMobile = ({member}) => {
 		return (
@@ -178,24 +204,27 @@ const Team = () => {
 							valued. With open arms, we invite you to get acquainted with our diverse team, a remarkable assembly of individuals hailing 
 							from all corners of the globe. Together, we celebrate the rich tapestry of perspectives and experiences that this global 
 							diversity brings to our group.
-						</div>
+					</div>
 					{members
-					.sort((a, b) => {
-						const lastNameA = a.name.split(' ').pop();
-						const lastNameB = b.name.split(' ').pop();
-						if (lastNameA < lastNameB) return -1;
-						if (lastNameA > lastNameB) return 1;
-						return 0;
-					  })
-					.map(member => {
-    					return <MemberRenderMobile key={member.name} member={member} />;
-					})}
+						.sort((a, b) => {
+							const lastNameA = a.name.split(' ').pop();
+							const lastNameB = b.name.split(' ').pop();
+							if (lastNameA < lastNameB) return -1;
+							if (lastNameA > lastNameB) return 1;
+							return 0;
+						})
+						.map(member => {
+							return <MemberRenderMobile key={member.name} member={member} />;
+						})}
 				</div>
 				:
 				<>
 					<div className="members-pie">
 
-						<PieChart data={dataArray} colors={colors} selectedTeam={selectedTeam} setSelectedTeam={setSelectedTeam}/>
+						<PieChart
+							data={dataArray}
+							setSelectedTeam={setSelectedTeam}
+						/>
 
 						<div className="researchCard bg-white rounded p-2 pr-10 pl-10 pb-5 pt-5 ml-12">
 							At the heart of our ethos lies a deep commitment to acknowledging and fostering the unique qualities and strengths of each 
@@ -208,31 +237,18 @@ const Team = () => {
 					<div className="text-black">
 						<div className="members-list">
 							{members
-							.sort((a, b) => {
-								const lastNameA = a.name.split(' ').pop();
-								const lastNameB = b.name.split(' ').pop();
-								if (lastNameA < lastNameB) return -1;
-								if (lastNameA > lastNameB) return 1;
-								return 0;
-							  })
-							.map(member => {
-								// check if a country is selected
+								.sort((a,b) => {
+								const A = a.name.split(' ').pop();
+								const B = b.name.split(' ').pop();
+								return A.localeCompare(B);
+								})
+												.map(member => {
 								if (selectedTeam) {
-								// render the member only if their country matches the selectedTeam
-								if (member.team === selectedTeam) {
-									return (
-										<MemberRender key={member.name} member={member} />
-									);
-								} else {
-									// skip rendering this member if their country doesn't match the selectedTeam
-									return null;
-								}
-								} else {
-								// render all members if no country is selected
-								return (
+									return member.bg === selectedTeam ? (
 									<MemberRender key={member.name} member={member} />
-								);
+									) : null;
 								}
+								return <MemberRender key={member.name} member={member} />;
 							})}
 						</div>
 					</div>

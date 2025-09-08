@@ -1,5 +1,4 @@
 import unknown from './../img/team/unknown.png'
-import mariaPernemalm from './../img/team/mariaPernemalm.png';
 import aliRazzak from './../img/team/aliRazzak.png';
 import eduardoAraujo from './../img/team/eduardoAraujo.png';
 import olenaBerkovska from './../img/team/olenaBerkovska.png';
@@ -10,7 +9,6 @@ import nooraSissala from './../img/team/nooraSissala.png';
 import xiaofangCao from './../img/team/xiaofangCao.png';
 import ruiBranca from './../img/team/ruiBranca.png';
 import lukasOrre from './../img/team/lukasOrre.png';
-import nidhiSharma from './../img/team/nidhiSharma.png';
 import akramEmdadi from './../img/team/akramEmdadi.png';
 import ioannisSiavelis from './../img/team/ioannisSiavelis.png';
 import ireneSanz from './../img/team/ireneSanz.png';
@@ -28,11 +26,16 @@ import yaroslavKaminskiy from './../img/team/yaroslavKaminskiy.png';
 import georgiosMermelekas from './../img/team/georgiosMermelekas.png';
 import mahnazNikpour from './../img/team/mahnazNikpour.png';
 import lauraLevi from './../img/team/lauraLevi.png';
-import ghazalehAssadi from './../img/team/ghazalehAssadi.png'
-import dmitriiRudakovskii from './../img/team/dmitriiRudakovskii.png'
-import amareWolide from './../img/team/amareWolide.png'
-import koviGovindarajan from './../img/team/koviGovindarajan.png'
-import lucaGaessler from './../img/team/lucaGaessler.png'
+import ghazalehAssadi from './../img/team/ghazalehAssadi.png';
+import dmitriiRudakovskii from './../img/team/dmitriiRudakovskii.png';
+import amareWolide from './../img/team/amareWolide.png';
+import koviGovindarajan from './../img/team/koviGovindarajan.png';
+import lucaGaessler from './../img/team/lucaGaessler.png';
+import ritaHutyraGram from './../img/team/ritaHutyraGram.png';
+import barbaraMahler from './../img/team/barbaraMahler.png';
+import georgeField from './../img/team/georgeField.png';
+import nazliOzkan from './../img/team/nazliOzkan.png'
+import owenHovey from './../img/team/owenHovey.png'
 
 /*
 The role of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -57,7 +60,7 @@ googleScholar is their google scholar link
 
 
 //23d160 - breast cancer
-//ff7c4b -mtbp
+//ff7c4b - mtbp
 //a71eff - proteomics platform
 //6493ff - admin
 //ff1536 - applied proteomics
@@ -378,14 +381,14 @@ export const members = [
 		email: "luca.gaessler@ki.se",
 		github: "",
 		kiLink: "https://ki.se/en/people/luca-gaessler",
-		linkedIn: "www.linkedin.com/in/luca-gaessler",
-		yearStarted: "2025",
+		linkedIn: "https://www.linkedin.com/in/luca-gaessler",
+		yearStarted: "2023",
 		active: 1,
 		team: "Breast cancer",
 		bg: "breastCancer",
 		pictureLink :  lucaGaessler,
 		googleScholar: "",
-		orcid:""
+		orcid:"https://orcid.org/0009-0008-4748-2605"
 	},
 	{
 		name: "Lukas Orre",
@@ -692,7 +695,7 @@ export const members = [
 	{
 		name: "Kovi Govindarajan",
 		role: "student",
-		title: "System Developer",
+		title: "PhD Student",
 		email: "rishyashrung@gmail.com",
 		github: "",
 		kiLink: "",
@@ -705,5 +708,100 @@ export const members = [
 		googleScholar: "",
 		orcid:""
 	},
-	
+	{
+		name: "Rita Hutyra-gram",
+		role: "",
+		title: "Research Engineer",
+		email: "rita.hutyragram@ki.se",
+		github: "",
+		kiLink: "https://ki.se/personer/rita-hutyragram",
+		linkedIn: "https://www.linkedin.com/in/rita-ötvös-hutyra-gram-b7982658/",
+		yearStarted: "2024",
+		active: 1,
+		team: "Core Facility",
+		bg: "coreFacility",
+		pictureLink : ritaHutyraGram,
+		googleScholar: "",
+		orcid:""
+	},
+	{
+		name: "Barbara Mahler",
+		role: "research",
+		title: "Researcher",
+		email: "rita.hutyragram@ki.se",
+		github: "",
+		kiLink: "",
+		linkedIn: "",
+		yearStarted: "2024",
+		active: 1,
+		team: "Applied proteomics",
+		bg: "appliedProteomics",
+		pictureLink : barbaraMahler,
+		googleScholar: "",
+		orcid:""
+	},
+	{
+		name: "George Field",
+		role: "student",
+		title: "PhD Student",
+		email: "george.field@ki.se",
+		github: "",
+		kiLink: "",
+		linkedIn: "",
+		yearStarted: "2024",
+		active: 1,
+		team: "Lung Cancer",
+		bg: "lungCancer",
+		pictureLink : georgeField,
+		googleScholar: "",
+		orcid:""
+	},
+	{
+		name: "Nazli Ezgi Özkan",
+		role: "research",
+		title: "Research Infrastructure Specialists",
+		email: "",
+		github: "",
+		kiLink: "https://ki.se/en/people/nazli-ezgi-ozkan",
+		linkedIn: "",
+		yearStarted: "2025",
+		active: 1,
+		team: "Core Facility",
+		bg: "coreFacility",
+		pictureLink : nazliOzkan,
+		googleScholar: "",
+		orcid:""
+	},
+	{
+		name: "Owen Hovey",
+		role: "postdoc",
+		title: "Post-Doctoral Fellow",
+		email: "owen.hovey@ki.se",
+		github: "",
+		kiLink: "https://ki.se/en/people/owen-hovey",
+		linkedIn: "",
+		yearStarted: "2025",
+		active: 1,
+		team: "Breast cancer",
+		bg: "breastCancer",
+		pictureLink : owenHovey,
+		googleScholar: "",
+		orcid:""
+	},
+		{
+		name: "Krishnatej Nishtala",
+		role: "research",
+		title: "Research Infrastructure Specialist",
+		email: "krishnatej.nishtala@ki.se",
+		github: "",
+		kiLink: "https://ki.se/en/people/krishnatej-nishtala",
+		linkedIn: "",
+		yearStarted: "2025",
+		active: 1,
+		team: "Core Facility",
+		bg: "coreFacility",
+		pictureLink : unknown,
+		googleScholar: "",
+		orcid:""
+	},
 ]

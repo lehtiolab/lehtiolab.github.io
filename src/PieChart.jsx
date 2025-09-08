@@ -1,55 +1,45 @@
-import React, { useRef } from 'react';
+// PieChart.jsx
+import React, { useRef, useMemo } from 'react';
 import Chart from 'chart.js/auto';
-import { CategoryScale } from "chart.js";
-import { useState } from "react";
-import { Doughnut, getElementAtEvent } from "react-chartjs-2";
+import { CategoryScale } from 'chart.js';
+import { Doughnut, getElementAtEvent } from 'react-chartjs-2';
 
-const PieChart = ({ data, selectedTeam, setSelectedTeam, colors }) => {
+const PieChart = ({ data, setSelectedTeam }) => {
 	Chart.register(CategoryScale);
 	const chartRef = useRef();
 
-	const colorMap = {};
-	data.forEach((item, index) => {
-		colorMap[item.label] = colors[index];
-	});
+	const labels = useMemo(() => data.map(d => d.label), [data]);
+	const values = useMemo(() => data.map(d => d.value), [data]);
+	const colors = useMemo(() => data.map(d => d.color), [data]);
+	const bgKeys = useMemo(() => data.map(d => d.bg), [data]);
 
-	const [chartData, setChartData] = useState({
-		labels: data.map(item => item.label),
+	const chartData = {
+		labels,
 		datasets: [{
-			data: data.map(item => item.value),
-			backgroundColor: data.map(item => colorMap[item.label]),
+		data: values,
+		backgroundColor: colors,
+		borderWidth: 0
 		}]
-	});
+	};
 
 	const options = {
 		animation: false,
 		maintainAspectRatio: false,
 		aspectRatio: 1,
-		plugins: {
-			legend: {
-				display: false,
-			}
-		}
+		plugins: { legend: { display: false } }
 	};
-	
+
 	const onClick = (event) => {
-		const elements = getElementAtEvent(chartRef.current, event);
-		if (!elements.length) return;
-
-		const { index } = elements[0];
-		const label = data[index].label;
-
-		if (selectedTeam === label) {
-			setSelectedTeam(null);
-		} else {
-			setSelectedTeam(label);
-		}
+		const elems = getElementAtEvent(chartRef.current, event);
+		if (!elems.length) return;
+		const { index } = elems[0];
+		const bg = bgKeys[index];
+		setSelectedTeam(prev => (prev === bg ? null : bg));
 	};
 
 	return (
 		<div className='doughnut' style={{ width: '400px', height: '400px' }}>
-			<Doughnut data={chartData} options={options} ref={chartRef} onClick={onClick} />
-			<p className='country-selection'>{selectedTeam}</p>
+		<Doughnut ref={chartRef} data={chartData} options={options} onClick={onClick} />
 		</div>
 	);
 };
