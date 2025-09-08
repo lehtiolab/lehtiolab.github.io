@@ -1,41 +1,41 @@
-import unknown from './../img/team/unknown.png'
-import aliRazzak from './../img/team/aliRazzak.png';
-import eduardoAraujo from './../img/team/eduardoAraujo.png';
-import olenaBerkovska from './../img/team/olenaBerkovska.png';
-import rozbehJafar from './../img/team/rozbehJafar.png';
+import unknown from './../img/team/unknown.webp'
+import aliRazzak from './../img/team/aliRazzak.webp';
+import eduardoAraujo from './../img/team/eduardoAraujo.webp';
+import olenaBerkovska from './../img/team/olenaBerkovska.webp';
+import rozbehJafar from './../img/team/rozbehJafar.webp';
 import isabelleLeo from './../img/team/isabelleLeo.png';
-import davidTamborero from './../img/team/davidTamborero.png';
-import nooraSissala from './../img/team/nooraSissala.png';
-import xiaofangCao from './../img/team/xiaofangCao.png';
-import ruiBranca from './../img/team/ruiBranca.png';
-import lukasOrre from './../img/team/lukasOrre.png';
-import akramEmdadi from './../img/team/akramEmdadi.png';
-import ioannisSiavelis from './../img/team/ioannisSiavelis.png';
-import ireneSanz from './../img/team/ireneSanz.png';
-import xuekangQi from './../img/team/xuekangQi.png';
-import henrikJohansson from './../img/team/henrikJohansson.png';
-import mahshidZarrineh from './../img/team/mahshidZarrineh.png';
-import yanboPan from './../img/team/yanboPan.png';
-import markusJonsson from './../img/team/markusJonsson.png';
-import janneLehtio from './../img/team/janneLehtio.png';
-import harisBabacic from './../img/team/harisBabacic.png';
-import soumitraMarathe from './../img/team/soumitraMarathe.png';
-import lauraGheorghe from './../img/team/lauraGheorghe.png';
-import xeniaVillalobos from './../img/team/xeniaVillalobos.png'
-import yaroslavKaminskiy from './../img/team/yaroslavKaminskiy.png';
-import georgiosMermelekas from './../img/team/georgiosMermelekas.png';
-import mahnazNikpour from './../img/team/mahnazNikpour.png';
-import lauraLevi from './../img/team/lauraLevi.png';
-import ghazalehAssadi from './../img/team/ghazalehAssadi.png';
-import dmitriiRudakovskii from './../img/team/dmitriiRudakovskii.png';
-import amareWolide from './../img/team/amareWolide.png';
-import koviGovindarajan from './../img/team/koviGovindarajan.png';
-import lucaGaessler from './../img/team/lucaGaessler.png';
-import ritaHutyraGram from './../img/team/ritaHutyraGram.png';
-import barbaraMahler from './../img/team/barbaraMahler.png';
-import georgeField from './../img/team/georgeField.png';
-import nazliOzkan from './../img/team/nazliOzkan.png'
-import owenHovey from './../img/team/owenHovey.png'
+import davidTamborero from './../img/team/davidTamborero.webp';
+import nooraSissala from './../img/team/nooraSissala.webp';
+import xiaofangCao from './../img/team/xiaofangCao.webp';
+import ruiBranca from './../img/team/ruiBranca.webp';
+import lukasOrre from './../img/team/lukasOrre.webp';
+import akramEmdadi from './../img/team/akramEmdadi.webp';
+import ioannisSiavelis from './../img/team/ioannisSiavelis.webp';
+import ireneSanz from './../img/team/ireneSanz.webp';
+import xuekangQi from './../img/team/xuekangQi.webp';
+import henrikJohansson from './../img/team/henrikJohansson.webp';
+import mahshidZarrineh from './../img/team/mahshidZarrineh.webp';
+import yanboPan from './../img/team/yanboPan.webp';
+import markusJonsson from './../img/team/markusJonsson.webp';
+import janneLehtio from './../img/team/janneLehtio.webp';
+import harisBabacic from './../img/team/harisBabacic.webp';
+import soumitraMarathe from './../img/team/soumitraMarathe.webp';
+import lauraGheorghe from './../img/team/lauraGheorghe.webp';
+import xeniaVillalobos from './../img/team/xeniaVillalobos.webp'
+import yaroslavKaminskiy from './../img/team/yaroslavKaminskiy.webp';
+import georgiosMermelekas from './../img/team/georgiosMermelekas.webp';
+import mahnazNikpour from './../img/team/mahnazNikpour.webp';
+import lauraLevi from './../img/team/lauraLevi.webp';
+import ghazalehAssadi from './../img/team/ghazalehAssadi.webp';
+import dmitriiRudakovskii from './../img/team/dmitriiRudakovskii.webp';
+import amareWolide from './../img/team/amareWolide.webp';
+import koviGovindarajan from './../img/team/koviGovindarajan.webp';
+import lucaGaessler from './../img/team/lucaGaessler.webp';
+import ritaHutyraGram from './../img/team/ritaHutyraGram.webp';
+import barbaraMahler from './../img/team/barbaraMahler.webp';
+import georgeField from './../img/team/georgeField.webp';
+import nazliOzkan from './../img/team/nazliOzkan.webp'
+import owenHovey from './../img/team/owenHovey.webp'
 
 /*
 The role of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -706,7 +706,7 @@ export const members = [
 		bg: "proteomicsMethod",
 		pictureLink : koviGovindarajan,
 		googleScholar: "",
-		orcid:""
+		orcid:"https://orcid.org/0000-0002-0233-2071"
 	},
 	{
 		name: "Rita Hutyra-gram",

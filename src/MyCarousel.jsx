@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './styles/carousel.scss';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import img1 from './assets/img/carousel/meeting-room.png';
-import img2 from './assets/img/carousel/christmas-pic.png';
-import img3 from './assets/img/carousel/team-pic.png';
-import img4 from './assets/img/carousel/travel-pic.png';
-import img5 from './assets/img/carousel/lab-pic-1.jpg';
-import img6 from './assets/img/carousel/lab-pic-2.jpg';
-import img7 from './assets/img/carousel/lab-pic-3.jpg';
+import img1 from './assets/img/carousel/meeting-room.webp';
+import img2 from './assets/img/carousel/christmas-pic.webp';
+import img3 from './assets/img/carousel/team-pic.webp';
+import img4 from './assets/img/carousel/travel-pic.webp';
+import img5 from './assets/img/carousel/lab-pic-1.webp';
+import img6 from './assets/img/carousel/lab-pic-2.webp';
+import img7 from './assets/img/carousel/lab-pic-3.webp';
 import Loader from './Loader';
 
 function MyCarousel() {
