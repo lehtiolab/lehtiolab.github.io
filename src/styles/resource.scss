@@ -19,14 +19,6 @@ $radius-lg: 16px;
     gap: 1.25rem;
 }
 
-.resource-title {
-    color: $primary;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-    font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem);
-    margin: 0;
-}
-
 .resource-intro {
     background: $card-bg;
     color: $ink-600;
