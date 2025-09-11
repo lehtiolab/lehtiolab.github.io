@@ -1,23 +1,23 @@
 #root {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
 }
 
 a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .app-page {
-  height: calc(100vh - 50px);
-  margin-top: 50px;
-  overflow-y: auto;
-  overflow-x: hidden
+	height: calc(100vh - 50px);
+	margin-top: 50px;
+	overflow-y: auto;
+	overflow-x: hidden
 }
 
 @media (max-width: 800px) {
-  .app-page {
-    height: 100%;
-    margin-top: 0px;
-  }
+	.app-page {
+		height: 100%;
+		margin-top: 0px;
+	}
 }

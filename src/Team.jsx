@@ -234,7 +234,7 @@ const TEAM_COLORS = {
 							diversity brings to our group.
 						</div>
 					</div>
-					<div className="text-black">
+					<div>
 						<div className="members-list">
 							{members
 								.sort((a,b) => {

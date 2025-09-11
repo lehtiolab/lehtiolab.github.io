@@ -102,9 +102,6 @@ $radius: 16px;
 }
 
 .year-heading {
-	color: #0f4255;
-	font-weight: 700; 
-	letter-spacing: .3px; 
 	margin: 0 .25rem;
 }
 
@@ -129,7 +126,6 @@ $radius: 16px;
 		position:absolute; 
 		left:0; top:.4rem; 
 		bottom:.4rem; width:4px; background:$primary; border-radius:4px; opacity:.85; }
-	&:hover .pub-title { color: darken($primary, 8%); }
 	@media (max-width: 860px) { grid-template-columns: 1fr; padding: .5rem 0; }
 }
 .pub-card--flip { 
@@ -161,9 +157,7 @@ $radius: 16px;
 }
 .pub-authors { 
 	margin-top:.35rem; 
-	color:$ink-600; 
 	line-height:1.6; 
-	&__lab { color:$ink; } 
 }
 .pub-cta { 
 	display:inline-flex; 

@@ -15,7 +15,7 @@ const TeamModal = ({isOpen, setIsOpen, member}) => {
 				onClick={() => setIsOpen(false)}
 			></div>
 			{member && <div className="fixed inset-0 flex items-center justify-center z-50">
-			<div className="bg-white text-black p-8 rounded shadow-lg w-1/3">
+			<div className="bg-white p-8 rounded shadow-lg w-1/3">
 				<h2 className="text-2xl mb-4">{member.name}</h2>
 				<p>{member.title} since {member.yearStarted}</p>
 				<h4 className="text-2xl mt-4">Contact information</h4>
