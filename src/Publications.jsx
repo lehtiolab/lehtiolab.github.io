@@ -1,78 +1,173 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { publications } from "./assets/data/publications";
-import "./styles/publications.scss"
+import "./styles/publications.scss";
 
-const Publications = () => {
+const SmartLink = ({ to, className, children }) => {
+	const isExternal = /^https?:\/\//i.test(to);
+	return isExternal ? (
+		<a href={to} target="_blank" rel="noopener noreferrer" className={className}>
+			{children}
+		</a>
+	) : (
+		<Link to={to} className={className}>{children}</Link>
+	);
+};
 
-  // Sort publications by date
-  publications.sort(function(a,b) {
-    var aa = a.publicationDate.split("/").reverse().join();
-    var bb = b.publicationDate.split("/").reverse().join();
-    return aa<bb ? -1 : (aa > bb ? 1: 0)
-  })
+const parseDMY = (dmy) => {
+	if (!dmy) return new Date(0);
+	const [dd, mm, yyyy] = dmy.split("/").map(Number);
+	return new Date(yyyy, (mm || 1) - 1, dd || 1);
+};
 
-  // Organise publications into years
-  var publicationByYear = {}
-  publications.forEach((publication) => {
-    if (publicationByYear.hasOwnProperty(publication.publicationDate.split("/")[2])) {
-      publicationByYear[publication.publicationDate.split("/")[2]].push(publication)
-    } else {
-      publicationByYear[publication.publicationDate.split("/")[2]] = [publication]
-    }
-  }
-  )
+const PublicationCard = ({ pub, flip }) => {
+	const authors = pub.publicationAuthors?.map((a, i) => {
+		const isLab = a.includes("*");
+		const text = a.replace("*", "");
+		const sep = i < pub.publicationAuthors.length - 1 ? ", " : "";
+		return isLab ? (
+			<span key={i} className="pub-authors__lab"><strong>{text}</strong>{sep}</span>
+		) : (
+			<span key={i}>{text}{sep}</span>
+		);
+	});
 
-  // Loop through the objects in a order from the first year to the current and populate grid.
-  var publicationGrid = []
-  for (let i=new Date().getFullYear(); i>=2011; i--) {
-    if (publicationByYear[i]) {
-      var publicationYearEntries = []
-      var imageSide = 1
-      publicationByYear[i].forEach((publication) => {
-        if (imageSide % 2 === 0) {
-          var textOrder = 2
-          var imageOrder = 1
-        } else {
-          var textOrder = 1
-          var imageOrder = 2
-        }
-        var publicationAuthours = []
-        publication.publicationAuthors.forEach((authour, idx, array) => {
-          if (idx === array.length - 1) {
-            if (authour.includes("*")) {
-              publicationAuthours.push(<span className="groupAuthour font-bold">{authour.replace("*","")}</span>)
-            } else {
-              publicationAuthours.push(authour)
-            }
-          } else {
-            if (authour.includes("*")) {
-              publicationAuthours.push(<span className="groupAuthour font-bold">{authour.replace("*","")}, </span>)
-            } else {
-              publicationAuthours.push(authour+", ")
-            }
-          }
-        })
-        publicationYearEntries.push(<div className="publicationEntry text-left gap-4 flex flex-row pb-5">
-          <div className="publicationText" style={{order: textOrder}}>
-            <Link className="publicationTitle text-left" to={publication.publicationLink} target="_blank">{publication.publicationTitle}</Link>
-            <div className="publicationJournalTime text-black italic ">{publication.publicationJournal}, {publication.publicationDate}</div>
-            <div className="publicationAuthours text-black text-justify">{publicationAuthours}</div>
-          </div>
-          <div className="publicationImage" style={{order: imageOrder}}
-          ><img src={publication.publicationImage}/></div>
-      </div>)
-      imageSide += 1
-      })
-      publicationGrid.push(<div className="publicationYear" id={"year-"+i}>
-        <div className="yearTitle text-left">{i}</div><div className="publicationList bg-white flex flex-col gap-1 p-2 rounded pl-10 pr-10">{publicationYearEntries}</div></div>)
-    }
-  }
-  return (
-    <div className="flex flex-col w-8/12 mt-2 mb-20 h-fit ml-auto mr-auto gap-5 pt-14">
-    {publicationGrid}
-    </div>
-  )
-}
+	const fullImgHref = pub.publicationImageFull || pub.publicationImage;
 
-export default Publications
+	return (
+		<article className={`pub-card${flip ? " pub-card--flip" : ""}`}>
+			<div>
+				{pub.publicationImage ? (
+					<a
+						className="pub-thumb-link"
+						href={fullImgHref}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Open figure in a new tab"
+					>
+						<img
+							src={pub.publicationImage}
+							alt=""
+							loading="lazy"
+							srcSet={pub.publicationImage2x ? `${pub.publicationImage2x} 2x` : undefined}
+						/>
+					</a>
+				) : (
+					<div className="pub-card__placeholder" aria-hidden="true"></div>
+				)}
+			</div>
+
+			<div className="pub-card__content">
+				<p className="pub-title">
+					{pub.publicationTitle}
+				</p>
+				<div className="pub-meta">
+					<em>{pub.publicationJournal}</em>, <time>{pub.publicationDate}</time>
+				</div>
+				<div className="pub-authors">{authors}</div>
+				<SmartLink to={pub.publicationLink} className="pub-cta" aria-label="Open publication">
+					Open publication
+					<svg viewBox="0 0 24 24" className="pub-cta__icon">
+						<path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+					</svg>
+				</SmartLink>
+			</div>
+		</article>
+	);
+};
+
+	const Publications = () => {
+	const sorted = useMemo(
+		() => [...publications].sort((a, b) => parseDMY(b.publicationDate) - parseDMY(a.publicationDate)),
+		[]
+	);
+
+	// Group by year
+	const byYear = useMemo(() => {
+		return sorted.reduce((acc, p) => {
+		const y = (p.publicationDate || "").split("/")[2] || "Unknown";
+		(acc[y] ||= []).push(p);
+		return acc;
+		}, {});
+	}, [sorted]);
+
+	// Ordered years (desc, numeric first)
+	const years = useMemo(
+		() => Object.keys(byYear).sort((a, b) => (Number(b) || 0) - (Number(a) || 0)),
+		[byYear]
+	);
+
+	// Active year tracking (for highlight)
+	const [activeYear, setActiveYear] = useState(years[0] || "");
+	const observerRef = useRef(null);
+
+	useEffect(() => {
+		if (!years.length) return;
+		const sections = years
+		.map((y) => document.getElementById(`year-${y}`))
+		.filter(Boolean);
+
+		// Observe which year block is "centered" in viewport
+		observerRef.current = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				const id = entry.target.getAttribute("id") || "";
+				const y = id.replace("year-", "");
+				setActiveYear(y);
+			}
+			});
+		},
+		{ root: null, rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+		);
+
+		sections.forEach((el) => observerRef.current.observe(el));
+		return () => observerRef.current?.disconnect();
+	}, [years]);
+
+	const scrollToYear = (y) => {
+		const el = document.getElementById(`year-${y}`);
+		if (!el) return;
+		const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+		el.scrollIntoView({ behavior: prefersReduced ? "auto" : "smooth", block: "start" });
+	};
+
+	return (
+		<main className="pubs-wrapper">
+			{/* Sticky side rail (desktop only via CSS) */}
+			<aside className="year-rail" aria-label="Year timeline">
+			<ul className="year-rail__list">
+				{years.map((y) => (
+				<li key={`rail-${y}`}>
+					<button
+					type="button"
+					className="year-rail__link"
+					onClick={() => scrollToYear(y)}
+					aria-current={activeYear === y ? "true" : undefined}
+					>
+					<span className="dot" aria-hidden="true" />
+					{y}
+					</button>
+				</li>
+				))}
+			</ul>
+			</aside>
+
+			{/* Publications content */}
+			<div className="pubs-content">
+			{years.map((year) => (
+				<section key={year} id={`year-${year}`} className="year-block">
+				<h2 className="year-heading">{year}</h2>
+				<div className="year-list">
+					{byYear[year].map((pub, i) => (
+					<PublicationCard key={pub.publicationTitle} pub={pub} flip={i % 2 === 1} />
+					))}
+				</div>
+				</section>
+			))}
+			</div>
+		</main>
+	);
+};
+
+export default Publications;
