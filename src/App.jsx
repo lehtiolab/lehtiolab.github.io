@@ -10,6 +10,7 @@ import Resources from './Resources'
 import Contact from './Contact';
 import Opportunities from './Opportunities'
 import ReactGA from 'react-ga4';
+import ParticleBackground from './BackgroundParticles';
 
 ReactGA.initialize('G-SQHQTBJNLB');
 
@@ -20,6 +21,7 @@ function App() {
 	return (
     <HashRouter>
 			<Navbar />
+			<ParticleBackground />
 			<div className="app-page">
 				<Routes>
 					<Route exact path="/" element={<Homepage />} />
