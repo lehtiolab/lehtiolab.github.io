@@ -45,7 +45,7 @@ const SmartLink = ({ to, children, className }) => {
 
 	const Section = ({ title, intro, items }) => (
 		<section className="resource-section" aria-labelledby={`${title}-heading`}>
-			<h2 id={`${title}-heading`} className="resource-title">{title}</h2>
+			<h1 id={`${title}-heading`} className="resource-title">{title}</h1>
 			<p className="resource-intro">{intro}</p>
 
 			<div className="resource-grid">

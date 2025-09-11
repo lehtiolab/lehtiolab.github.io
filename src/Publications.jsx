@@ -91,13 +91,11 @@ const PublicationCard = ({ pub, flip }) => {
 		}, {});
 	}, [sorted]);
 
-	// Ordered years (desc, numeric first)
 	const years = useMemo(
 		() => Object.keys(byYear).sort((a, b) => (Number(b) || 0) - (Number(a) || 0)),
 		[byYear]
 	);
 
-	// Active year tracking (for highlight)
 	const [activeYear, setActiveYear] = useState(years[0] || "");
 	const observerRef = useRef(null);
 
@@ -107,15 +105,14 @@ const PublicationCard = ({ pub, flip }) => {
 		.map((y) => document.getElementById(`year-${y}`))
 		.filter(Boolean);
 
-		// Observe which year block is "centered" in viewport
 		observerRef.current = new IntersectionObserver(
 		(entries) => {
 			entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				const id = entry.target.getAttribute("id") || "";
-				const y = id.replace("year-", "");
-				setActiveYear(y);
-			}
+				if (entry.isIntersecting) {
+					const id = entry.target.getAttribute("id") || "";
+					const y = id.replace("year-", "");
+					setActiveYear(y);
+				}
 			});
 		},
 		{ root: null, rootMargin: "-40% 0px -55% 0px", threshold: 0 }
@@ -134,37 +131,35 @@ const PublicationCard = ({ pub, flip }) => {
 
 	return (
 		<main className="pubs-wrapper">
-			{/* Sticky side rail (desktop only via CSS) */}
 			<aside className="year-rail" aria-label="Year timeline">
-			<ul className="year-rail__list">
-				{years.map((y) => (
-				<li key={`rail-${y}`}>
-					<button
-					type="button"
-					className="year-rail__link"
-					onClick={() => scrollToYear(y)}
-					aria-current={activeYear === y ? "true" : undefined}
-					>
-					<span className="dot" aria-hidden="true" />
-					{y}
-					</button>
-				</li>
-				))}
-			</ul>
+				<ul className="year-rail__list">
+					{years.map((y) => (
+						<li key={`rail-${y}`}>
+							<button
+								type="button"
+								className="year-rail__link"
+								onClick={() => scrollToYear(y)}
+								aria-current={activeYear === y ? "true" : undefined}
+							>
+							<span className="dot" aria-hidden="true" />
+								{y}
+							</button>
+						</li>
+					))}
+				</ul>
 			</aside>
 
-			{/* Publications content */}
 			<div className="pubs-content">
-			{years.map((year) => (
-				<section key={year} id={`year-${year}`} className="year-block">
-				<h2 className="year-heading">{year}</h2>
-				<div className="year-list">
-					{byYear[year].map((pub, i) => (
-					<PublicationCard key={pub.publicationTitle} pub={pub} flip={i % 2 === 1} />
-					))}
-				</div>
-				</section>
-			))}
+				{years.map((year) => (
+					<section key={year} id={`year-${year}`} className="year-block">
+						<h1 className="year-heading">{year}</h1>
+						<div className="year-list">
+							{byYear[year].map((pub, i) => (
+								<PublicationCard key={pub.publicationTitle} pub={pub} flip={i % 2 === 1} />
+							))}
+						</div>
+					</section>
+				))}
 			</div>
 		</main>
 	);
