@@ -13,7 +13,7 @@ const News = () => {
 	});
 
 	return (
-		<ul className="overflow-y-auto">
+		<ul className="news-list">
 			{sortedNews.map((n, i) => (
 				<li key={i} className="news-links">
 				<time style={{fontWeight: 600, color: 'var(--muted)', marginRight: 8}}>{n.date}</time>

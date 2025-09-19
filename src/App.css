@@ -14,10 +14,3 @@ a:link, a:visited, a:hover, a:active {
 	overflow-y: auto;
 	overflow-x: hidden
 }
-
-@media (max-width: 800px) {
-	.app-page {
-		height: 100%;
-		margin-top: 0px;
-	}
-}
