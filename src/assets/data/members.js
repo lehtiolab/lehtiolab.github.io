@@ -169,7 +169,7 @@ export const members = [
 	{
 		name: "Eduardo Araújo",
 		role: "research",
-		title: "Research Enginner",
+		title: "Research Infrastructure Specialist",
 		email: "eduardo.araujo@ki.se",
 		github: "",
 		kiLink: "https://medarbetare.ki.se/people/eduardo-araujo",
@@ -201,12 +201,12 @@ export const members = [
 	{
 		name: "Ghazaleh Assadi",
 		role: "staff",
-		title: "Research engineer",
+		title: "PMSC Team Coordinator",
 		email: "",
 		github: "",
 		kiLink: "",
 		linkedIn: "",
-		yearStarted: "",
+		yearStarted: "2017",
 		active: 1,
 		team: "Admin/ClinProt",
 		bg: "admin",
