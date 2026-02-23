@@ -30,6 +30,10 @@ const News = () => {
 			date: '10.2024',
 			html: 'The <a href="https://www.testbedswedenphc.se/focuse" target="_blank" rel="noopener noreferrer">FOCU.SE</a> national cancer precision medicine trial has been approved by the European Medicines Agency (EMA) and Swedish authorities. This sets the ground for a prospective flow of patient samples through the FOCU.SE trial.',
 		},
+		{
+			date: '01.2026',
+			html: 'Check out our new <a href="https://www.biorxiv.org/content/10.64898/2026.01.20.700495v1" target="_blank" rel="noopener noreferrer">preprint</a> about proteomics of single-slide FFPE cancer biopsies!',
+		}
 	];
 
 	const sortedNews = [...news].sort((a, b) => parseFlexibleDate(b.date) - parseFlexibleDate(a.date));

@@ -204,15 +204,15 @@ export const members = [
 		title: "PMSC Team Coordinator",
 		email: "",
 		github: "",
-		kiLink: "",
-		linkedIn: "",
+		kiLink: "https://ki.se/en/people/ghazaleh-assadi",
+		linkedIn: "https://www.linkedin.com/in/ghazaleh-aida-assadi-9048532a/",
 		yearStarted: "2017",
 		active: 1,
 		team: "Admin/ClinProt",
 		bg: "admin",
 		pictureLink :  ghazalehAssadi,
-		googleScholar: "",
-		orcid:""
+		googleScholar: "https://scholar.google.com/citations?user=5HELRVMAAAAJ&hl=en",
+		orcid:"https://orcid.org/0000-0002-3723-9141"
 	},
 	{
 		name: "Haris Babacic",
