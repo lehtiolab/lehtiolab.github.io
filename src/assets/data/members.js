@@ -36,6 +36,9 @@ import barbaraMahler from './../img/team/barbaraMahler.webp';
 import georgeField from './../img/team/georgeField.webp';
 import nazliOzkan from './../img/team/nazliOzkan.webp'
 import owenHovey from './../img/team/owenHovey.webp'
+import albertoArenas from './../img/team/albertoArenas.png'
+import alexandraArgyriou from './../img/team/alexandraArgyriou.png'
+import felixManske from './../img/team/felixManske.png'
 
 /*
 The role of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -217,7 +220,7 @@ export const members = [
 	{
 		name: "Haris Babacic",
 		role: "postdoc",
-		title: "Postdoctoral researcher",
+		title: "Post-Doctoral Researcher",
 		email: "haris.babacic@ki.se",
 		github: "",
 		kiLink: "https://ki.se/people/haris-babacic",
@@ -788,7 +791,7 @@ export const members = [
 		googleScholar: "",
 		orcid:""
 	},
-		{
+	{
 		name: "Krishnatej Nishtala",
 		role: "research",
 		title: "Research Infrastructure Specialist",
@@ -803,5 +806,53 @@ export const members = [
 		pictureLink : unknown,
 		googleScholar: "",
 		orcid:""
+	},
+	{
+		name: "Alberto Arenas",
+		role: "postdoc",
+		title: "Post-Doctoral Researcher",
+		email: "alberto.arenas@ki.se",
+		github: "",
+		kiLink: "https://ki.se/en/people/alberto-arenas",
+		linkedIn: "https://www.linkedin.com/in/alberto-m-arenas-molina-phd-0327b2228/",
+		yearStarted: "2025",
+		active: 1,
+		team: "Proteomics methods",
+		bg: "proteomicsMethod",
+		pictureLink : albertoArenas,
+		googleScholar: "",
+		orcid:"https://orcid.org/0000-0002-5995-2968"
+	},
+	{
+		name: "Alexandra Argyriou",
+		role: "postdoc",
+		title: "Post-Doctoral Researcher",
+		email: "alexandra.argyriou.2@ki.se",
+		github: "",
+		kiLink: "https://ki.se/personer/alexandra-argyriou-2",
+		linkedIn: "https://www.linkedin.com/in/alexandra-argyriou/",
+		yearStarted: "2025",
+		active: 1,
+		team: "Proteomics methods",
+		bg: "proteomicsMethod",
+		pictureLink : alexandraArgyriou,
+		googleScholar: "",
+		orcid:"https://orcid.org/0000-0002-4181-927X"
+	},
+	{
+		name: "Felix Manske",
+		role: "postdoc",
+		title: "Post-Doctoral Researcher",
+		email: "felix.manske@ki.se",
+		github: "",
+		kiLink: "https://ki.se/personer/felix-manske",
+		linkedIn: "",
+		yearStarted: "2026",
+		active: 1,
+		team: "Proteomics methods",
+		bg: "proteomicsMethod",
+		pictureLink : felixManske,
+		googleScholar: "",
+		orcid:"https://orcid.org/0000-0001-6509-2063"
 	},
 ]

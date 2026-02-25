@@ -31,7 +31,7 @@ body {
 }
 
 .welcome-page-left {
-	width: 100%;
+	height: 90vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	gap: 22px;
@@ -65,7 +65,7 @@ body {
 .welcome-page-second { 
 	display: flex; 
 	flex-direction: column; 
-	overflow: hidden; 
+	overflow: hidden;
 }
 
 .welcome-page-second .news-list { 

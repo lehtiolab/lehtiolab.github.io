@@ -27,8 +27,12 @@ const News = () => {
 			html: 'The website of our <a href="https://proteomemedicine.se/" target="_blank" rel="noopener noreferrer">project ProMS</a> is ready! Check out how we will bring proteomic analysis into the clinic.',
 		},
 		{
-			date: '10.2024',
-			html: 'The <a href="https://www.testbedswedenphc.se/focuse" target="_blank" rel="noopener noreferrer">FOCU.SE</a> national cancer precision medicine trial has been approved by the European Medicines Agency (EMA) and Swedish authorities. This sets the ground for a prospective flow of patient samples through the FOCU.SE trial.',
+			date: '11.2025',
+			html: 'The <a href="https://www.testbedswedenphc.se/focuse" target="_blank" rel="noopener noreferrer">FOCU.SE national cancer precision medicine trial</a> has been approved by the European Medicines Agency (EMA) and Swedish authorities. This sets the ground for a prospective flow of patient samples through the FOCU.SE trial.',
+		},
+		{
+			date: '10.2025',
+			html: 'We’re proud to share that our PI, Henrik Johansson, has been awarded a 10 MSEK SSF grant for the project <a href="https://strategiska.se/en/press-release/they-receive-120-million-for-instrument-technology-and-method-development/" target="_blank" rel="noopener noreferrer">“Proteoform Elucidation And Knowledge-graph System (PEAKS)” </a>, advancing instrument and method development in proteomics — congratulations to the entire team! 🎉',
 		},
 		{
 			date: '01.2026',

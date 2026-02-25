@@ -40,9 +40,7 @@ const Homepage = () => {
           
           <div className="welcome-page-second">
             <h1>News</h1>
-            <div className="news-container">
               <News />
-            </div>
           </div>
           
           <div className="welcome-page-third">
