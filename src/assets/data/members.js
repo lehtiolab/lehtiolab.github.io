@@ -34,11 +34,13 @@ import lucaGaessler from './../img/team/lucaGaessler.webp';
 import ritaHutyraGram from './../img/team/ritaHutyraGram.webp';
 import barbaraMahler from './../img/team/barbaraMahler.webp';
 import georgeField from './../img/team/georgeField.webp';
-import nazliOzkan from './../img/team/nazliOzkan.webp'
-import owenHovey from './../img/team/owenHovey.webp'
-import albertoArenas from './../img/team/albertoArenas.png'
-import alexandraArgyriou from './../img/team/alexandraArgyriou.png'
-import felixManske from './../img/team/felixManske.png'
+import nazliOzkan from './../img/team/nazliOzkan.webp';
+import owenHovey from './../img/team/owenHovey.webp';
+import albertoArenas from './../img/team/albertoArenas.png';
+import alexandraArgyriou from './../img/team/alexandraArgyriou.png';
+import felixManske from './../img/team/felixManske.png';
+import quentinGlaziou from './../img/team/quentinGlaziou.png';
+
 
 /*
 The role of a member determines their appearance, followed by who has been the longest, & then finally alphabetically
@@ -854,5 +856,21 @@ export const members = [
 		pictureLink : felixManske,
 		googleScholar: "",
 		orcid:"https://orcid.org/0000-0001-6509-2063"
+	},
+		{
+		name: "Quentin Glaziou",
+		role: "postdoc",
+		title: "Post-Doctoral Researcher",
+		email: "quentin.glaziou@ki.se",
+		github: "",
+		kiLink: "https://ki.se/en/people/quentin-glaziou",
+		linkedIn: "",
+		yearStarted: "2025",
+		active: 1,
+		team: "Childhood cancer",
+		bg: "childhoodCancer",
+		pictureLink : quentinGlaziou,
+		googleScholar: "",
+		orcid:""
 	},
 ]
